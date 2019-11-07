@@ -1,0 +1,475 @@
+"Pto8081,8096,8082,8003"
+tcp 8081-8081 
+  tcp 8096-8096 
+ udp 8081-8081 
+ udp 8096-8096 
+ tcp 8082-8082 
+ udp 8082-8082 
+ tcp 8003-8003 
+"Puerto_109,_5051"
+tcp 109-109 
+  tcp 5051-5051 
+"Pto_2095"
+tcp 2095-2095 
+ "Secure_Radius_Svce_2083"
+tcp 2083-2083 
+  udp 2083-2083 
+"Base_de_datos_DIA"
+tcp 7824-7824 
+ "7001"
+tcp 7001-7001 
+ "SNPP-444"
+tcp 444-444 
+ "SAGARPA"
+tcp 2155-2155 
+  udp 2155-2155 
+ tcp 80-80 
+ tcp 0-0 
+"avaya_pbx"
+tcp 5050-5050 
+ "VPN-CISCO"
+tcp 10000-10000 
+  udp 10000-10000 
+"maildev"
+tcp 80-80 
+  tcp 443-443 
+ tcp 389-389 
+ tcp 636-636 
+"Demo_allot"
+tcp 80-80 
+  tcp 21-21 
+ tcp 51000-51000 
+ tcp 52000-52000 
+ tcp 53000-53000 
+"5222,_5223,_5269,_7777"
+tcp 5222-5222 
+  tcp 5223-5223 
+ tcp 5269-5269 
+ tcp 7777-7777 
+"doc-server-station"
+tcp 3389-3389 
+  udp 3389-3389 
+"PROXY-FERROMEX1"
+tcp 4443-4443 
+  tcp 100-109 
+ tcp 51002-51009 
+ tcp 50000-50001 
+"Pto_4500_ipsec-nat-t"
+tcp 4500-4500 
+  udp 4500-4500 
+"pto_8080"
+tcp 8080-8080 
+ "pto_8999"
+tcp 8999-8999 
+  udp 8999-8999 
+"Pto_8000_TCP"
+tcp 8000-8000 
+ "Pto_TCP_UDP_4672"
+tcp 0-65535 
+  udp 0-65535 
+"Saprouter-3299"
+tcp 3299-3299 
+  udp 3299-3299 
+"POP3/SSL"
+tcp 995-995 
+  udp 995-995 
+"Sevicios_para_190.1.4.45"
+tcp 993-993 
+  udp 993-993 
+ tcp 143-143 
+ udp 143-143 
+"IMAP4/SSL"
+tcp 993-993 
+  udp 993-993 
+"Pto-8080-HTTP-ALT"
+tcp 8080-8080 
+ "Pto-7824"
+tcp 7824-7824 
+ "Pto-8080"
+tcp 8080-8080 
+  tcp 8030-8030 
+"Pto-3301"
+tcp 3301-3301 
+ "Pto-5631"
+tcp 5631-5631 
+ "pto_6400_crital_reports"
+tcp 6400-6400 
+ "pto_50000"
+tcp 50000-50000 
+ "Pto-50100"
+tcp 50100-50100 
+ "Puerto_Skype"
+tcp 33138-33138 
+ "SKYPE"
+tcp 29015-29015 
+  tcp 33138-33138 
+ tcp 37-37 
+"Puertos_1719,_2776,_2777"
+udp 1719-1719 
+ udp 2776-2776 
+ udp 2777-2777 
+"Puerto_2776"
+tcp 2776-2776 
+  udp 2776-2776 
+"Puerto-2187"
+tcp 2187-2187 
+ "SMTP/SSL"
+tcp 465-465 
+ "tpc_sap"
+tcp 3299-3299 
+  tcp 3200-3200 
+ tcp 3201-3201 
+"Ptos-doc.ferromex"
+tcp 2055-2055 
+  tcp 4739-4739 
+ tcp 6343-6343 
+ udp 2055-2055 
+ udp 4739-4739 
+ udp 6343-6343 
+"VP-8080"
+tcp 8080-8080 
+ "Puerto-5000"
+tcp 50000-50000 
+ "ICA"
+tcp 1494-1494 
+ "SSL_TELNET"
+tcp 992-992 
+ "License_Check/SSL"
+tcp 9470-9470 
+ "Blackberry"
+tcp 3101-3101 
+ "Puerto-21173"
+tcp 21173-21173 
+ "Puerto-465"
+tcp 465-465 
+ "Puerto_6080"
+tcp 6080-6080 
+ "CONCENTRADOR_VPN"
+tcp 18190-18191 
+ "Puerto-4433"
+tcp 4433-4433 
+ "Puerto-8642"
+tcp 8642-8642 
+ "MySQL"
+tcp 3306-3306 
+ "Puerto-2300"
+tcp 2300-2300 
+ "Puerto-9443"
+tcp 9443-9443 
+ "Puerto-1022"
+tcp 1022-1022 
+ "SMTP_secure_465"
+tcp 465-465 
+  udp 465-465 
+"Puerto-495"
+tcp 495-495 
+ "Puerto-1533"
+tcp 1533-1533 
+ "Puerto-9080"
+tcp 9080-9080 
+ "Ferromex_Port_15"
+tcp 1533-1533 
+  udp 1533-1533 
+ tcp 9080-9080 
+ udp 9080-9080 
+"Puerto-49177"
+tcp 49177-49177 
+ "Puerto-56123"
+tcp 56123-56123 
+  udp 56123-56123 
+"MS-CIFS"
+tcp 445-445 
+  udp 445-445 
+"Puerto-8"
+tcp 8-8 
+ "Puerto-8501"
+udp 8501-8501 
+"Puerto-Holcim_Apasco"
+tcp 47449-47449 
+ "Puerto-5223"
+tcp 5223-5223 
+ "Puerto-3689"
+tcp 3689-3689 
+ "Puerto-5353"
+udp 5353-5353 
+"Puerto-5222"
+tcp 5222-5222 
+  udp 5222-5222 
+"pto_10000"
+tcp 10000-10000 
+ "Puerto-5228"
+tcp 5228-5228 
+  udp 5228-5228 
+"pto_2525_smtp"
+tcp 2525-2525 
+ "SFTP"
+tcp 22-22 
+  tcp 99-99 
+ udp 99-99 
+"pto_8200_tcp"
+tcp 8200-8200 
+ "Gmail-465"
+tcp 465-465 
+ "Gmail-993"
+tcp 993-993 
+ "gmail-587"
+tcp 587-587 
+ "Sap_Network-3298"
+tcp 3298-3298 
+ "Puerto_50000"
+tcp 50000-50000 
+ "Puerto-50000"
+tcp 50000-50000 
+ "Puerto-4042"
+tcp 4042-4042 
+ "Puerto-8443"
+tcp 8443-8443 
+ "Puerto-5553"
+tcp 5553-5553 
+ "Puerto-8000"
+tcp 8000-8000 
+ "Puerto-1522"
+tcp 1522-1522 
+ "Puertos-23301,_23303"
+tcp 23301-23301 
+  tcp 23303-23303 
+"Puerto-90"
+tcp 90-90 
+ "Puerto-6036"
+tcp 6036-6036 
+ "Puerto-587"
+tcp 587-587 
+  udp 587-587 
+"Puerto-2083"
+tcp 2083-2083 
+ "Puertos_20_21_22"
+tcp 20-22 
+ "Puertos_Telcel_1"
+tcp 2809-2809 
+  tcp 8880-8880 
+ tcp 9043-9043 
+ tcp 9060-9060 
+ tcp 9080-9080 
+ tcp 9443-9443 
+ tcp 9633-9633 
+ tcp 2810-2810 
+"Puertos_Telcel_2"
+tcp 8881-8881 
+  tcp 9044-9044 
+ tcp 9061-9061 
+ tcp 9081-9081 
+ tcp 9444-9444 
+ tcp 9634-9634 
+"TCP-443"
+tcp 443-443 
+ "TCP-80"
+tcp 80-80 
+ "Puerto-3007"
+tcp 3007-3007 
+  udp 3007-3007 
+"Puerto_81"
+tcp 81-81 
+  udp 81-81 
+"Pto_1528"
+tcp 1528-1528 
+  udp 1528-1528 
+"TCP-50778"
+tcp 50778-65535 
+ "pto_81_8081_tcp"
+tcp 81-81 
+  tcp 8081-8081 
+"Pto_587"
+tcp 587-587 
+  udp 587-587 
+"Pto_465"
+tcp 465-465 
+  udp 465-465 
+"Pto_995"
+tcp 995-995 
+  udp 995-995 
+"Pto_110"
+tcp 110-110 
+  udp 110-110 
+"PUERTO_35000"
+tcp 35000-35000 
+  udp 35000-35000 
+ tcp 35001-35001 
+ udp 35001-35001 
+"Puerto_1433"
+tcp 1433-1433 
+  udp 1433-1433 
+"TCP-143_SQL_Server"
+tcp 143-143 
+ "Pto_9154"
+tcp 9154-9154 
+  udp 9154-9154 
+"Pto_9002"
+tcp 9002-9002 
+  udp 9002-9002 
+"TCP-22"
+tcp 22-22 
+ "TCP-2195"
+tcp 0-2195 
+ "TCP_46262"
+tcp 0-65535 
+ "TCP/32137"
+tcp 0-65535 
+ "7400"
+tcp 0-65535 
+ "2222"
+tcp 2222-2222 
+ "7004"
+tcp 0-65535 
+ "36000"
+tcp 0-65535 
+ "36001"
+tcp 0-65535 
+ "Ephermeral_Port"
+tcp 0-65535 
+ "XMPP"
+tcp 7400-7400 
+ "SSH(https/tunels)"
+tcp 2222-65535 
+ "Trasveral_SIP"
+udp 36000-65535 
+ udp 36001-65535 
+"Sip_Media"
+udp 1024-65535 
+ udp 1024-65535 
+"SIP_Signaling_7004"
+tcp 7004-65535 
+  tcp 7004-65535 
+ udp 7004-65535 
+"SIP_Signaling_7001"
+tcp 7001-65535 
+  tcp 7001-65535 
+ udp 7001-65535 
+"SIP_Signaling_1024"
+tcp 1024-65535 
+  tcp 1024-65535 
+ udp 1024-65535 
+"XMPP_Presence"
+tcp 5222-5222 
+ "https_Proxy"
+tcp 8443-8443 
+ "Media"
+udp 36002-59999 
+ udp 36012-59999 
+"SIP_signaling_5061"
+tcp 5061-5061 
+  udp 5061-5061 
+"SIP_Signaling_5060"
+tcp 5060-5060 
+  udp 5060-5060 
+"HTTPS_file_retrieval"
+tcp 6970-6970 
+ "CUC"
+tcp 443-443 
+ "Media_36000_1024"
+udp 1024-65535 
+"TCP-25"
+tcp 25-25 
+ "TCP-110"
+tcp 110-110 
+ "UDP_3478"
+udp 3478-3483 
+"UDP_36002__59999"
+udp 36002-59999 
+"UDP_36000_59999"
+udp 36000-59999 
+"TCP_1720"
+tcp 1720-1720 
+ "UDP_1719"
+tcp 1719-1719 
+ "TCP_15000_19999"
+tcp 15000-19999 
+ "tcp_2777"
+tcp 2777-2777 
+ "UDP_1718"
+udp 1718-1718 
+"UDP_53"
+udp 53-53 
+"UDP_123"
+udp 123-123 
+"Puerto_3478_3483"
+udp 3478-3483 
+"Puerto_3478"
+udp 3478-3483 
+"TCP_53"
+tcp 53-53 
+ "Puerto_4172"
+tcp 4172-4172 
+  udp 4172-4172 
+"Pto50000-59999"
+tcp 50000-59999 
+  udp 50000-59999 
+"Pto-5223"
+tcp 5223-5223 
+ "PTO3478-3481UDP"
+udp 3478-3478 
+ udp 3479-3479 
+ udp 3480-3480 
+ udp 3481-3481 
+"3478"
+udp 3478-3478 
+"9090"
+tcp 9090-9090 
+ "9091"
+tcp 9091-9091 
+ "8442"
+tcp 8442-8442 
+ "9100"
+tcp 9100-9100 
+ "8081"
+tcp 8081-8081 
+ "5985"
+tcp 5985-5985 
+ "161_UDP"
+udp 161-161 
+"445"
+tcp 445-445 
+ "8443"
+tcp 8443-8443 
+ "TCP-4248"
+tcp 4248-4248 
+ "449"
+tcp 449-449 
+ "8476"
+tcp 8476-8476 
+ "7351"
+tcp 7351-7351 
+ "7734"
+tcp 7734-7734 
+ "7752"
+tcp 7752-7752 
+ "7070"
+tcp 7070-7070 
+ "7443"
+tcp 7443-7443 
+ "0-65535"
+tcp 0-65535 
+ "ALLPORT_0-65535"
+tcp 7443-7443 
+ "TCP-1521"
+tcp 1521-1521 
+ "PTO_389"
+tcp 389-389 
+  udp 389-389 
+"9251"
+tcp 9251-9251 
+  udp 9251-9251 
+"8888"
+tcp 8888-8888 
+  udp 8888-8888 
+"8411"
+tcp 8411-8411 
+  udp 8411-8411 
+"TT204190"
+tcp 9194-9194 
+  tcp 80-80 
+ tcp 443-443 
+ tcp 9191-9191 
+ tcp 445-445 
+"Pto_25"
+tcp 25-25 
+  udp 25-25 

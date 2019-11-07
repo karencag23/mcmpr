@@ -1,0 +1,8 @@
+config firewall address
+
+config firewall addrgrp
+
+config firewall service custom
+
+config firewall policy
+

@@ -1,0 +1,293 @@
+set service "Pto8081,8096,8082,8003" protocol tcp src-port 0-65535 dst-port 8081-8081 
+set service "Pto8081,8096,8082,8003" + tcp src-port 0-65535 dst-port 8096-8096 
+set service "Pto8081,8096,8082,8003" + udp src-port 0-65535 dst-port 8081-8081 
+set service "Pto8081,8096,8082,8003" + udp src-port 0-65535 dst-port 8096-8096 
+set service "Pto8081,8096,8082,8003" + tcp src-port 0-65535 dst-port 8082-8082 
+set service "Pto8081,8096,8082,8003" + udp src-port 0-65535 dst-port 8082-8082 
+set service "Pto8081,8096,8082,8003" + tcp src-port 0-65535 dst-port 8003-8003 
+set service "Puerto 109, 5051" protocol tcp src-port 0-65535 dst-port 109-109 
+set service "Puerto 109, 5051" + tcp src-port 0-65535 dst-port 5051-5051 
+set service "Pto 2095" protocol tcp src-port 0-65535 dst-port 2095-2095 
+set service "Secure Radius Svce 2083" protocol tcp src-port 0-65535 dst-port 2083-2083 
+set service "Secure Radius Svce 2083" + udp src-port 0-65535 dst-port 2083-2083 
+set service "Base de datos DIA" protocol tcp src-port 0-65535 dst-port 7824-7824 
+set service "7001" protocol tcp src-port 7001-7001 dst-port 7001-7001 
+set service "SNPP-444" protocol tcp src-port 0-65535 dst-port 444-444 
+set service "SAGARPA" protocol tcp src-port 0-65535 dst-port 2155-2155 
+set service "SAGARPA" + udp src-port 0-65535 dst-port 2155-2155 
+set service "SAGARPA" + tcp src-port 0-65535 dst-port 80-80 
+set service "SAGARPA" + tcp src-port 0-65535 dst-port 0-0 
+set service "avaya_pbx" protocol tcp src-port 0-65535 dst-port 5050-5050 
+set service "VPN-CISCO" protocol tcp src-port 0-65535 dst-port 10000-10000 
+set service "VPN-CISCO" + udp src-port 0-65535 dst-port 10000-10000 
+set service "maildev" protocol tcp src-port 0-65535 dst-port 80-80 
+set service "maildev" + tcp src-port 0-65535 dst-port 443-443 
+set service "maildev" + tcp src-port 0-65535 dst-port 389-389 
+set service "maildev" + tcp src-port 0-65535 dst-port 636-636 
+set service "Demo_allot" protocol tcp src-port 0-65535 dst-port 80-80 
+set service "Demo_allot" + tcp src-port 0-65535 dst-port 21-21 
+set service "Demo_allot" + tcp src-port 0-65535 dst-port 51000-51000 
+set service "Demo_allot" + tcp src-port 0-65535 dst-port 52000-52000 
+set service "Demo_allot" + tcp src-port 0-65535 dst-port 53000-53000 
+set service "5222, 5223, 5269, 7777" protocol tcp src-port 0-65535 dst-port 5222-5222 
+set service "5222, 5223, 5269, 7777" + tcp src-port 0-65535 dst-port 5223-5223 
+set service "5222, 5223, 5269, 7777" + tcp src-port 0-65535 dst-port 5269-5269 
+set service "5222, 5223, 5269, 7777" + tcp src-port 0-65535 dst-port 7777-7777 
+set service "doc-server-station" protocol tcp src-port 0-65535 dst-port 3389-3389 
+set service "doc-server-station" + udp src-port 0-65535 dst-port 3389-3389 
+set service "PROXY-FERROMEX1" protocol tcp src-port 0-65535 dst-port 4443-4443 
+set service "PROXY-FERROMEX1" + tcp src-port 0-65535 dst-port 100-109 
+set service "PROXY-FERROMEX1" + tcp src-port 0-65535 dst-port 51002-51009 
+set service "PROXY-FERROMEX1" + tcp src-port 0-65535 dst-port 50000-50001 
+set service "Pto 4500 ipsec-nat-t" protocol tcp src-port 0-65535 dst-port 4500-4500 
+set service "Pto 4500 ipsec-nat-t" + udp src-port 0-65535 dst-port 4500-4500 
+set service "pto 8080" protocol tcp src-port 0-65535 dst-port 8080-8080 
+set service "pto_8999" protocol tcp src-port 0-65535 dst-port 8999-8999 
+set service "pto_8999" + udp src-port 0-65535 dst-port 8999-8999 
+set service "Pto 8000 TCP" protocol tcp src-port 0-65535 dst-port 8000-8000 
+set service "Pto TCP UDP 4672" protocol tcp src-port 0-4672 dst-port 0-65535 
+set service "Pto TCP UDP 4672" + udp src-port 0-4672 dst-port 0-65535 
+set service "Saprouter-3299" protocol tcp src-port 0-65535 dst-port 3299-3299 
+set service "Saprouter-3299" + udp src-port 0-65535 dst-port 3299-3299 
+set service "POP3/SSL" protocol tcp src-port 0-65535 dst-port 995-995 
+set service "POP3/SSL" + udp src-port 0-65535 dst-port 995-995 
+set service "Sevicios para 190.1.4.45" protocol tcp src-port 0-65535 dst-port 993-993 
+set service "Sevicios para 190.1.4.45" + udp src-port 0-65535 dst-port 993-993 
+set service "Sevicios para 190.1.4.45" + tcp src-port 0-65535 dst-port 143-143 
+set service "Sevicios para 190.1.4.45" + udp src-port 0-65535 dst-port 143-143 
+set service "IMAP4/SSL" protocol tcp src-port 0-65535 dst-port 993-993 
+set service "IMAP4/SSL" + udp src-port 0-65535 dst-port 993-993 
+set service "Pto-8080-HTTP-ALT" protocol tcp src-port 0-65535 dst-port 8080-8080 
+set service "Pto-7824" protocol tcp src-port 0-65535 dst-port 7824-7824 
+set service "Pto-8080" protocol tcp src-port 0-65535 dst-port 8080-8080 
+set service "Pto-8080" + tcp src-port 0-65535 dst-port 8030-8030 
+set service "Pto-3301" protocol tcp src-port 0-65535 dst-port 3301-3301 
+set service "Pto-5631" protocol tcp src-port 0-65535 dst-port 5631-5631 
+set service "pto_6400_crital_reports" protocol tcp src-port 0-65535 dst-port 6400-6400 
+set service "pto_50000" protocol tcp src-port 0-65535 dst-port 50000-50000 
+set service "Pto-50100" protocol tcp src-port 0-65535 dst-port 50100-50100 
+set service "Puerto Skype" protocol tcp src-port 0-65535 dst-port 33138-33138 
+set service "SKYPE" protocol tcp src-port 0-65535 dst-port 29015-29015 
+set service "SKYPE" + tcp src-port 0-65535 dst-port 33138-33138 
+set service "SKYPE" + tcp src-port 0-65535 dst-port 37-37 
+set service "Puertos 1719, 2776, 2777" protocol udp src-port 0-65535 dst-port 1719-1719 
+set service "Puertos 1719, 2776, 2777" + udp src-port 0-65535 dst-port 2776-2776 
+set service "Puertos 1719, 2776, 2777" + udp src-port 0-65535 dst-port 2777-2777 
+set service "Puerto 2776" protocol tcp src-port 2776-2776 dst-port 2776-2776 
+set service "Puerto 2776" + udp src-port 2776-2776 dst-port 2776-2776 
+set service "Puerto-2187" protocol tcp src-port 0-65535 dst-port 2187-2187 
+set service "SMTP/SSL" protocol tcp src-port 0-65535 dst-port 465-465 
+set service "tpc_sap" protocol tcp src-port 0-65535 dst-port 3299-3299 
+set service "tpc_sap" + tcp src-port 0-65535 dst-port 3200-3200 
+set service "tpc_sap" + tcp src-port 0-65535 dst-port 3201-3201 
+set service "Ptos-doc.ferromex" protocol tcp src-port 0-65535 dst-port 2055-2055 
+set service "Ptos-doc.ferromex" + tcp src-port 0-65535 dst-port 4739-4739 
+set service "Ptos-doc.ferromex" + tcp src-port 0-65535 dst-port 6343-6343 
+set service "Ptos-doc.ferromex" + udp src-port 0-65535 dst-port 2055-2055 
+set service "Ptos-doc.ferromex" + udp src-port 0-65535 dst-port 4739-4739 
+set service "Ptos-doc.ferromex" + udp src-port 0-65535 dst-port 6343-6343 
+set service "VP-8080" protocol tcp src-port 0-65535 dst-port 8080-8080 
+set service "Puerto-5000" protocol tcp src-port 0-65535 dst-port 50000-50000 
+set service "ICA" protocol tcp src-port 0-65535 dst-port 1494-1494 
+set service "SSL TELNET" protocol tcp src-port 0-65535 dst-port 992-992 
+set service "License Check/SSL" protocol tcp src-port 0-65535 dst-port 9470-9470 
+set service "Blackberry" protocol tcp src-port 0-65535 dst-port 3101-3101 
+set service "Puerto-21173" protocol tcp src-port 0-65535 dst-port 21173-21173 
+set service "Puerto-465" protocol tcp src-port 0-65535 dst-port 465-465 
+set service "Puerto 6080" protocol tcp src-port 6080-6080 dst-port 6080-6080 
+set service "CONCENTRADOR_VPN" protocol tcp src-port 0-65535 dst-port 18190-18191 
+set service "Puerto-4433" protocol tcp src-port 0-65535 dst-port 4433-4433 
+set service "Puerto-8642" protocol tcp src-port 0-65535 dst-port 8642-8642 
+set service "MySQL" protocol tcp src-port 0-65535 dst-port 3306-3306 
+set service "Puerto-2300" protocol tcp src-port 0-65535 dst-port 2300-2300 
+set service "Puerto-9443" protocol tcp src-port 0-65535 dst-port 9443-9443 
+set service "Puerto-1022" protocol tcp src-port 0-65535 dst-port 1022-1022 
+set service "SMTP_secure_465" protocol tcp src-port 0-65535 dst-port 465-465 
+set service "SMTP_secure_465" + udp src-port 0-65535 dst-port 465-465 
+set service "Puerto-495" protocol tcp src-port 0-65535 dst-port 495-495 
+set service "Puerto-1533" protocol tcp src-port 0-65535 dst-port 1533-1533 
+set service "Puerto-9080" protocol tcp src-port 0-65535 dst-port 9080-9080 
+set service "Ferromex Port 15" protocol tcp src-port 0-65535 dst-port 1533-1533 
+set service "Ferromex Port 15" + udp src-port 0-65535 dst-port 1533-1533 
+set service "Ferromex Port 15" + tcp src-port 0-65535 dst-port 9080-9080 
+set service "Ferromex Port 15" + udp src-port 0-65535 dst-port 9080-9080 
+set service "Puerto-49177" protocol tcp src-port 0-65535 dst-port 49177-49177 
+set service "Puerto-56123" protocol tcp src-port 0-65535 dst-port 56123-56123 
+set service "Puerto-56123" + udp src-port 0-65535 dst-port 56123-56123 
+set service "MS-CIFS" protocol tcp src-port 0-65535 dst-port 445-445 
+set service "MS-CIFS" + udp src-port 0-65535 dst-port 445-445 
+set service "Puerto-8" protocol tcp src-port 0-65535 dst-port 8-8 
+set service "Puerto-8501" protocol udp src-port 0-65535 dst-port 8501-8501 
+set service "Puerto-Holcim Apasco" protocol tcp src-port 0-65535 dst-port 47449-47449 
+set service "Puerto-5223" protocol tcp src-port 0-65535 dst-port 5223-5223 
+set service "Puerto-3689" protocol tcp src-port 0-65535 dst-port 3689-3689 
+set service "Puerto-5353" protocol udp src-port 0-65535 dst-port 5353-5353 
+set service "Puerto-5222" protocol tcp src-port 5222-5222 dst-port 5222-5222 
+set service "Puerto-5222" + udp src-port 5222-5222 dst-port 5222-5222 
+set service "pto_10000" protocol tcp src-port 0-65535 dst-port 10000-10000 
+set service "Puerto-5228" protocol tcp src-port 0-65535 dst-port 5228-5228 
+set service "Puerto-5228" + udp src-port 0-65535 dst-port 5228-5228 
+set service "pto_2525_smtp" protocol tcp src-port 0-65535 dst-port 2525-2525 
+set service "SFTP" protocol tcp src-port 0-65535 dst-port 22-22 
+set service "SFTP" + tcp src-port 0-65535 dst-port 99-99 
+set service "SFTP" + udp src-port 0-65535 dst-port 99-99 
+set service "pto_8200_tcp" protocol tcp src-port 0-65535 dst-port 8200-8200 
+set service "Gmail-465" protocol tcp src-port 0-65535 dst-port 465-465 
+set service "Gmail-993" protocol tcp src-port 0-65535 dst-port 993-993 
+set service "gmail-587" protocol tcp src-port 0-65535 dst-port 587-587 
+set service "Sap Network-3298" protocol tcp src-port 0-65535 dst-port 3298-3298 
+set service "Puerto_50000" protocol tcp src-port 0-65535 dst-port 50000-50000 
+set service "Puerto-50000" protocol tcp src-port 0-65535 dst-port 50000-50000 
+set service "Puerto-4042" protocol tcp src-port 0-65535 dst-port 4042-4042 
+set service "Puerto-8443" protocol tcp src-port 8443-8443 dst-port 8443-8443 
+set service "Puerto-5553" protocol tcp src-port 0-65535 dst-port 5553-5553 
+set service "Puerto-8000" protocol tcp src-port 0-65535 dst-port 8000-8000 
+set service "Puerto-1522" protocol tcp src-port 0-65535 dst-port 1522-1522 
+set service "Puertos-23301, 23303" protocol tcp src-port 0-65535 dst-port 23301-23301 
+set service "Puertos-23301, 23303" + tcp src-port 0-65535 dst-port 23303-23303 
+set service "Puerto-90" protocol tcp src-port 0-65535 dst-port 90-90 
+set service "Puerto-6036" protocol tcp src-port 0-65535 dst-port 6036-6036 
+set service "Puerto-587" protocol tcp src-port 0-65535 dst-port 587-587 
+set service "Puerto-587" + udp src-port 0-65535 dst-port 587-587 
+set service "Puerto-2083" protocol tcp src-port 0-65535 dst-port 2083-2083 
+set service "Puertos 20_21_22" protocol tcp src-port 0-65535 dst-port 20-22 
+set service "Puertos Telcel 1" protocol tcp src-port 0-65535 dst-port 2809-2809 
+set service "Puertos Telcel 1" + tcp src-port 0-65535 dst-port 8880-8880 
+set service "Puertos Telcel 1" + tcp src-port 0-65535 dst-port 9043-9043 
+set service "Puertos Telcel 1" + tcp src-port 0-65535 dst-port 9060-9060 
+set service "Puertos Telcel 1" + tcp src-port 0-65535 dst-port 9080-9080 
+set service "Puertos Telcel 1" + tcp src-port 0-65535 dst-port 9443-9443 
+set service "Puertos Telcel 1" + tcp src-port 0-65535 dst-port 9633-9633 
+set service "Puertos Telcel 1" + tcp src-port 0-65535 dst-port 2810-2810 
+set service "Puertos Telcel 2" protocol tcp src-port 0-65535 dst-port 8881-8881 
+set service "Puertos Telcel 2" + tcp src-port 0-65535 dst-port 9044-9044 
+set service "Puertos Telcel 2" + tcp src-port 0-65535 dst-port 9061-9061 
+set service "Puertos Telcel 2" + tcp src-port 0-65535 dst-port 9081-9081 
+set service "Puertos Telcel 2" + tcp src-port 0-65535 dst-port 9444-9444 
+set service "Puertos Telcel 2" + tcp src-port 0-65535 dst-port 9634-9634 
+set service "TCP-443" protocol tcp src-port 0-65535 dst-port 443-443 
+set service "TCP-80" protocol tcp src-port 0-65535 dst-port 80-80 
+set service "Puerto-3007" protocol tcp src-port 0-65535 dst-port 3007-3007 
+set service "Puerto-3007" + udp src-port 0-65535 dst-port 3007-3007 
+set service "Puerto 81" protocol tcp src-port 0-65535 dst-port 81-81 
+set service "Puerto 81" + udp src-port 0-65535 dst-port 81-81 
+set service "Pto_1528" protocol tcp src-port 0-65535 dst-port 1528-1528 
+set service "Pto_1528" + udp src-port 0-65535 dst-port 1528-1528 
+set service "TCP-50778" protocol tcp src-port 50778-65535 dst-port 50778-65535 
+set service "pto_81_8081_tcp" protocol tcp src-port 0-65535 dst-port 81-81 
+set service "pto_81_8081_tcp" + tcp src-port 0-65535 dst-port 8081-8081 
+set service "Pto_587" protocol tcp src-port 0-65535 dst-port 587-587 
+set service "Pto_587" + udp src-port 0-65535 dst-port 587-587 
+set service "Pto_465" protocol tcp src-port 0-65535 dst-port 465-465 
+set service "Pto_465" + udp src-port 0-65535 dst-port 465-465 
+set service "Pto_995" protocol tcp src-port 0-65535 dst-port 995-995 
+set service "Pto_995" + udp src-port 0-65535 dst-port 995-995 
+set service "Pto_110" protocol tcp src-port 0-65535 dst-port 110-110 
+set service "Pto_110" + udp src-port 0-65535 dst-port 110-110 
+set service "PUERTO 35000" protocol tcp src-port 0-65535 dst-port 35000-35000 
+set service "PUERTO 35000" + udp src-port 0-65535 dst-port 35000-35000 
+set service "PUERTO 35000" + tcp src-port 0-65535 dst-port 35001-35001 
+set service "PUERTO 35000" + udp src-port 0-65535 dst-port 35001-35001 
+set service "Puerto 1433" protocol tcp src-port 1433-1433 dst-port 1433-1433 
+set service "Puerto 1433" + udp src-port 1433-1433 dst-port 1433-1433 
+set service "TCP-143 SQL_Server" protocol tcp src-port 0-65535 dst-port 143-143 
+set service "Pto_9154" protocol tcp src-port 0-65535 dst-port 9154-9154 
+set service "Pto_9154" + udp src-port 0-65535 dst-port 9154-9154 
+set service "Pto_9002" protocol tcp src-port 0-65535 dst-port 9002-9002 
+set service "Pto_9002" + udp src-port 0-65535 dst-port 9002-9002 
+set service "TCP-22" protocol tcp src-port 0-65535 dst-port 22-22 
+set service "TCP-2195" protocol tcp src-port 0-2195 dst-port 0-2195 
+set service "TCP_46262" protocol tcp src-port 46262-65535 dst-port 0-65535 
+set service "TCP/32137" protocol tcp src-port 32137-65535 dst-port 0-65535 
+set service "7400" protocol tcp src-port 7400-65535 dst-port 0-65535 
+set service "2222" protocol tcp src-port 2222-2222 dst-port 2222-2222 
+set service "7004" protocol tcp src-port 7004-65535 dst-port 0-65535 
+set service "36000" protocol tcp src-port 36000-65535 dst-port 0-65535 
+set service "36001" protocol tcp src-port 36001-65535 dst-port 0-65535 
+set service "Ephermeral_Port" protocol tcp src-port 1024-65535 dst-port 0-65535 
+set service "XMPP" protocol tcp src-port 1024-65524 dst-port 7400-7400 
+set service "SSH(https/tunels)" protocol tcp src-port 1024-65535 dst-port 2222-65535 
+set service "Trasveral_SIP" protocol udp src-port 36000-59999 dst-port 36000-65535 
+set service "Trasveral_SIP" + udp src-port 36000-59999 dst-port 36001-65535 
+set service "Sip_Media" protocol udp src-port 36002-59999 dst-port 1024-65535 
+set service "Sip_Media" + udp src-port 36012-59999 dst-port 1024-65535 
+set service "SIP_Signaling_7004" protocol tcp src-port 5060-5069 dst-port 7004-65535 
+set service "SIP_Signaling_7004" + tcp src-port 25000-29999 dst-port 7004-65535 
+set service "SIP_Signaling_7004" + udp src-port 25000-29999 dst-port 7004-65535 
+set service "SIP_Signaling_7001" protocol tcp src-port 5060-5068 dst-port 7001-65535 
+set service "SIP_Signaling_7001" + tcp src-port 25000-29999 dst-port 7001-65535 
+set service "SIP_Signaling_7001" + udp src-port 25000-29999 dst-port 7001-65535 
+set service "SIP_Signaling_1024" protocol tcp src-port 5060-5068 dst-port 1024-65535 
+set service "SIP_Signaling_1024" + tcp src-port 25000-29999 dst-port 1024-65535 
+set service "SIP_Signaling_1024" + udp src-port 25000-29999 dst-port 1024-65535 
+set service "XMPP_Presence" protocol tcp src-port 1024-65535 dst-port 5222-5222 
+set service "https_Proxy" protocol tcp src-port 1024-65535 dst-port 8443-8443 
+set service "Media" protocol udp src-port 1024-65535 dst-port 36002-59999 
+set service "Media" + udp src-port 1024-65535 dst-port 36012-59999 
+set service "SIP_signaling_5061" protocol tcp src-port 5061-5061 dst-port 5061-5061 
+set service "SIP_signaling_5061" + udp src-port 5061-5061 dst-port 5061-5061 
+set service "SIP_Signaling_5060" protocol tcp src-port 5060-5060 dst-port 5060-5060 
+set service "SIP_Signaling_5060" + udp src-port 5060-5060 dst-port 5060-5060 
+set service "HTTPS_file_retrieval" protocol tcp src-port 1024-65535 dst-port 6970-6970 
+set service "CUC" protocol tcp src-port 1024-65535 dst-port 443-443 
+set service "Media_36000_1024" protocol udp src-port 36000-59999 dst-port 1024-65535 
+set service "TCP-25" protocol tcp src-port 25-25 dst-port 25-25 
+set service "TCP-110" protocol tcp src-port 110-110 dst-port 110-110 
+set service "UDP_3478" protocol udp src-port 3478-3483 dst-port 3478-3483 
+set service "UDP_36002 _59999" protocol udp src-port 36002-59999 dst-port 36002-59999 
+set service "UDP_36000_59999" protocol udp src-port 36000-59999 dst-port 36000-59999 
+set service "TCP_1720" protocol tcp src-port 1720-1720 dst-port 1720-1720 
+set service "UDP_1719" protocol tcp src-port 1719-1719 dst-port 1719-1719 
+set service "TCP_15000_19999" protocol tcp src-port 15000-19999 dst-port 15000-19999 
+set service "tcp_2777" protocol tcp src-port 2777-2777 dst-port 2777-2777 
+set service "UDP_1718" protocol udp src-port 1718-1718 dst-port 1718-1718 
+set service "UDP_53" protocol udp src-port 53-53 dst-port 53-53 
+set service "UDP_123" protocol udp src-port 123-123 dst-port 123-123 
+set service "Puerto_3478_3483" protocol udp src-port 0-65535 dst-port 3478-3483 
+set service "Puerto_3478" protocol udp src-port 3478-3483 dst-port 3478-3483 
+set service "TCP_53" protocol tcp src-port 53-53 dst-port 53-53 
+set service "Puerto_4172" protocol tcp src-port 0-65535 dst-port 4172-4172 
+set service "Puerto_4172" + udp src-port 0-65535 dst-port 4172-4172 
+set service "Pto50000-59999" protocol tcp src-port 0-65535 dst-port 50000-59999 
+set service "Pto50000-59999" + udp src-port 0-65535 dst-port 50000-59999 
+set service "Pto-5223" protocol tcp src-port 0-65535 dst-port 5223-5223 
+set service "PTO3478-3481UDP" protocol udp src-port 3478-3478 dst-port 3478-3478 
+set service "PTO3478-3481UDP" + udp src-port 3479-3479 dst-port 3479-3479 
+set service "PTO3478-3481UDP" + udp src-port 3480-3480 dst-port 3480-3480 
+set service "PTO3478-3481UDP" + udp src-port 3481-3481 dst-port 3481-3481 
+set service "3478" protocol udp src-port 0-65535 dst-port 3478-3478 
+set service "9090" protocol tcp src-port 0-65535 dst-port 9090-9090 
+set service "9091" protocol tcp src-port 0-65535 dst-port 9091-9091 
+set service "8442" protocol tcp src-port 0-65535 dst-port 8442-8442 
+set service "9100" protocol tcp src-port 0-65535 dst-port 9100-9100 
+set service "8081" protocol tcp src-port 0-65535 dst-port 8081-8081 
+set service "5985" protocol tcp src-port 0-65535 dst-port 5985-5985 
+set service "161_UDP" protocol udp src-port 0-65535 dst-port 161-161 
+set service "445" protocol tcp src-port 0-65535 dst-port 445-445 
+set service "8443" protocol tcp src-port 0-65535 dst-port 8443-8443 
+set service "TCP-4248" protocol tcp src-port 0-65535 dst-port 4248-4248 
+set service "449" protocol tcp src-port 0-65535 dst-port 449-449 
+set service "8476" protocol tcp src-port 0-65535 dst-port 8476-8476 
+set service "7351" protocol tcp src-port 0-65535 dst-port 7351-7351 
+set service "7734" protocol tcp src-port 0-65535 dst-port 7734-7734 
+set service "7752" protocol tcp src-port 0-65535 dst-port 7752-7752 
+set service "7070" protocol tcp src-port 7070-7070 dst-port 7070-7070 
+set service "7443" protocol tcp src-port 0-65535 dst-port 7443-7443 
+set service "0-65535" protocol tcp src-port 0-65535 dst-port 0-65535 
+set service "ALLPORT_0-65535" protocol tcp src-port 0-65535 dst-port 7443-7443 
+set service "TCP-1521" protocol tcp src-port 1521-1521 dst-port 1521-1521 
+set service "PTO_389" protocol tcp src-port 389-389 dst-port 389-389 
+set service "PTO_389" + udp src-port 389-389 dst-port 389-389 
+set service "9251" protocol tcp src-port 9251-9251 dst-port 9251-9251 
+set service "9251" + udp src-port 9251-9251 dst-port 9251-9251 
+set service "8888" protocol tcp src-port 8888-8888 dst-port 8888-8888 
+set service "8888" + udp src-port 8888-8888 dst-port 8888-8888 
+set service "8411" protocol tcp src-port 8411-8411 dst-port 8411-8411 
+set service "8411" + udp src-port 8411-8411 dst-port 8411-8411 
+set service "TT204190" protocol tcp src-port 9194-9194 dst-port 9194-9194 
+set service "TT204190" + tcp src-port 80-80 dst-port 80-80 
+set service "TT204190" + tcp src-port 443-443 dst-port 443-443 
+set service "TT204190" + tcp src-port 9191-9191 dst-port 9191-9191 
+set service "TT204190" + tcp src-port 445-445 dst-port 445-445 
+set service "Pto 25" protocol tcp src-port 0-65535 dst-port 25-25 
+set service "Pto 25" + udp src-port 0-65535 dst-port 25-25 

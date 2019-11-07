@@ -1,0 +1,4124 @@
+config firewall policy
+edit 812
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.251.244" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 13
+next
+edit 810
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.22" 
+set dstaddr "Any" 
+set action   accept
+set service  "SMTP" 
+set  nat src dip-id 13
+next
+edit 390
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "teksid.com.mx" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 808
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.224/32" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 806
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.251.65" 
+set dstaddr "10.10.29.117<svgdldvtbc03>" 
+set action   accept
+set service  "8411" 
+set nat src 
+next
+edit 803
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.141.60.87 (Fibra_Sensora" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 801
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.19" 
+set dstaddr "Any" 
+set action   accept
+set service  "9091"  "HTTPS"
+set nat src 
+next
+edit 800
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.19" 
+set dstaddr "Any" 
+set action   accept
+set service  "9090" 
+set nat src 
+next
+edit 586
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.61.35 ftp IMEX" 
+set dstaddr "lms.pilship.com" 
+set action   accept
+set service  "FTP"  "Puertos 20_21_22" "SFTP" "SSH"
+set nat src 
+next
+edit 663
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.20.23"  "10.10.32.132" "10.10.32.133" "10.10.54.52" "10.10.54.54" "10.10.61.22"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 723
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "208.67.24.124-mcrew22"  "208.67.24.125-mcrew22" "eBOL - https://208.67.25.126" "RC2 – https://208.67.25.80" "ShipperConnect Yard not RCI - https://204.10.22.79" "support.railconnect.com"
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 790
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.241_ISE"  "10.10.32.242_ISE"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 787
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.29.91" 
+set dstaddr "support.opmantek.com" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 785
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "servidor Hikivision-10.11.77.112" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 784
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.147/255.255.255.255" 
+set dstaddr "amazon.com" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 783
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "187.218.237.130/32"  "https://gmxtsas.mx/self-service"
+set action   accept
+set service  "9251"  "HTTP" "HTTP-EXT"
+set nat src 
+next
+edit 782
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "svcoxngo01-10.10.39.33" 
+set dstaddr "cpan.org"  "ftp.perl.org" "perl.org"
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 781
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.5.23/32 Enrique Chávez" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 775
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.11.250.0/23_Invitados" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 772
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "www.google-analytics.com" 
+set action   accept
+set service  "HTTPS" 
+set nat src 
+next
+edit 767
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.31.35"  "10.10.32.199" "10.10.32.241_ISE" "10.10.32.242_ISE" "10.10.35.171" "10.10.35.202" "10.10.39.54" "10.10.39.55" "10.10.40.55" "10.10.40.56" "10.10.40.57" "10.10.40.58" "10.10.40.59"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 745
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.36.124"  "10.10.36.141" "10.10.36.228" "10.10.36.233" "10.10.36.242" "10.10.36.243" "AP_Meraki"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 706
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.10.23"  "10.10.121.114" "10.10.153.66" "10.10.250.118/32" "10.10.250.12" "10.10.250.213" "10.10.251.145" "10.10.251.244" "10.10.29.131" "10.10.32.181/32" "10.10.32.37" "10.10.34.136" "10.10.34.166/32" "10.10.34.40" "10.10.35.172" "10.10.37.182" "10.10.40.240-ProxyMEX1" "10.10.40.241-ProxyMEX2" "10.10.40.242-ProxyVirtual" "10.10.61.32/32" "10.175.116.118/32" "Cyberark"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 742
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "www.openstreetmap.org" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 739
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.251.244"  "10.10.32.252"
+set dstaddr "ftp02beta.2wglobal.com"  "ftp05.2wglobal.com"
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 736
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "ftpforepd:ma1nframe@epddownload.bmc.com" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 732
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.61.35 ftp IMEX" 
+set dstaddr "edib2b.oocl.com"  "edib2btest.oocl.com" "ediftp.one-line.com"
+set action   accept
+set service  "SFTP" 
+set  nat src dip-id 4
+next
+edit 730
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "ASA_VALERO" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 728
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.5.12"  "10.10.5.44"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 11
+next
+edit 717
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "fecrwy.com" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 679
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.66.173/32"  "10.10.68.109" "10.11.70.129"
+set dstaddr "FTP-Holland" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 714
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "184.105.192.2" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 704
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "104.244.14.252/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 697
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.27.133 /32" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 11
+next
+edit 693
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "197.231.221.211"  "199.249.223.66" "216.218.222.12"
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 11
+next
+edit 675
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.34.145/32"  "10.10.35.235"
+set dstaddr "148.202.167.48" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 6
+next
+edit 652
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.20.22_esa1"  "10.10.32.168-svcoxzim01" "10.10.32.169"
+set dstaddr "Any" 
+set action   accept
+set service  "DNS"  "HTTP" "HTTPS" "ICMP-ANY" "SMTP" "TCP-110" "TCP/32137" "TRACEROUTE"
+set  nat src dip-id 6
+next
+edit 658
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.175.116.125"  "10.175.116.43" "172.16.103.75/32"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 6
+next
+edit 653
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "187.217.243.52"  "ADO"
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 6
+next
+edit 591
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.35.28" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 6
+next
+edit 593
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.35.201/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 6
+next
+edit 595
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.168.70/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 6
+next
+edit 597
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.71.70/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 6
+next
+edit 599
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.236.70/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 6
+next
+edit 581
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.34.132" 
+set dstaddr "nspi37.railconnect.com" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 579
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.35.192/32" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 566
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.35.192/32" 
+set dstaddr "SERVIDOR_PRODIGY_148.235.52.32/32" 
+set action   accept
+set service  "Pto_110"  "Pto_465" "Pto_587" "Pto_995"
+set  nat src dip-id 4
+next
+edit 568
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "131.188.40.189"  "209.235.250.103/32" "chrome.java-api-update.com" "landertok.site" "viewclc.com" "www.freecontent.stream" "www.hibids10.com"
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 565
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "132.245.0.0_Testbk"  "132.245.68.210_117994"
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 564
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "120.130.140.210_CHINA" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 551
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FERROSUR-APN TELCEL-172.16.103.89/32" 
+set dstaddr "APN TELCEL-FERROSUR-10.212.250.0/24" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 802
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "edib2b.oocl.com"  "edib2btest.oocl.com" "ediftp.one-line.com"
+set dstaddr "10.10.61.35 ftp IMEX" 
+set action   accept
+set service  "SFTP" 
+set  nat src dip-id 4
+next
+edit 797
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "lms.pilship.com" 
+set dstaddr "10.10.61.35 ftp IMEX" 
+set action   accept
+set service  "FTP"  "Puertos 20_21_22" "SFTP" "SSH"
+set  nat src dip-id 4
+next
+edit 792
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "10.10.54.54" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 734
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.14)" 
+set action   accept
+set service  "FTP"  "ICMP-ANY" "TELNET" "TRACEROUTE"
+set  nat src dip-id 4
+next
+edit 715
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "184.105.192.2" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 694
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "197.231.221.211"  "199.249.223.66" "216.218.222.12"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 692
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "IPs_China" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 710
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "china_3"  "IPs_China2"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 707
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.43)" 
+set action   accept
+set service  "HTTP"  "HTTPS" "TCP-4248" "VP-8080"
+set  nat src dip-id 4
+next
+edit 662
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.13)" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 673
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.8)" 
+set action   accept
+set service  "HTTP"  "HTTPS" "ICMP-ANY" "PING" "pto_50000" "Saprouter-3299"
+set  nat src dip-id 4
+next
+edit 502
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "IPS Bloqueadas C&C" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 290
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "131.188.40.189"  "191.234.4.50-Malware" "74.125.1.19-google" "bvconline.com.ar" "chrome.java-api-update.com" "landertok.site" "viewclc.com" "www.freecontent.stream" "www.hibids10.com"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 563
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "120.130.140.210_CHINA" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 458
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "Any" 
+set action   accept
+set service  "ICMP-ALL"  "NBNAME" "SMB"
+set  nat src dip-id 4
+next
+edit 550
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-FERROSUR-10.212.250.0/24" 
+set dstaddr "FERROSUR-APN TELCEL-172.16.103.89/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 549
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FERROSUR-APN TELCEL-172.16.103.89/32" 
+set dstaddr "APN TELCEL-FERROSUR-10.212.248.0/23" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 548
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-FERROSUR-10.212.248.0/23" 
+set dstaddr "FERROSUR-APN TELCEL-172.16.103.89/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 547
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FERROSUR-APN TELCEL-172.16.103.89/32" 
+set dstaddr "APN TELCEL-FERROSUR-10.212.238.0/24" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 546
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-FERROSUR-10.212.238.0/24" 
+set dstaddr "FERROSUR-APN TELCEL-172.16.103.89/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 545
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FERROSUR-APN TELCEL-172.16.104.90/32" 
+set dstaddr "APN TELCEL-FERROSUR-10.212.250.0/24" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 544
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-FERROSUR-10.212.250.0/24" 
+set dstaddr "FERROSUR-APN TELCEL-172.16.104.90/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 543
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FERROSUR-APN TELCEL-172.16.104.90/32" 
+set dstaddr "APN TELCEL-FERROSUR-10.212.248.0/23" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 542
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-FERROSUR-10.212.248.0/23" 
+set dstaddr "FERROSUR-APN TELCEL-172.16.104.90/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 541
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FERROSUR-APN TELCEL-172.16.104.90/32" 
+set dstaddr "APN TELCEL-FERROSUR-10.212.238.0/24" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 540
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-FERROSUR-10.212.238.0/24" 
+set dstaddr "FERROSUR-APN TELCEL-172.16.104.90/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 537
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FERROSUR-APN TELCEL-10.10.64.70/32" 
+set dstaddr "APN TELCEL-FERROSUR-10.212.250.0/24" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 536
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-FERROSUR-10.212.250.0/24" 
+set dstaddr "FERROSUR-APN TELCEL-10.10.64.70/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 533
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FERROSUR-APN TELCEL-10.10.64.70/32" 
+set dstaddr "APN TELCEL-FERROSUR-10.212.248.0/23" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 532
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-FERROSUR-10.212.248.0/23" 
+set dstaddr "FERROSUR-APN TELCEL-10.10.64.70/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 530
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-FERROSUR-10.212.238.0/24" 
+set dstaddr "FERROSUR-APN TELCEL-10.10.64.70/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 531
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FERROSUR-APN TELCEL-10.10.64.70/32" 
+set dstaddr "APN TELCEL-FERROSUR-10.212.238.0/24" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 539
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FERROSUR-APN TELCEL-10.10.32.70/32" 
+set dstaddr "APN TELCEL-FERROSUR-10.212.250.0/24" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 535
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FERROSUR-APN TELCEL-10.10.32.70/32" 
+set dstaddr "APN TELCEL-FERROSUR-10.212.248.0/23" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 538
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-FERROSUR-10.212.250.0/24" 
+set dstaddr "FERROSUR-APN TELCEL-10.10.32.70/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 534
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-FERROSUR-10.212.248.0/23" 
+set dstaddr "FERROSUR-APN TELCEL-10.10.32.70/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 529
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FERROSUR-APN TELCEL-10.10.32.70/32" 
+set dstaddr "APN TELCEL-FERROSUR-10.212.238.0/24" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 528
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-FERROSUR-10.212.238.0/24" 
+set dstaddr "FERROSUR-APN TELCEL-10.10.32.70/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 415
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "Any" 
+set action   accept
+set service  "DNS" 
+set  nat src dip-id 4
+next
+edit 523
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.0.0/16" 
+set dstaddr "VPN New York-149.244.179.0/24" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 501
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "Bloqueospam"  "IPS Bloqueadas C&C"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 570
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "209.235.250.103/32" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 524
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN New York-149.244.179.0/24" 
+set dstaddr "190.1.0.0/16" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 522
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN New York-149.244.179.0/24" 
+set dstaddr "10.10.0.0/16" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 519
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.0.0/16" 
+set dstaddr "VPN-NY-WF-10.68.4.0" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 518
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN-NY-WF-10.68.4.0" 
+set dstaddr "10.10.0.0/16" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 517
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "190.1.0.0/16" 
+set dstaddr "VPN-NY-WF-10.68.4.0" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 516
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN-NY-WF-10.68.4.0" 
+set dstaddr "190.1.0.0/16" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 269
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.0/21" 
+set dstaddr "VPN RMI US-192.168.100.0/24" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 521
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.182.7 - DOC-TORREON-A"  "10.10.182.8 - DOC-TORREON-B" "10.10.182.9 - DOC-TORREON-C" "10.10.40.105- ILO" "172.16.112.234-DOC-SERVER-D" "172.16.113.230_DOC-SERVER-A" "172.16.113.231-DOC-SERVER-B" "172.16.113.232-DOC-SERVER-C" "172.16.113.240 - DOC-SERVER-A" "172.16.113.242 - DOC-SERVER-B" "172.16.113.246 - DOC-SERVER-C"
+set dstaddr "209.251.51.192/26 - Railcomm_B"  "69.195.39.192/26 - Railcomm_A"
+set action   accept
+set service  "HTTP"  "HTTPS"
+set  nat src dip-id 4
+next
+edit 457
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Equipos Redes TI_t" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 515
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.0.0/16"  "10.175.116.0-LAN_WiWork_FXE" "10.70.209.0/25" "172.16.0.0/16" "Corporativo - 10.10.1.0/24" "Corporativo - 10.10.2.0/24" "Guadalajara - 10.10.73.0/24" "Hermosillo-10.10.129.0/24" "Hermosillo-10.10.130.0/24" "Mexicali - 10.10.231.0/24" "Monterrey - (Escobedo) 10.10.3.0/24" "Monterrey - 10.10.146./24" "Nogales - 10.10.184.0/25"
+set dstaddr "108.161.147.0"  "199.231.78.0" "209.206.48.0" "64.62.142.12" "AKAMAI - 23.40.20.0/24" "AKAMAI - 23.63.109.0/24" "AKAMAI - 23.76.0.0/16" "amazon_192.168.1.80/32" "Amazon_52.23.0.0/16" "Microsoft - 13.104.0.0/14" "Microsoft - 13.64.0.0/11" "Microsoft - 13.96.0.0/13" "MICROSOFT-64.4.0.0" "Microsoft-65.52.0.0/14" "Office 23.76.2.70/32" "Office 365 23.75.0.0/16" "Office 365- 64.4.11.42/32" "Office 365- 93.184.215.200/32" "Office 365-132.245.0.0/16" "Office 365-134.170.0.0/16" "Office 365-191.238.33.50/32" "Office 365-201.149.60.0/24" "Office 365-40.97.108.0/24" "Office 365-40.97.155.0/24" "Office 365-65.54.54.128/28" "Office 365-65.55.121.128/27" "Office 365-65.55.127.0/24" "Verizon – 72.21.91.0/24" "2Skype Microsoft" "Grp_Skype" "Segmentos_Microsoft"
+set action   accept
+set service  "3478"  "7351" "7734" "7752" "Correo-ferrosur" "HTTP" "HTTPS" "NTP" "Pto-5223" "PTO3478-3481UDP" "Pto50000-59999" "Puerto_4172" "TCP-110" "TCP-25" "APPLE-ICHAT"
+set  nat src dip-id 4
+next
+edit 514
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.15.8"  "10.10.31.105" "10.10.31.23" "10.10.31.24" "10.10.32.105" "10.10.32.129" "10.10.32.130" "10.10.33.75" "172.16.103.76"
+set dstaddr "mensajeria.telcel.com" 
+set action   accept
+set service  "HTTPS"  "Puerto-1522" "Puertos-23301, 23303" "SQL*Net V2" "APPLE-ICHAT"
+set  nat src dip-id 4
+next
+edit 513
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.250.58" 
+set dstaddr "194.140.170.152" 
+set action   accept
+set service  "POP3"  "SMTP"
+set  nat src dip-id 4
+next
+edit 511
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.20.103.2" 
+set dstaddr "200.66.69.29" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 510
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "187.236.11.244_AS400-IBM-Legaria"  "69.58.254.116/32"
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 508
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Mvaldez" 
+set dstaddr "189.135.0.0/16"  "199.16.156.21" "199.16.156.38" "199.96.57.7" "201.103.0.0/16" "93.184.216.146" "impulso_pedagogico_3" "impulsopedagogico.com" "ipmalisos.redirectme.net" "Segmento Infinitums" "Uninet-Infinitums-impuso pedagogico"
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 503
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.40.35" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 500
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Serv-SAP-IMEX" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 4
+next
+edit 499
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.1.22"  "10.10.1.23" "10.10.1.26" "10.10.129.0/24" "10.10.130.0/24" "10.10.146.0/24" "10.10.2.0/24" "10.10.212.0/24" "10.10.221.0/24" "10.10.231.0/24" "10.10.234.0/24" "10.10.3.0/24" "10.10.73.0/24"
+set dstaddr "212.49.145.0/24" 
+set action   accept
+set service  "HTTPS" 
+set  nat src dip-id 4
+next
+edit 498
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "Infosel-200.57.83.30" 
+set action   accept
+set service  "HTTP"  "Puerto-5553"
+set  nat src dip-id 4
+next
+edit 495
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.213/32"  "Facturación Electrónica Producción-10.10.32.213" "Facturación Electrónica-10.10.32.43 (svrcorfac01)" "Facturación Electrónica-10.10.32.44(svrcorfac02)" "Facturación Electrónica-10.10.32.45" "Facturación Electrónica-10.10.32.46"
+set dstaddr "167.57.13.235_IndiciumTimbradoWS"  "Comercio-digital_1" "Comercio-digital_2" "digitalinvoicecfdi.com.mx" "http://pruebas.comercio-digital.mx/retenciones/timbrar.asmx" "https://cancela.comercio-digital.mx/cancela3/cancelarUuid" "indicium.comercio-digital.mx/wsx/cfdi.svc" "indicium.expidetufactura.com.mx" "Pruebas.comercio-digital_1" "Pruebas.comercio-digital_2" "rayo.wf.com.mx" "Soporte-indiciumsolutions.com-75.126.23.206" "Timbrado-108.168.130.12" "Sitios facturación electrónica"
+set action   accept
+set service  "FTP"  "HTTP" "HTTPS" "Puerto-4042" "Puerto-8443"
+set  nat src dip-id 4
+next
+edit 494
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "200.52.78.27" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 492
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "www.interjet.com.mx" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 7
+next
+edit 488
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.250.231" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 7
+next
+edit 489
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.250.28/32" 
+set dstaddr "Any" 
+set action   accept
+set service  "POP3"  "SMTP"
+set  nat src dip-id 7
+next
+edit 490
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.250.28/32" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 7
+next
+edit 487
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.34.98" 
+set dstaddr "ahmftp.honda.com" 
+set action   accept
+set service  "SFTP" 
+set  nat src dip-id 7
+next
+edit 485
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.27.0/24" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 7
+next
+edit 484
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.1.3" 
+set dstaddr "194.39.131.34" 
+set action   accept
+set service  "Sap Network-3298"  "Saprouter-3299"
+set  nat src dip-id 7
+next
+edit 483
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.250.0/24" 
+set dstaddr "imap-mail.outlook.com"  "imap.gmail.com" "smtp-mail.outlook.com" "smtp.gmail.com"
+set action   accept
+set service  "Gmail-465"  "gmail-587" "Gmail-993"
+set  nat src dip-id 7
+next
+edit 481
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "Any" 
+set dstaddr "Any" 
+set action   accept
+set service  "CONCENTRADOR_VPN"  "HTTPS" "ICMP-ANY" "Puerto-4433" "SNPP-444" "SSH"
+set  nat src dip-id 7
+next
+edit 569
+set srcintf "dmz2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "209.235.250.103/32" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 7
+next
+edit 479
+set srcintf "dmz2"
+set  dstintf  "port3"
+set srcaddr  "192.168.10.13" 
+set dstaddr "204.10.22.0/24_Texas Pacifico net2"  "208.67.24.0/22_Texas Pacifico net1" "209.203.79.67-dev.glovis.com" "ftp.glovismx.com" "sftp4.successfactors.com"
+set action   accept
+set service  "FTP"  "SFTP"
+set nat src 
+next
+edit 478
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "sapdes02-10.10.1.118" 
+set dstaddr "mail.eclipsedc.com.mx" 
+set action   accept
+set service  "POP3"  "pto_2525_smtp"
+set nat src 
+next
+edit 475
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "AD_IMEX_GOOGLE" 
+set dstaddr "apps-apis.google.com"  "apps-apis.l.google.com" "Syn_Google1" "Syn_Google2"
+set action   accept
+set service  "HTTP"  "HTTPS" "IMAP4/SSL" "POP3/SSL" "SMTP/SSL"
+set nat src 
+next
+edit 470
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.250.76"  "10.10.35.76"
+set dstaddr "www.jonima.com.mx" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 469
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.250.145"  "10.10.250.204"
+set dstaddr "Any" 
+set action   accept
+set service  "ICMP-ALL" 
+set nat src 
+next
+edit 468
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.171_svcoxbw01"  "10.10.32.244" "10.10.32.24_svcoxctm01" "10.10.32.252"
+set dstaddr "189.210.196.22"  "209.164.32.46" "ahmftp.honda.com" "ftp.glovismx.com" "ftp.iclfca.com" "ftp.iclmazda.com" "ftp.iclnna.com" "ftp.icltls.com" "ftp.icltlsuat.com" "ftp.qts.com" "mft.honda.com" "sftp.wi-tronix.com"
+set action   accept
+set service  "2222"  "FTP" "HTTPS" "SFTP" "SSH"
+set nat src 
+next
+edit 465
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "BacSoft AEI-10.10.32.70" 
+set dstaddr "timobile.dyndns.info" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 472
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-10.202.116.0/22"  "TELCEL APN-10.205.140.0/22"
+set dstaddr "MIP(192.168.2.117)"  "MIP(192.168.2.118)"
+set action   accept
+set service  "Puertos 20_21_22"  "Puertos Telcel 1" "Puertos Telcel 2"
+set nat src 
+next
+edit 471
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-10.202.116.0/22"  "TELCEL APN-10.205.140.0/22"
+set dstaddr "MIP(192.168.2.116)" 
+set action   accept
+set service  "Puertos 20_21_22"  "Puertos Telcel 1" "Puertos Telcel 2"
+set nat src 
+next
+edit 463
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "TELCEL APN-10.205.140.0/22" 
+set dstaddr "MIP(192.168.2.112)" 
+set action   accept
+set service  "Puertos 20_21_22"  "Puertos Telcel 1" "Puertos Telcel 2"
+set nat src 
+next
+edit 224
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "TELCEL APN-10.205.140.0/22" 
+set dstaddr "TELCEL_ACCESO_APN" 
+set action   accept
+set service  "Puertos 20_21_22"  "Puertos Telcel 1" "Puertos Telcel 2"
+set nat src 
+next
+edit 437
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-10.202.116.0/22" 
+set dstaddr "TELCEL_ACCESO_APN" 
+set action   accept
+set service  "Puertos 20_21_22"  "Puertos Telcel 1" "Puertos Telcel 2"
+set nat src 
+next
+edit 410
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN-BMCR-192.168.105.24/29" 
+set dstaddr "10.10.42.11" 
+set action   accept
+set service  "LDAP" 
+set nat src 
+next
+edit 408
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN-BMCR-192.168.105.24/29" 
+set dstaddr "10.10.42.30" 
+set action   accept
+set service  "POP3"  "Puerto-495" "SMTP" "SMTP/SSL"
+set nat src 
+next
+edit 354
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Dial-Up VPN" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 461
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.34.86_Pc-ahernandezc" 
+set dstaddr "8.20.181.61_VpnIpSec_BMC_Marlboro" 
+set action   accept
+set service  "pto_10000" 
+set nat src 
+next
+edit 460
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.250.0/24" 
+set dstaddr "50.22.231.41"  "bin-short.whatsapp.net"
+set action   accept
+set service  "HTTP-EXT"  "HTTPS" "Puerto-3689" "Puerto-5222" "Puerto-5223" "Puerto-5228" "Puerto-5353"
+set nat src 
+next
+edit 459
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "ftp2.railconnect.com" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 474
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.50" 
+set dstaddr "APN TELCEL-10.202.116.0/22"  "TELCEL APN-10.205.140.0/22"
+set action   accept
+set service  "Puertos 20_21_22"  "Puertos Telcel 1" "Puertos Telcel 2"
+set nat src 
+next
+edit 473
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "NAT-10.10.31.39" 
+set dstaddr "APN TELCEL-10.202.116.0/22"  "TELCEL APN-10.205.140.0/22"
+set action   accept
+set service  "Puertos 20_21_22"  "Puertos Telcel 1" "Puertos Telcel 2"
+set nat src 
+next
+edit 464
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "NAT-172.16.103.91" 
+set dstaddr "APN TELCEL-10.202.116.0/22"  "TELCEL APN-10.205.140.0/22"
+set action   accept
+set service  "Puertos 20_21_22"  "Puertos Telcel 1" "Puertos Telcel 2"
+set nat src 
+next
+edit 223
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "TELCEL_ACCESO_APN" 
+set dstaddr "TELCEL APN-10.205.140.0/22" 
+set action   accept
+set service  "Puertos 20_21_22"  "Puertos Telcel 1" "Puertos Telcel 2"
+set nat src 
+next
+edit 438
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "TELCEL_ACCESO_APN" 
+set dstaddr "APN TELCEL-10.202.116.0/22" 
+set action   accept
+set service  "Puertos 20_21_22"  "Puertos Telcel 1" "Puertos Telcel 2"
+set nat src 
+next
+edit 476
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.39/32" 
+set dstaddr "66.11.7.16/32" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 454
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Rebeca Galindo-10.10.37.197" 
+set dstaddr "189.226.73.162" 
+set action   accept
+set service  "Pto 8000 TCP" 
+set nat src 
+next
+edit 453
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Big-Ip-monitor" 
+set dstaddr "Any" 
+set action   accept
+set service  "DNS"  "HTTP" "ICMP-ANY"
+set nat src 
+next
+edit 444
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "laseritsconline.com/DirectAProveedores" 
+set action   accept
+set service  "Puerto-Holcim Apasco" 
+set nat src 
+next
+edit 413
+set srcintf "dmz2"
+set  dstintf  "port3"
+set srcaddr  "192.168.10.5/32" 
+set dstaddr "Any" 
+set action   accept
+set service  "DNS" 
+set nat src 
+next
+edit 439
+set srcintf "dmz2"
+set  dstintf  "port3"
+set srcaddr  "192.168.10.14" 
+set dstaddr "Any" 
+set action   accept
+set service  "DNS"  "HTTP" "HTTPS" "ICMP-ANY" "ICMP-INFO" "NTP" "SMTP" "SSH" "TRACEROUTE"
+set nat src 
+next
+edit 435
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "svcoxcarh01-10.10.32.13" 
+set dstaddr "ftp2.railconnect.com" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 434
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "iPad-ifranklin-10.10.250.88"  "iPhone-ifranklin-10.10.250.87" "Mac-ifranklin-10.10.250.86"
+set dstaddr "pop.prodigy.net.mx"  "smtp.prodigy.net.mx"
+set action   accept
+set service  "POP3"  "POP3/SSL" "SMTP" "SMTP/SSL"
+set nat src 
+next
+edit 433
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "IP phones-Imex" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 427
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.33.72"  "10.10.33.73" "Portal SAP Pro-10.10.33.96" "Portal SAP Pro-10.10.33.97"
+set dstaddr "Any" 
+set action   accept
+set service  "HTTP"  "HTTPS"
+set nat src 
+next
+edit 426
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.1.24"  "Host_10.10.61.35"
+set dstaddr "10.255.132.17"  "12.191.195.66" "148.245.62.85" "173.227.95.204" "174.143.212.203" "174.36.134.128" "185.21.133.157-VMODAL" "187.237.234.195" "190.143.117.2_Widetech_1" "193.163.248.25" "193.163.248.28/32" "193.17.48.215-Hapag-Lloyd AG" "193.17.48.216 - Hapag-Lloyd AG" "194.9.166.145-Hapag-Lloyd AG" "194.9.166.146-Hapag-Lloyd AG" "198.58.80.94" "204.232.130.226_Widetech 2" "207.106.188.251" "207.211.89.200" "207.97.206.102_Widetech 3" "210.65.198.133" "216.111.234.115" "216.111.234.116" "216.54.111.217" "23.91.123.124" "57.77.23.92-cma-cgm.com" "63.240.116.74 - EVERGREEN tpegw001.shipmentchain.com" "63.254.154.250" "63.254.154.251" "65.200.132.15" "65.200.132.39" "CMI-63.138.243.68/32" "CMI-64.22.152.164/32" "CMI-66.77.30.68/32" "edi-xfr.usa.cma-cgm.com" "edi.gtgs.net" "edi.gtgs.net-69.64.161.46" "edi.maerskline.com" "ediftp.cosco-usa.com" "ediftp.mol-it.com" "ftp.usa.cma-cgm.com" "ftpham04.hamburgsud.com" "ibtsus.hmm21.com" "shipmentchain.com" "shipmentonline.com" "XPO/Pacer1" "XPO/Pacer2" "XPO/Pacer3" "XPO/Pacer4" "XPO/Pacer5"
+set action   accept
+set service  "FTP"  "SFTP"
+set nat src 
+next
+edit 425
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "SmartCare-10.10.40.14" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 424
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Pool Self Ip F5" 
+set dstaddr "ebmx.extra.chrysler.com"  "ftp.transentric.com" "ftp2.sat.gob.mx"
+set action   accept
+set service  "FTP"  "HTTPS"
+set nat src 
+next
+edit 423
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "BacSoft AEI-10.10.32.70" 
+set dstaddr "187.237.233.124" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 419
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.75"  "10.10.32.76"
+set dstaddr "alpha.watchdogtracking.com" 
+set action   accept
+set service  "FTP"  "HTTP"
+set nat src 
+next
+edit 418
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.224.0"  "10.10.32.142_svcoxapt01" "10.10.32.143_svcoxapt02" "10.10.32.144_svcoxapt03" "10.10.32.145_svcoxapt04" "Vista SAP PRO" "Vista SAP QA"
+set dstaddr "200.53.155.0-Pago_Santander"  "ebmx.extra.chrysler.com" "m.mitec.com.mx" "ssl.e-pago.com.mx" "ssl2.e-pago.com.mx" "vip.e-pago.com.mx" "vip2.e-pago.com.mx"
+set action   accept
+set service  "HTTPS" 
+set nat src 
+next
+edit 417
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.142_svcoxapt01"  "10.10.32.143_svcoxapt02" "10.10.32.144_svcoxapt03" "10.10.32.145_svcoxapt04" "Vista SAP PRO" "Vista SAP QA"
+set dstaddr "ftp.transentric.com" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 406
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.23)" 
+set action   accept
+set service  "FTP"  "HTTP" "ICMP-ANY" "TELNET" "VNC"
+set nat src 
+next
+edit 407
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "svrcorfacpro-10.10.32.46"  "SVRCORFACQAS-10.10.32.45"
+set dstaddr "ftp2.sat.gob.mx" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 401
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Acceso Sagarpa" 
+set dstaddr "200.57.159.17/32" 
+set action   accept
+set service  "ICMP-ALL"  "SAGARPA"
+set nat src 
+next
+edit 400
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "edcidse.com.mx"  "fiestarewards.com" "fiestarewards.holabye.com" "idse.imss.gob.mx" "imss.gob.mx" "maps.qlikcloud.com"
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 399
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.34.78" 
+set dstaddr "FTP" 
+set action   accept
+set service  "FTP"  "SSH"
+set nat src 
+next
+edit 398
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.45)" 
+set action   accept
+set service  "ICMP-ALL"  "PING" "TELNET" "TRACEROUTE"
+set nat src 
+next
+edit 397
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.0.0.0/8"  "172.16.0.0/16"
+set dstaddr "187.237.233.124" 
+set action   accept
+set service  "449"  "8476" "TELNET"
+set nat src 
+next
+edit 396
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.33.75" 
+set dstaddr "ftp://www.grupodos.com.mx/" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 394
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Barracuda_Imex-10.10.40.19" 
+set dstaddr "Any" 
+set action   accept
+set service  "DNS"  "HTTP" "NTP" "SMTP" "SSH"
+set nat src 
+next
+edit 392
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.168.46"  "10.10.225.46"
+set dstaddr "www.ssamexico.com" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 391
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.37.196"  "Rebeca Galindo-10.10.37.197"
+set dstaddr "infotel.com.mx" 
+set action   accept
+set service  "POP3"  "SMTP_secure_465"
+set nat src 
+next
+edit 395
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.1.24" 
+set dstaddr "data.interasset.com"  "edi.maerskline.com" "uftp.cyberlogitec.com"
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 388
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.1.24" 
+set dstaddr "FTP hlcl" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 385
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.58)" 
+set action   accept
+set service  "VPN WINDOWS" 
+set nat src 
+next
+edit 383
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.1.24" 
+set dstaddr "ftp.pacer.com" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 382
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "burodecredito.com.mx" 
+set action   accept
+set service  "Puerto-9443" 
+set nat src 
+next
+edit 381
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.34.44"  "Integridata Fsrr-172.16.103.28"
+set dstaddr "201.122.55.91" 
+set action   accept
+set service  "Puerto-1022"  "Puerto-2300"
+set nat src 
+next
+edit 380
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "mensajeria.telcel.com" 
+set action   accept
+set service  "HTTP"  "HTTPS"
+set nat src 
+next
+edit 379
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "204.10.22.165" 
+set action   accept
+set service  "HTTP"  "HTTPS" "TELNET"
+set nat src 
+next
+edit 378
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "201.122.131.252" 
+set action   accept
+set service  "MySQL" 
+set nat src 
+next
+edit 377
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "kh.google.com" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 376
+set srcintf "port3"
+set  dstintf  "Netcontrol"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.5)" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 375
+set srcintf "Netcontrol"
+set  dstintf  "port3"
+set srcaddr  "192.168.95.0/24"  "Red Netcontrol 192.168.20.0"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 372
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "SERVERS RHLE6" 
+set dstaddr "akamaitechnologies.com"  "redhat.com"
+set action   accept
+set service  "HTTP"  "HTTPS" "TCP-50778"
+set nat src 
+next
+edit 384
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "10.255.132.17"  "12.191.195.66" "162.253.151.84" "167.132.254.32" "167.132.254.33" "167.132.254.34" "167.132.254.35" "167.132.254.36" "167.132.254.37" "167.132.254.38" "167.132.254.39" "167.132.254.40" "173.227.95.204" "185.21.133.157-VMODAL" "187.174.238.23 - MEDITARREAN SHIPPING COMPANY" "187.237.234.195" "190.143.117.2_Widetech_1" "193.163.248.25" "193.163.248.28/32" "193.17.48.215-Hapag-Lloyd AG" "193.17.48.216 - Hapag-Lloyd AG" "194.9.166.145-Hapag-Lloyd AG" "194.9.166.146-Hapag-Lloyd AG" "198.58.80.94" "200.52.78.28" "204.232.130.226_Widetech 2" "207.106.188.251" "207.211.89.200" "207.97.206.102_Widetech 3" "57.77.23.92-cma-cgm.com" "63.240.116.74 - EVERGREEN tpegw001.shipmentchain.com" "63.254.154.250" "63.254.154.251" "65.200.132.15" "65.200.132.39" "CMI-63.138.243.68/32" "CMI-64.22.152.164/32" "CMI-66.77.30.68/32" "edi-xfr.usa.cma-cgm.com" "edi.gtgs.net-69.64.161.46" "edi.maerskline.com" "edi.rez1.com" "ediftp.cosco-usa.com" "ediftp.mol-it.com" "ftp.transentric.com" "ibtsus.hmm21.com" "XPO/Pacer1" "XPO/Pacer2" "XPO/Pacer3" "XPO/Pacer4" "XPO/Pacer5" "XPO/Pacer6" "XPO/Pacer7" "FTP-IMEX"
+set dstaddr "MIP(200.52.78.21)"  "MIP(200.52.78.28)"
+set action   accept
+set service  "FTP"  "SFTP"
+set nat src 
+next
+edit 368
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.35.11_bancos" 
+set dstaddr "tslink1.jpmorgan.com_bancos a jpmorgan"  "Tslink2.jpmorgan.com"
+set action   accept
+set service  "HTTP"  "Puerto 6080"
+set nat src 
+next
+edit 366
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Server wdms.fxe.net-10.10.32.39" 
+set dstaddr "Servidor (InteRRIS)-150.195.254.140" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 364
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "wsfxe" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 362
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.252"  "10.10.38.134-svsappro" "10.10.69.40" "KRONOS-10.10.33.75" "kronos-a" "kronos-b" "PC_nf20036-10.10.34.74" "svcoxcarh01-10.10.32.13" "svcoxctm01-10.10.32.24" "SVCOXFXE32-10.10.9.2" "svcoxvuc03-10.10.32.158"
+set dstaddr "bbftp-trn.bnsf.com-170.49.49.107"  "bbftp.bnsf.com-139.51.10.48" "EDIFTP.BNSF.COM" "ediftp.railconnect.com" "ftp.glovismx.com" "ftp1.toyota.com" "ftp2.railconnect.com" "mft.railinc.com" "railconnect.com" "tstmft.railinc.com"
+set action   accept
+set service  "FTP"  "SSH"
+set nat src 
+next
+edit 361
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "VWSISOV01-10.10.32.47" 
+set dstaddr "EDIFTP.BNSF.COM"  "ftp.toyota.com" "ftp1.toyota.com"
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 359
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Correo Lotus-10.10.32.55"  "HOST_172.16.103.158" "Relay_Lotus-10.10.32.176" "svcoxmail02_10.10.32.183"
+set dstaddr "Any" 
+set action   accept
+set service  "HTTP"  "HTTPS" "SMTP" "SMTP/SSL"
+set  nat src dip-id 9
+next
+edit 480
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.62" 
+set dstaddr "Any" 
+set action   accept
+set service  "Blackberry"  "HTTP" "HTTPS" "SMTP"
+set  nat src dip-id 9
+next
+edit 355
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.190-SVCOXBES02"  "10.10.32.62" "Bes Express-10.10.32.61" "SERVICIO BB LOTUS-10.10.32.59" "Svcoxbes03-10.10.32.81"
+set dstaddr "208.65.77.102"  "216.9.242.176" "216.9.242.177" "216.9.242.244" "216.9.242.32" "68.171.232.35" "68.171.232.36" "68.171.242.240" "68.171.242.241" "68.171.242.252" "68.171.242.32" "ca.swsmanager.bbsecure.com" "ca.swstps.bbsecure.com" "license.blackberry.com" "mx.bbsecure.com" "mx.srp.blackberry.com"
+set action   accept
+set service  "Blackberry"  "HTTPS"
+set  nat src dip-id 9
+next
+edit 393
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "BMC-remedy"  "BMC-remedy-2"
+set dstaddr "MIP(200.52.78.48)" 
+set action   accept
+set service  "POP3"  "POP3/SSL" "SMTP" "SMTP/SSL"
+set  nat src dip-id 9
+next
+edit 353
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.48)" 
+set action   accept
+set service  "HTTP"  "HTTPS" "IMAP" "IMAP4/SSL" "POP3" "POP3/SSL"
+set  nat src dip-id 9
+next
+edit 352
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Servidor Fxe-10.10.32.70" 
+set dstaddr "158.255.43.240"  "212.199.160.162/32" "bacsoft.com"
+set action   accept
+set service  "HTTP" 
+set  nat src dip-id 9
+next
+edit 350
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.0.0/16" 
+set dstaddr "VPN New York-172.31.0.0/16" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 9
+next
+edit 306
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.0.0/16" 
+set dstaddr "VPN New York-149.244.178.0/23" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 9
+next
+edit 348
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "190.1.0.0/16" 
+set dstaddr "VPN New York-149.244.178.0/23" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 345
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "200.57.151.129/32" 
+set dstaddr "10.10.130.47/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 144
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "190.1.0.0/16" 
+set dstaddr "VPN New York-172.31.0.0/16" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 505
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.120.0/23" 
+set dstaddr "VPN RMI US-192.168.100.0/24" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 429
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.192.0/24" 
+set dstaddr "VPN RMI US-192.168.100.0/24" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 261
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.64.0/21" 
+set dstaddr "VPN RMI US-192.168.100.0/24" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 552
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.237.0/24" 
+set dstaddr "VPN RMI US-192.168.100.0/24" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 411
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.42.11" 
+set dstaddr "VPN-BMCR-192.168.105.24/29" 
+set action   accept
+set service  "LDAP"  "PING"
+set nat src 
+next
+edit 409
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.42.30" 
+set dstaddr "VPN-BMCR-192.168.105.24/29" 
+set action   accept
+set service  "PING"  "POP3" "Puerto-495" "SMTP" "SMTP/SSL"
+set nat src 
+next
+edit 284
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.234.65/32" 
+set dstaddr "200.57.151.129/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 340
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.1.24"  "10.10.32.195-SAP_Router" "10.10.33.70" "10.10.33.75" "10.10.33.90" "10.10.33.91" "10.10.33.92" "10.10.33.93" "10.10.34.152" "10.10.38.132 SAP Nodo 1" "10.10.38.133 SAP Nodo 2" "10.10.38.134 SAP Server Virtual" "Host_10.10.61.35"
+set dstaddr "194.39.131.34-Servidor SAP"  "216.251.67.122_ftp_ericher" "CMI-66.161.82.84" "ericher-nld.dyndns.org" "ftp.edi.rez1.com" "ftp.transentric.com" "nld.dyndns.org" "sftp4.successfactors.com"
+set action   accept
+set service  "FTP"  "PING" "SFTP" "tpc_sap"
+set nat src 
+next
+edit 324
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.1.70"  "Servidor correo Inmex-10.10.1.10"
+set dstaddr "Any" 
+set action   accept
+set service  "DNS"  "IMAP" "IMAP4/SSL" "POP3" "POP3/SSL" "Puerto-587" "Puerto-8501" "SMTP" "SMTP/SSL"
+set nat src 
+next
+edit 323
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "Dominios Railconnect" 
+set action   accept
+set service  "HTTP"  "HTTPS" "License Check/SSL" "SSL TELNET"
+set nat src 
+next
+edit 317
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.33.75-SVCORAP1"  "10.10.33.90" "10.10.33.91" "BacSoft AEI-10.10.32.70"
+set dstaddr "187.237.234.197"  "207.126.48.231" "ftp2.railconnect.com"
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 344
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.130.47/32" 
+set dstaddr "200.57.151.129/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 314
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "200.57.67.5-DRP de Sicotra" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 351
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.34.111" 
+set dstaddr "200.52.131.28" 
+set action   accept
+set service  "Pto-8080-HTTP-ALT" 
+set nat src 
+next
+edit 231
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.34.0/24" 
+set dstaddr "Any" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 336
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.41" 
+set dstaddr "sdinet.com.mx" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 332
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "Any" 
+set action   accept
+set service  "VPN WINDOWS" 
+set nat src 
+next
+edit 778
+set srcintf "dmz2"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "10.10.40.0/24" 
+set action   accept
+set service  "SSH" 
+set nat src 
+next
+edit 316
+set srcintf "dmz2"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 307
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN New York-149.244.178.0/23" 
+set dstaddr "10.10.0.0/16" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 347
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN New York-149.244.178.0/23" 
+set dstaddr "190.1.0.0/16" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 145
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN New York-172.31.0.0/16" 
+set dstaddr "190.1.0.0/16" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 349
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN New York-172.31.0.0/16" 
+set dstaddr "10.10.0.0/16" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 297
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "IP Servidor Antivirus" 
+set dstaddr "osce8-p.activeupdate.trendmicro.com/activeupdate" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 292
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.250.108" 
+set dstaddr "intellego.no-ip.org"  "Pruebas SAP"
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 293
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Acceso sdinet.com.mx" 
+set dstaddr "sdinet.com.mx" 
+set action   accept
+set service  "Pto-7824" 
+set nat src 
+next
+edit 289
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.5.5" 
+set dstaddr "IMSS" 
+set action   accept
+set service  "FTP"  "HTTP" "POP3" "Pto-8080-HTTP-ALT"
+set nat src 
+next
+edit 285
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "200.57.151.129/32" 
+set dstaddr "10.10.234.65/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 283
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "200.57.151.129/32" 
+set dstaddr "10.10.146.65/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 282
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.146.65/32" 
+set dstaddr "200.57.151.129/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 281
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "200.57.151.129/32" 
+set dstaddr "10.10.9.0/24" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 280
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.9.0/24" 
+set dstaddr "200.57.151.129/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 270
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN RMI US-192.168.100.0/24" 
+set dstaddr "10.10.32.0/21" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 262
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN RMI US-192.168.100.0/24" 
+set dstaddr "10.10.64.0/21" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 428
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN RMI US-192.168.100.0/24" 
+set dstaddr "10.10.192.0/24" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 504
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN RMI US-192.168.100.0/24" 
+set dstaddr "10.10.120.0/23" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 553
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN RMI US-192.168.100.0/24" 
+set dstaddr "10.10.237.0/24" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 226
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Red Noc Avaya" 
+set dstaddr "190.1.0.0/16" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 294
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Wild-65.217.179.242" 
+set dstaddr "MIP(200.52.78.9)" 
+set action   accept
+set service  "Pto8080,8443,8095"  "SSH"
+set nat src 
+next
+edit 312
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "Any" 
+set action   accept
+set service  "HTTP"  "HTTPS" "pto_50000"
+set nat src 
+next
+edit 571
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.41)" 
+set action   accept
+set service  "HTTP" 
+set nat src 
+next
+edit 225
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "190.1.0.0/16" 
+set dstaddr "Red Noc Avaya" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 232
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "190.1.1.0/16" 
+set dstaddr "Any" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 162
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "209.164.26.98_tranferencia_archivos_clm_edi"  "tsftp.transystems.com"
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 228
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "190.1.4.43/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 183
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "167.132.252.50/32" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 171
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Barracuda Imex-10.10.40.18" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 170
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.2.69/32"  "10.10.32.14/32"
+set dstaddr "Any" 
+set action   accept
+set service  "POP3/SSL" 
+set nat src 
+next
+edit 165
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.5.41"  "10.10.5.42" "10.10.5.43"
+set dstaddr "201.161.8.69" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 164
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "72.246.54.1_akamai" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 206
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.46)" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 134
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "12.129.104.0/24"  "208.29.21.60" "fxe.railconnect.com" "railconnect.com" "www.hostlink.eds.com" "www.railconnect.com"
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 127
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Dial-Up VPN" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 123
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "IMEX-1" 
+set dstaddr "Any" 
+set action   accept
+set service  "INFO-RMI" 
+set nat src 
+next
+edit 122
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "172.16.103.32/32" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 119
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "190.1.5.38/32" 
+set dstaddr "ericher-nld.dyndns.org" 
+set action   accept
+set service  "5222, 5223, 5269, 7777" 
+set nat src 
+next
+edit 118
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Demo_allot-untrust" 
+set dstaddr "Demo_allot-trust" 
+set action   accept
+set service  "Demo_allot" 
+set nat src 
+next
+edit 172
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "ip-libres-10.10.x.x"  "LAN_WeWork_FXE"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 113
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FTP 20 Y 21 trust" 
+set dstaddr "FTP 20 Y 21" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 96
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Guillermo García Avila" 
+set dstaddr "10.1.0.0/16"  "190.1.0.0/16"
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 95
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "172.16.111.82"  "Sarahi Landa" "Xavier Villegas"
+set dstaddr "SAP Desarrollo" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 94
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "172.16.104.243/24" 
+set dstaddr "Mario" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 93
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Productos cierres ingresos" 
+set dstaddr "190.1.4.146/32"  "190.1.6.4" "190.1.7.15" "Anuar" "Mario"
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 89
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Aplicación TMD" 
+set dstaddr "64.105.150.123/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 85
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "mail.praxis.com.mx" 
+set action   accept
+set service  "MAIL"  "POP3"
+set nat src 
+next
+edit 52
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.33.75-SVCORAP1"  "To_ferrosur"
+set dstaddr "Servidor RMI"  "Servidor RMI desarrollo"
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 43
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "148.233.4.40/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 40
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Informacion RMI" 
+set dstaddr "RMI_2"  "RMI_3" "RMI"
+set action   accept
+set service  "INFO-RMI" 
+set nat src 
+next
+edit 39
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "69.58.198.62/32"  "69.58.198.71" "69.58.198.91" "69.58.204.104/32" "69.58.204.78"
+set dstaddr "MIP(200.52.78.20)" 
+set action   accept
+set service  "SSH" 
+set nat src 
+next
+edit 72
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Servidor Imex SMTP" 
+set dstaddr "Any" 
+set action   accept
+set service  "DNS"  "MAIL"
+set nat src 
+next
+edit 6
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Servidores SMTP-intel" 
+set dstaddr "Any" 
+set action   accept
+set service  "MAIL" 
+set  nat src dip-id 4
+next
+edit 182
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Servidores_Smtp_Unix-1" 
+set dstaddr "Any" 
+set action   accept
+set service  "MAIL" 
+set  nat src dip-id 5
+next
+edit 188
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Servidores_Smtp_Unix-2" 
+set dstaddr "Any" 
+set action   accept
+set service  "MAIL" 
+set  nat src dip-id 8
+next
+edit 38
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "GDL_Principal_Alfonso" 
+set dstaddr "12.129.104.244/32"  "150.195.254.140" "207.126.48.231" "ftp.railincftp.com" "ftp.transentric.com"
+set action   accept
+set service  "FTP" 
+set  nat src dip-id 8
+next
+edit 2
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FTP_cemex" 
+set dstaddr "200.23.29.227/255.255.255.255" 
+set action   accept
+set service  "FTP" 
+set  nat src dip-id 8
+next
+edit 318
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "187.237.234.197" 
+set dstaddr "MIP(200.52.78.20)" 
+set action   accept
+set service  "FTP" 
+set  nat src dip-id 8
+next
+edit 466
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.29)" 
+set action   accept
+set service  "Pto 8000 TCP"  "Pto-50100" "pto_50000" "Saprouter-3299"
+set  nat src dip-id 8
+next
+edit 300
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "129.170.1.36"  "129.170.1.42"
+set dstaddr "Any" 
+set action   accept
+set service  "Puerto 2776"  "Puertos 1719, 2776, 2777"
+set  nat src dip-id 8
+next
+edit 301
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.40.10"  "HA-MX1_10.10.40.182" "HA-MX2_10.10.40.184" "LAN1-MX1_10.10.40.181" "LAN1-MX2_10.10.40.183"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 8
+next
+edit 302
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.70.254"  "172.16.113.201"
+set dstaddr "SmartRad-12.53.43.234" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 8
+next
+edit 303
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.33.57" 
+set dstaddr "Any" 
+set action   accept
+set service  "SMTP" 
+set  nat src dip-id 8
+next
+edit 305
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.129.62" 
+set dstaddr "vpn.gruppomgus.com-63.76.230.11" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 8
+next
+edit 321
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.1.11/32" 
+set dstaddr "Any" 
+set action   accept
+set service  "DNS" 
+set  nat src dip-id 8
+next
+edit 311
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "VIP(200.52.78.47)" 
+set action   accept
+set service  "HTTP"  "VP-8080"
+set  nat src dip-id 8
+next
+edit 313
+set srcintf "port2"
+set  dstintf  "dmz2"
+set srcaddr  "Any" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 8
+next
+edit 346
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.14/32" 
+set dstaddr "200.23.29.227"  "209.164.26.98" "ehms.railinc.com"
+set action   accept
+set service  "FTP"  "HTTP" "HTTP-EXT" "HTTPS"
+set  nat src dip-id 8
+next
+edit 387
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.1.24"  "Host_10.10.61.35"
+set dstaddr "162.253.151.84"  "167.132.254.32" "167.132.254.33" "167.132.254.34" "167.132.254.35" "167.132.254.36" "167.132.254.37" "167.132.254.38" "167.132.254.39" "167.132.254.40" "210.71.241.143_FTP" "ftp.hlcl.com"
+set action   accept
+set service  "FTP" 
+set  nat src dip-id 8
+next
+edit 422
+set srcintf "dmz2"
+set  dstintf  "port3"
+set srcaddr  "192.168.10.14"  "192.168.10.4"
+set dstaddr "Any" 
+set action   accept
+set service  "DNS"  "HTTP" "HTTP-EXT" "HTTPS" "SMTP" "SSH"
+set  nat src dip-id 8
+next
+edit 448
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.81.1)" 
+set action   accept
+set service  "ICMP-ALL"  "IMAP" "IMAP4/SSL" "NTP" "SMTP"
+set  nat src dip-id 8
+next
+edit 449
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.88.1)" 
+set action   accept
+set service  "ICMP-ALL"  "IMAP" "IMAP4/SSL" "NTP" "SMTP"
+set  nat src dip-id 8
+next
+edit 450
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.66.64.4)" 
+set action   accept
+set service  "ICMP-ALL"  "IMAP" "IMAP4/SSL" "NTP" "SMTP"
+set  nat src dip-id 8
+next
+edit 451
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "Any" 
+set dstaddr "MIP(201.149.0.36)" 
+set action   accept
+set service  "ICMP-ALL"  "IMAP" "IMAP4/SSL" "NTP" "SMTP"
+set  nat src dip-id 8
+next
+edit 452
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "Any" 
+set dstaddr "MIP(201.149.32.8)" 
+set action   accept
+set service  "ICMP-ALL"  "IMAP" "IMAP4/SSL" "NTP" "SMTP"
+set  nat src dip-id 8
+next
+edit 477
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.21.0 SSID_WSPONSOR"  "10.10.30.0/24SSID fxegadget"
+set dstaddr "Any" 
+set action   accept
+set service  "HTTP"  "HTTPS" "APPLE-ICHAT"
+set  nat src dip-id 8
+next
+edit 482
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.250.224" 
+set dstaddr "201.155.113.8/32" 
+set action   accept
+set service  "VNC" 
+set  nat src dip-id 8
+next
+edit 525
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "190.1.0.0/16" 
+set dstaddr "VPN New York-149.244.179.0/24" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 8
+next
+edit 526
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "sapdes02-10.10.1.118" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 8
+next
+edit 527
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.61.19sap_prod_imex"  "10.10.61.22"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 8
+next
+edit 554
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "Win-Defender-134.170.180.0/24"  "Win-Defender-134.170.58.0/24"
+set action   accept
+set service  "TCP-443"  "TCP-80"
+set nat src 
+next
+edit 555
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.250.130_prueba"  "lsosa_afaria_10.10.251.96" "motorola_afaria_10.10.250.179"
+set dstaddr "Afaria Akamai-3"  "Afaria-Akamai_1" "Afaria-Akamai_2" "Afaria-Akamai_4" "Afaria-Google_2" "Afaria-Google_3" "Afaria-Google_4" "Affaria-Google_1"
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 557
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN_Remedy_10.170.4.119/32" 
+set dstaddr "10.10.33.80/32" 
+set action   accept
+set service  "Pto_1528" 
+set nat src 
+next
+edit 558
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN_Remedy_10.170.136.107/32" 
+set dstaddr "10.10.33.80/32" 
+set action   accept
+set service  "Pto_1528" 
+set nat src 
+next
+edit 559
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN_Remedy_10.170.144.116/32" 
+set dstaddr "10.10.33.80/32" 
+set action   accept
+set service  "Pto_1528" 
+set nat src 
+next
+edit 560
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.33.80/32" 
+set dstaddr "VPN_Remedy_10.170.4.119/32" 
+set action   accept
+set service  "Pto_1528" 
+set nat src 
+next
+edit 561
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.33.80/32" 
+set dstaddr "VPN_Remedy_10.170.136.107/32" 
+set action   accept
+set service  "Pto_1528" 
+set nat src 
+next
+edit 562
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.33.80/32" 
+set dstaddr "VPN_Remedy_10.170.144.116/32" 
+set action   accept
+set service  "Pto_1528" 
+set nat src 
+next
+edit 567
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.31.25/32" 
+set dstaddr "my305077.crm.ondemand.com" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 572
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.35.182"  "10.10.35.185" "10.10.35.93"
+set dstaddr "69.16.233.139/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 573
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.137.132" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 574
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.115-svcoxome01" 
+set dstaddr "143.166.0.0/16 Monitor_OME_DELL" 
+set action   accept
+set service  "FTP"  "HTTPS" "SNMP" "TCP-143 SQL_Server"
+set nat src 
+next
+edit 575
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "172.16.112.244/32" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 576
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "FTP_189.202.236.105" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 577
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.61.22_imex-appprod" 
+set dstaddr "Office 365-132.245.0.0/16" 
+set action   accept
+set service  "POP3/SSL"  "TCP-443"
+set nat src 
+next
+edit 578
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "50.252.112.179_TMD" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 580
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.35.192/32" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 582
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.94" 
+set dstaddr "Any" 
+set action   accept
+set service  "NTP" 
+set nat src 
+next
+edit 583
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "VPN_RMI 204.10.22.230" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 585
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "edi.maerskline.com"  "edi.rez1.com"
+set dstaddr "MIP(200.52.78.28)" 
+set action   accept
+set service  "FTP"  "Puertos 20_21_22" "SSH"
+set nat src 
+next
+edit 587
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "mail.amf.org.mx" 
+set action   accept
+set service  "Pto_110"  "Pto_465" "Pto_587" "Pto_995" "SMTP"
+set nat src 
+next
+edit 588
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "200.57.136.21"  "200.57.179.203-Server_Vending_Test" "vending2.tmanager.com.mx"
+set action   accept
+set service  "ICMP Address Mask"  "ICMP Dest Unreachable" "ICMP Fragment Needed" "ICMP Fragment Reassembly" "ICMP Host Unreachable" "ICMP Parameter Problem" "ICMP Port Unreachable" "ICMP Protocol Unreach" "ICMP Redirect" "ICMP Redirect Host" "ICMP Redirect TOS & Host" "ICMP Redirect TOS & Net" "ICMP Source Quench" "ICMP Source Route Fail" "ICMP Time Exceeded" "ICMP-ANY" "ICMP-INFO" "ICMP-TIMESTAMP" "PING" "Pto_9002" "Pto_9154"
+set nat src 
+next
+edit 592
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.35.28" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 594
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.35.201/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 596
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.168.70/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 598
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.71.70/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 600
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.236.70/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 601
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.213.70/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 602
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.213.70/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 603
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.184.70/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 604
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.184.70/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 605
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.215.70/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 606
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.224.67/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 607
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.224.67/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 608
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.224.69/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 609
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.226.70/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 610
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.192.70/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 611
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.209.69/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 612
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.188.69/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 613
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.145.70/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 614
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.180.70/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 615
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.205.70/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 616
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.153.70/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 617
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.204.70/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 618
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.217.70/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 619
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.224.69/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 620
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.215.70/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 621
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.226.70/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 622
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.192.70/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 623
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.209.69/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 624
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.188.69/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 625
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.145.70/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 626
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.180.70/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 627
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.205.70/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 628
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.153.70/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 629
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.204.70/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 630
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.217.70/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 631
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.29.117/32" 
+set dstaddr "192.168.66.80/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 632
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "192.168.66.80/32" 
+set dstaddr "10.10.29.117/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 633
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "SERVER_1_10.10.62.17" 
+set dstaddr "cfdiws.sedeb2b.com" 
+set action   accept
+set service  "HTTPS" 
+set nat src 
+next
+edit 634
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "SERVER_10.10.62.132" 
+set dstaddr "cfdiws.sedeb2b.com" 
+set action   accept
+set service  "HTTPS" 
+set nat src 
+next
+edit 635
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.29.117_svgdldvtbc03"  "10.10.29.171_svgdlqabw01"
+set dstaddr "sftp.wi-tronix.com" 
+set action   accept
+set service  "HTTPS"  "SFTP"
+set nat src 
+next
+edit 636
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.211/32" 
+set dstaddr "services.isee.hp.com" 
+set action   accept
+set service  "TCP-443" 
+set nat src 
+next
+edit 637
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.38.165-StorageOnce_MX" 
+set dstaddr "remote3par.houston.hp.com" 
+set action   accept
+set service  "TCP-443" 
+set nat src 
+next
+edit 643
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.0.0/16"  "10.175.116.173" "10.175.116.176"
+set dstaddr "sftp.kcsouthern.com" 
+set action   accept
+set service  "TCP-22" 
+set nat src 
+next
+edit 430
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.11)" 
+set action   accept
+set service  "Ferromex Port 15"  "HTTP" "HTTPS" "pto_6400_crital_reports" "PUERTO 35000" "TCP-4248"
+set nat src 
+next
+edit 486
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.15)" 
+set action   accept
+set service  "HTTP"  "HTTPS" "Puerto-50000"
+set nat src 
+next
+edit 412
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.25)" 
+set action   accept
+set service  "DNS" 
+set nat src 
+next
+edit 416
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.10)" 
+set action   accept
+set service  "HTTP"  "HTTPS" "Pto 25" "pto 8080" "Pto-8080" "pto_6400_crital_reports" "Puerto-50000" "SMTP"
+set nat src 
+next
+edit 467
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.26)" 
+set action   accept
+set service  "FTP"  "SFTP"
+set nat src 
+next
+edit 520
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.49)" 
+set action   accept
+set service  "HTTP"  "HTTPS" "pto_81_8081_tcp" "Puerto-2083"
+set nat src 
+next
+edit 644
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.172_svcoxbw02" 
+set dstaddr "gateway.push.apple.com"  "gateway.sandbox.push.apple.com" "gcm-http.googleapis.com"
+set action   accept
+set service  "HTTPS"  "TCP-2195"
+set nat src 
+next
+edit 645
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Consola DOC Río Escondido A"  "Consola DOC Río Escondido B"
+set dstaddr "docsupport.railcomm.com" 
+set action   accept
+set service  "HTTPS" 
+set  nat src dip-id 4
+next
+edit 647
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN_Remedy_10.170.136.107/32" 
+set dstaddr "ServVI_Aplicación_ADDM" 
+set action   accept
+set service  "TCP_46262" 
+set  nat src dip-id 4
+next
+edit 648
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN_Remedy_10.170.136.107/32" 
+set dstaddr "Servidor_Fisico_FXE-BMC" 
+set action   accept
+set service  "TCP_46262" 
+set  nat src dip-id 4
+next
+edit 649
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Servidor_Fisico_FXE-BMC" 
+set dstaddr "VPN_Remedy_10.170.136.107/32" 
+set action   accept
+set service  "TCP_46262" 
+set  nat src dip-id 4
+next
+edit 650
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "ServVI_Aplicación_ADDM" 
+set dstaddr "VPN_Remedy_10.170.136.107/32" 
+set action   accept
+set service  "TCP_46262" 
+set  nat src dip-id 4
+next
+edit 654
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.44)" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 442
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "205.158.110.0/24" 
+set dstaddr "MIP(200.52.78.22)" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 440
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.22)" 
+set action   accept
+set service  "ICMP-ALL"  "IMAP" "IMAP4/SSL" "NTP" "SMTP"
+set nat src 
+next
+edit 447
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "IPS Forefront" 
+set dstaddr "MIP(200.52.78.22)" 
+set action   accept
+set service  "doc-server-station"  "ICMP-ANY" "IMAP" "IMAP4/SSL" "NTP" "SMTP"
+set nat src 
+next
+edit 443
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.22)" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 661
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.20.20.23" 
+set dstaddr "Any" 
+set action   accept
+set service  "Ephermeral_Port"  "Sip_Media" "SIP_Signaling_1024" "SIP_Signaling_7001" "SIP_Signaling_7004" "SSH(https/tunels)" "XMPP"
+set nat src 
+next
+edit 665
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FERROSUR-APN TELCEL-172.16.103.90/32" 
+set dstaddr "APN TELCEL-FERROSUR-10.212.238.0/24" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 666
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FERROSUR-APN TELCEL-172.16.103.90/32" 
+set dstaddr "APN TELCEL-FERROSUR-10.212.248.0/23" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 667
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "FERROSUR-APN TELCEL-172.16.103.90/32" 
+set dstaddr "APN TELCEL-FERROSUR-10.212.250.0/24" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 668
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-FERROSUR-10.212.238.0/24" 
+set dstaddr "FERROSUR-APN TELCEL-172.16.103.90/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 669
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-FERROSUR-10.212.248.0/23" 
+set dstaddr "FERROSUR-APN TELCEL-172.16.103.90/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 670
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "APN TELCEL-FERROSUR-10.212.250.0/24" 
+set dstaddr "FERROSUR-APN TELCEL-172.16.103.90/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 671
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "apps1.semarnat.gob.mx"  "www.gemco.com.mx"
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 674
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.250.145/32" 
+set dstaddr "Barracuda-Update" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 12
+next
+edit 677
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.1.24"  "10.10.32.195-SAP_Router" "10.10.33.70" "10.10.33.75" "10.10.33.90" "10.10.33.91" "10.10.33.92" "10.10.33.93" "10.10.34.152" "Host_10.10.61.35"
+set dstaddr "194.39.131.34-Servidor SAP"  "216.251.67.122_ftp_ericher" "CMI-66.161.82.84" "ericher-nld.dyndns.org" "ftp.edi.rez1.com" "ftp.transentric.com" "nld.dyndns.org" "sftp4.successfactors.com"
+set action   accept
+set service  "FTP"  "PING" "SFTP" "tpc_sap"
+set  nat src dip-id 12
+next
+edit 680
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "svcoxdbqlk01-10.10.31.33"  "svcoxdbqlk02-10.10.31.34" "svcoxqlk01-10.10.32.147" "svcoxqlk02-10.10.32.148"
+set dstaddr "ga.idevio.com"  "maps.qlikcloud.com"
+set action   accept
+set service  "HTTP"  "HTTPS"
+set  nat src dip-id 12
+next
+edit 690
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.142_svcoxapt01"  "10.10.32.143_svcoxapt02" "10.10.32.144_svcoxapt03" "10.10.32.145_svcoxapt04" "10.10.32.170_svcoxems02" "10.10.32.171_svcoxbw01" "10.10.32.196_svcoxmon01" "10.10.57.20_svcoxwbt01" "10.10.57.21_svcoxwbt02" "10.10.57.22_svcoxwbt03" "10.10.57.23_svcoxwbt04" "172.16.103.66_fs03mxwb01"
+set dstaddr "eferromex.saas.appdynamics.com" 
+set action   accept
+set service  "HTTPS" 
+set  nat src dip-id 12
+next
+edit 688
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.142_svcoxapt01"  "10.10.32.143_svcoxapt02" "10.10.32.144_svcoxapt03" "10.10.32.145_svcoxapt04" "10.10.32.170_svcoxems02" "10.10.32.171_svcoxbw01" "10.10.32.196_svcoxmon01" "10.10.57.20_svcoxwbt01" "10.10.57.21_svcoxwbt02" "10.10.57.22_svcoxwbt03" "10.10.57.23_svcoxwbt04" "172.16.103.66_fs03mxwb01" "shcoxflx2bl09 _10.10.59.36" "shgdlen1bl04_10.10.64.143"
+set dstaddr "analytics.api.appdynamics.com"  "ca.dynatrace.com" "eferromex.saas.appdynamics.com" "fxi67456.live.dynatrace.com"
+set action   accept
+set service  "HTTPS" 
+set  nat src dip-id 12
+next
+edit 691
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.50" 
+set dstaddr "eferromex.saas.appdynamics.com" 
+set action   accept
+set service  "HTTPS" 
+set  nat src dip-id 12
+next
+edit 686
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.50" 
+set dstaddr "analytics.api.appdynamics.com"  "ca.dynatrace.com" "eferromex.saas.appdynamics.com" "fxi67456.live.dynatrace.com"
+set action   accept
+set service  "HTTPS" 
+set  nat src dip-id 12
+next
+edit 687
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.0.0/16" 
+set dstaddr "fs-us.kyocera.biz"  "rfs-us.kyocera.biz"
+set action   accept
+set service  "161_UDP"  "445" "5985" "8081" "8442" "8443" "9090" "9091" "9100" "HTTP" "HTTPS"
+set  nat src dip-id 12
+next
+edit 689
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.31.240" 
+set dstaddr "208.67.220.220"  "208.67.220.222" "208.67.222.220" "208.67.222.222" "67.215.71.201" "67.215.92.0/24" "91.189.89.199" "91.189.94.4" "crl.digicert.com" "ocsp.digicert.com"
+set action   accept
+set service  "2222"  "HTTP" "HTTPS" "TCP_53" "UDP_123" "UDP_53"
+set  nat src dip-id 12
+next
+edit 695
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.2.100"  "10.10.250.215" "10.10.35.76" "10.10.36.63" "10.10.40.33" "10.175.116.205" "10.175.116.254" "10.175.116.81" "Proxy Virtual"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 12
+next
+edit 698
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.29.91"  "10.10.39.34" "10.10.39.36" "10.10.39.52/32" "svcoxngo01-10.10.39.33" "svcoxopk01-10.10.39.35"
+set dstaddr "centos.com"  "centos.org" "community.opmantek.com" "mirror.centos.org" "mirrorlist.centos.org" "nagios.com" "opmantek.com" "repo.nagios.com" "support.nagios.com" "support.opmantek.com" "www.assets.nagios.com"
+set action   accept
+set service  "HTTP"  "HTTPS"
+set  nat src dip-id 12
+next
+edit 699
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.193/32" 
+set dstaddr "200.34.168.94/32" 
+set action   accept
+set service  "HTTP" 
+set  nat src dip-id 12
+next
+edit 700
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.78.102/32"  "10.10.78.134/32"
+set dstaddr "ftp2.railconnect.com" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 12
+next
+edit 702
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.6)" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 12
+next
+edit 703
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "fsrr.railconnect.com" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 12
+next
+edit 705
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "104.244.14.252/32" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 12
+next
+edit 708
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.175.116.50" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 12
+next
+edit 709
+set srcintf "port3"
+set  dstintf  "dmz2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.4)" 
+set action   accept
+set service  "HTTP" 
+set  nat src dip-id 12
+next
+edit 712
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.24_svcoxctm01"  "10.10.32.252"
+set dstaddr "ftp.deacero.com" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 12
+next
+edit 713
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.52)" 
+set action   accept
+set service  "TCP-22"  "TCP-443" "TCP-80"
+set nat src 
+next
+edit 716
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.35.235"  "10.10.66.173/32" "10.11.70.129"
+set dstaddr "FTP-Holland" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 718
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "IP_CHINA_3" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 719
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Chepe Legacy Pro1"  "Chepe Legacy Pro2" "Reservaciones Pro"
+set dstaddr "wpp.sandbox.mit.com.mx" 
+set action   accept
+set service  "HTTP" 
+set nat src 
+next
+edit 720
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.16)" 
+set action   accept
+set service  "7070"  "7443" "9090" "HTTP" "HTTPS"
+set nat src 
+next
+edit 721
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.53)" 
+set action   accept
+set service  "7070"  "7443" "9091" "HTTP" "HTTPS"
+set nat src 
+next
+edit 722
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "10.10.32.19/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 724
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.66.203"  "10.11.72.0/24"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 725
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Chepe Legacy Pro1"  "Chepe Legacy Pro2" "Reservaciones Pro"
+set dstaddr "Webpay Plus" 
+set action   accept
+set service  "HTTP"  "TCP-443"
+set nat src 
+next
+edit 726
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.29" 
+set dstaddr "ferromex.jidoka.io" 
+set action   accept
+set service  "HTTPS" 
+set nat src 
+next
+edit 727
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.31.27" 
+set dstaddr "dev30431.service-now.com"  "install.service-now.com"
+set action   accept
+set service  "HTTPS" 
+set nat src 
+next
+edit 729
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "s1.ariba.com" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 731
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.28)" 
+set action   accept
+set service  "SFTP" 
+set nat src 
+next
+edit 733
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Any" 
+set dstaddr "MIP(200.52.78.14)" 
+set action   accept
+set service  "FTP" 
+set nat src 
+next
+edit 735
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "www.google.com" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 737
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "remote.fecrwy.com" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 741
+set srcintf "Netcontrol"
+set  dstintf  "port3"
+set srcaddr  "10.1.12.0/23"  "10.1.4.0/23"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 743
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "10.10.34.136" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 744
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "10.10.32.243" 
+set action   accept
+set service  "FTP"  "SFTP"
+set nat src 
+next
+edit 746
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.105" 
+set dstaddr "192.70.191.64" 
+set action   accept
+set service  "HTTPS" 
+set nat src 
+next
+edit 759
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "AP_Meraki" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 760
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.28.99"  "10.10.32.99/32"
+set dstaddr "VPN_UNIFIED-FXE 192.168.245.162/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 763
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN_UNIFIED-FXE 192.168.245.162/32" 
+set dstaddr "10.10.32.99/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 766
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.121/32" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 768
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.31.51"  "10.10.31.73" "10.10.31.75" "10.10.31.91" "10.10.31.93" "gjimenez-10.10.251.142" "jreynoso-10.10.251.111"
+set dstaddr "VM_Oracle-129.213.18.247"  "VM_Oracle2-129.213.83.182" "VM_Oracle3-129.213.21.65"
+set action   accept
+set service  "TCP-1521"  "TCP-22"
+set nat src 
+next
+edit 769
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "adrm.com/"  "azure.com" "azure.net" "portal.azurerms.com/" "virtualearth.net" "windows.net"
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 770
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.28.99/32" 
+set dstaddr "VPN_UNIFIED-FXE 192.168.245.162/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 771
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "VPN_UNIFIED-FXE 192.168.245.162/32" 
+set dstaddr "10.10.28.99/32" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 774
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.60" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 776
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.11.77.105" 
+set dstaddr "axxonnet.com" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 777
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.13.143" 
+set dstaddr "10.10.64.15" 
+set action   accept
+set service  "PTO_389" 
+set nat src 
+next
+edit 779
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "58.242.83.0" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 780
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.158" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 786
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.250.0/23" 
+set dstaddr "157.230.218.231_ mail.b-iit.com" 
+set action   accept
+set service  "Pto_110"  "Pto_465" "Pto_995" "SMTP" "TCP-143 SQL_Server" "TCP-25"
+set nat src 
+next
+edit 789
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.40.53"  "10.10.40.54"
+set dstaddr "cisco.com"  "tools2.cisco.com"
+set action   accept
+set service  "HTTP"  "HTTPS"
+set nat src 
+next
+edit 791
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.171/32" 
+set dstaddr "ftp.truck.fourkites.com" 
+set action   accept
+set service  "ALL" 
+set nat src 
+next
+edit 793
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Acceso Sagarpa" 
+set dstaddr "2Skype Microsoft" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 5
+next
+edit 794
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.141.60.80/28" 
+set dstaddr "213.174.234.157"  "213.174.234.158"
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 5
+next
+edit 795
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.1.12.30"  "10.1.12.31"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 5
+next
+edit 796
+set srcintf "port3"
+set  dstintf  "port2"
+set srcaddr  "Linux/Oracle"  "Linux/Oracle/Update"
+set dstaddr "10.1.12.30"  "10.1.12.31"
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 5
+next
+edit 798
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "fonts.google.com"  "https://fonts.googleapis.com/"
+set action   accept
+set service  "HTTP" 
+set  nat src dip-id 5
+next
+edit 799
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.32.168/32" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 5
+next
+edit 804
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Any" 
+set dstaddr "Any" 
+set action   accept
+set service  "ICMP-ALL"  "NTP"
+set  nat src dip-id 5
+next
+edit 805
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "SAP1"  "SAP2"
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 5
+next
+edit 809
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "10.10.34.89" 
+set dstaddr "Any" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 5
+next
+edit 811
+set srcintf "port2"
+set  dstintf  "port3"
+set srcaddr  "Acceso Sagarpa" 
+set dstaddr "2Skype Microsoft" 
+set action   accept
+set service  "ALL" 
+set  nat src dip-id 13
+next
+end

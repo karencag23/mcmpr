@@ -1,0 +1,39 @@
+set policy id 597 from "Trust" to "Untrust"  "10.10.71.70/32" "192.168.66.80/32" "ANY" tunnel vpn "TelestockCAT_Guadalajara" id 0xe8 pair-policy 598 log 
+set policy id 566 from "Trust" to "Untrust"  "10.10.35.192/32" "SERVIDOR_PRODIGY_148.235.52.32/32" "Pto_110" nat src dip-id 4 permit log 
+set policy id 566
+set service "Pto_465"
+set service "Pto_587"
+set service "Pto_995"
+exit
+set policy id 801 from "Trust" to "Untrust"  "10.10.32.19" "Any" "9091" permit 
+set policy id 801 application "HTTP"
+set policy id 801
+set service "HTTPS"
+exit
+set policy id 514 from "Trust" to "Untrust"  "10.10.15.8" "mensajeria.telcel.com" "HTTPS" permit log 
+set policy id 514
+set src-address "10.10.31.105"
+set src-address "10.10.31.23"
+set src-address "10.10.31.24"
+set src-address "10.10.32.105"
+set src-address "10.10.32.129"
+set src-address "10.10.32.130"
+set src-address "10.10.33.75"
+set src-address "172.16.103.76"
+set service "Puerto-1522"
+set service "Puertos-23301, 23303"
+set service "SQL*Net V2"
+set service "APPLE-ICHAT"
+exit
+set policy id 484 from "Trust" to "Untrust"  "10.10.1.3" "194.39.131.34" "Sap Network-3298" permit log 
+set policy id 484
+set service "Saprouter-3299"
+exit
+set policy id 483 from "Trust" to "Untrust"  "10.10.250.0/24" "imap-mail.outlook.com" "Gmail-465" permit log 
+set policy id 483
+set dst-address "imap.gmail.com"
+set dst-address "smtp-mail.outlook.com"
+set dst-address "smtp.gmail.com"
+set service "gmail-587"
+set service "Gmail-993"
+exit

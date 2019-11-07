@@ -1,0 +1,2415 @@
+set policy id 812 name "IVONNE" from "Trust" to "Untrust"  "10.10.251.244" "Any" "ANY" nat src dip-id 13 permit log 
+set policy id 812 disable
+set policy id 812
+exit
+set policy id 810 name "TT 207180" from "Trust" to "Untrust"  "10.10.32.22" "Any" "SMTP" permit log 
+set policy id 810
+exit
+set policy id 390 from "Trust" to "Untrust"  "Any" "teksid.com.mx" "ANY" nat src dip-id 4 permit log 
+set policy id 390
+exit
+set policy id 808 name "TT204190" from "Trust" to "Untrust"  "10.10.32.224/32" "Any" "ANY" nat src permit log 
+set policy id 808
+exit
+set policy id 806 from "Trust" to "Untrust"  "10.10.251.65" "10.10.29.117<svgdldvtbc03>" "8411" permit log 
+set policy id 806
+set log session-init
+exit
+set policy id 803 from "Trust" to "Untrust"  "10.141.60.87 (Fibra_Sensora" "Any" "ANY" permit 
+set policy id 803
+exit
+set policy id 801 from "Trust" to "Untrust"  "10.10.32.19" "Any" "9091" permit 
+set policy id 801 application "HTTP"
+set policy id 801
+set service "HTTPS"
+exit
+set policy id 800 from "Trust" to "Untrust"  "10.10.32.19" "Any" "9090" deny 
+set policy id 800
+exit
+set policy id 586 from "Trust" to "Untrust"  "10.10.61.35 ftp IMEX" "lms.pilship.com" "FTP" permit log 
+set policy id 586
+set service "Puertos 20_21_22"
+set service "SFTP"
+set service "SSH"
+exit
+set policy id 663 from "Trust" to "Untrust"  "10.10.20.23" "Any" "ANY" nat src permit log 
+set policy id 663
+set src-address "10.10.32.132"
+set src-address "10.10.32.133"
+set src-address "10.10.54.52"
+set src-address "10.10.54.54"
+set src-address "10.10.61.22"
+exit
+set policy id 723 from "Trust" to "Untrust"  "Any" "208.67.24.124-mcrew22" "ANY" nat src permit log 
+set policy id 723
+set dst-address "208.67.24.125-mcrew22"
+set dst-address "eBOL - https://208.67.25.126"
+set dst-address "RC2 – https://208.67.25.80"
+set dst-address "ShipperConnect Yard not RCI - https://204.10.22.79"
+set dst-address "support.railconnect.com"
+exit
+set policy id 790 from "Trust" to "Untrust"  "10.10.32.241_ISE" "Any" "ANY" permit log 
+set policy id 790
+set src-address "10.10.32.242_ISE"
+exit
+set policy id 787 from "Trust" to "Untrust"  "10.10.29.91" "support.opmantek.com" "ANY" nat src permit log 
+set policy id 787
+exit
+set policy id 785 from "Trust" to "Untrust"  "servidor Hikivision-10.11.77.112" "Any" "ANY" permit log 
+set policy id 785
+exit
+set policy id 784 from "Trust" to "Untrust"  "10.10.32.147/255.255.255.255" "amazon.com" "ANY" permit log 
+set policy id 784
+exit
+set policy id 783 from "Trust" to "Untrust"  "Any" "187.218.237.130/32" "9251" nat src permit log 
+set policy id 783
+set dst-address "https://gmxtsas.mx/self-service"
+set service "HTTP"
+set service "HTTP-EXT"
+exit
+set policy id 782 from "Trust" to "Untrust"  "svcoxngo01-10.10.39.33" "cpan.org" "ANY" nat src dip-id 4 permit log 
+set policy id 782
+set dst-address "ftp.perl.org"
+set dst-address "perl.org"
+exit
+set policy id 781 from "Trust" to "Untrust"  "10.10.5.23/32 Enrique Chávez" "Any" "ANY" nat src permit log 
+set policy id 781
+exit
+set policy id 775 from "Trust" to "Untrust"  "10.11.250.0/23_Invitados" "Any" "ANY" permit traffic gbw 50000 mbw 50000
+set policy id 775
+exit
+set policy id 772 from "Trust" to "Untrust"  "Any" "www.google-analytics.com" "HTTPS" nat src permit log 
+set policy id 772
+exit
+set policy id 767 from "Trust" to "Untrust"  "10.10.31.35" "Any" "ANY" permit log 
+set policy id 767
+set src-address "10.10.32.199"
+set src-address "10.10.32.241_ISE"
+set src-address "10.10.32.242_ISE"
+set src-address "10.10.35.171"
+set src-address "10.10.35.202"
+set src-address "10.10.39.54"
+set src-address "10.10.39.55"
+set src-address "10.10.40.55"
+set src-address "10.10.40.56"
+set src-address "10.10.40.57"
+set src-address "10.10.40.58"
+set src-address "10.10.40.59"
+exit
+set policy id 745 from "Trust" to "Untrust"  "10.10.36.124" "Any" "ANY" nat src permit log 
+set policy id 745
+set src-address "10.10.36.141"
+set src-address "10.10.36.228"
+set src-address "10.10.36.233"
+set src-address "10.10.36.242"
+set src-address "10.10.36.243"
+set src-address "AP_Meraki"
+exit
+set policy id 706 name "10.10.251.244" from "Trust" to "Untrust"  "10.10.10.23" "Any" "ANY" permit log 
+set policy id 706
+set src-address "10.10.121.114"
+set src-address "10.10.153.66"
+set src-address "10.10.250.118/32"
+set src-address "10.10.250.12"
+set src-address "10.10.250.213"
+set src-address "10.10.251.145"
+set src-address "10.10.251.244"
+set src-address "10.10.29.131"
+set src-address "10.10.32.181/32"
+set src-address "10.10.32.37"
+set src-address "10.10.34.136"
+set src-address "10.10.34.166/32"
+set src-address "10.10.34.40"
+set src-address "10.10.35.172"
+set src-address "10.10.37.182"
+set src-address "10.10.40.240-ProxyMEX1"
+set src-address "10.10.40.241-ProxyMEX2"
+set src-address "10.10.40.242-ProxyVirtual"
+set src-address "10.10.61.32/32"
+set src-address "10.175.116.118/32"
+set src-address "Cyberark"
+exit
+set policy id 742 from "Trust" to "Untrust"  "Any" "www.openstreetmap.org" "ANY" nat src permit 
+set policy id 742
+exit
+set policy id 739 name "ftp" from "Trust" to "Untrust"  "10.10.251.244" "ftp02beta.2wglobal.com" "ANY" permit log 
+set policy id 739
+set src-address "10.10.32.252"
+set dst-address "ftp05.2wglobal.com"
+exit
+set policy id 736 name "ftp://epddownload.bmc.com" from "Trust" to "Untrust"  "Any" "ftpforepd:ma1nframe@epddownload.bmc.com" "ANY" permit 
+set policy id 736 disable
+set policy id 736
+exit
+set policy id 732 from "Trust" to "Untrust"  "10.10.61.35 ftp IMEX" "edib2b.oocl.com" "SFTP" nat src dip-id 4 permit log 
+set policy id 732
+set dst-address "edib2btest.oocl.com"
+set dst-address "ediftp.one-line.com"
+exit
+set policy id 730 from "Trust" to "Untrust"  "ASA_VALERO" "Any" "ANY" nat src dip-id 4 permit log 
+set policy id 730
+exit
+set policy id 728 from "Trust" to "Untrust"  "10.10.5.12" "Any" "ANY" nat src dip-id 11 permit log 
+set policy id 728
+set src-address "10.10.5.44"
+exit
+set policy id 717 from "Trust" to "Untrust"  "Any" "fecrwy.com" "ANY" nat src permit log 
+set policy id 717
+exit
+set policy id 679 from "Trust" to "Untrust"  "10.10.66.173/32" "FTP-Holland" "FTP" permit log 
+set policy id 679
+set src-address "10.10.68.109"
+set src-address "10.11.70.129"
+exit
+set policy id 714 name "Bloqueo_out_184.105.192.2" from "Trust" to "Untrust"  "Any" "184.105.192.2" "ANY" deny log 
+set policy id 714
+exit
+set policy id 704 from "Trust" to "Untrust"  "Any" "104.244.14.252/32" "ANY" deny 
+set policy id 704
+exit
+set policy id 697 from "Trust" to "Untrust"  "10.10.27.133 /32" "Any" "ANY" nat src dip-id 11 permit log 
+set policy id 697
+exit
+set policy id 693 from "Trust" to "Untrust"  "Any" "197.231.221.211" "ANY" deny 
+set policy id 693
+set dst-address "199.249.223.66"
+set dst-address "216.218.222.12"
+exit
+set policy id 675 from "Trust" to "Untrust"  "10.10.34.145/32" "148.202.167.48" "ANY" nat src dip-id 6 permit log 
+set policy id 675
+set src-address "10.10.35.235"
+set log session-init
+exit
+set policy id 652 from "Trust" to "Untrust"  "10.10.20.22_esa1" "Any" "DNS" permit log 
+set policy id 652
+set src-address "10.10.32.168-svcoxzim01"
+set src-address "10.10.32.169"
+set service "HTTP"
+set service "HTTPS"
+set service "ICMP-ANY"
+set service "SMTP"
+set service "TCP-110"
+set service "TCP/32137"
+set service "TRACEROUTE"
+exit
+set policy id 658 from "Trust" to "Untrust"  "10.175.116.125" "Any" "ANY" permit log 
+set policy id 658
+set src-address "10.175.116.43"
+set src-address "172.16.103.75/32"
+set log session-init
+exit
+set policy id 653 name "ADO_ACCESO TEMPORAL" from "Trust" to "Untrust"  "Any" "187.217.243.52" "ANY" nat src dip-id 6 permit log 
+set policy id 653
+set dst-address "ADO"
+exit
+set policy id 591 from "Trust" to "Untrust"  "10.10.35.28" "192.168.66.80/32" "ANY" tunnel vpn "telestock.28" id 0xe3 pair-policy 592 log 
+set policy id 591
+exit
+set policy id 593 from "Trust" to "Untrust"  "10.10.35.201/32" "192.168.66.80/32" "ANY" tunnel vpn "TelestockVending" id 0xe5 pair-policy 594 log 
+set policy id 593
+exit
+set policy id 595 from "Trust" to "Untrust"  "10.10.168.70/32" "192.168.66.80/32" "ANY" tunnel vpn "Telstock_CAT_Manzanillo" id 0xe7 pair-policy 596 log 
+set policy id 595
+exit
+set policy id 597 from "Trust" to "Untrust"  "10.10.71.70/32" "192.168.66.80/32" "ANY" tunnel vpn "TelestockCAT_Guadalajara" id 0xe8 pair-policy 598 log 
+set policy id 597
+exit
+set policy id 599 from "Trust" to "Untrust"  "10.10.236.70/32" "192.168.66.80/32" "ANY" tunnel vpn "TelestockCAT_Tepic-10.10.236.70" id 0xea pair-policy 600 log 
+set policy id 599
+exit
+set policy id 581 from "Trust" to "Untrust"  "10.10.34.132" "nspi37.railconnect.com" "ANY" nat src permit log 
+set policy id 581
+exit
+set policy id 579 from "Trust" to "Untrust"  "10.10.35.192/32" "Any" "ANY" permit log 
+set policy id 579
+exit
+set policy id 566 from "Trust" to "Untrust"  "10.10.35.192/32" "SERVIDOR_PRODIGY_148.235.52.32/32" "Pto_110" nat src dip-id 4 permit log 
+set policy id 566
+set service "Pto_465"
+set service "Pto_587"
+set service "Pto_995"
+exit
+set policy id 568 name "209.235.250.103_SPAM" from "Trust" to "Untrust"  "Any" "131.188.40.189" "ANY" deny log 
+set policy id 568
+set dst-address "209.235.250.103/32"
+set dst-address "chrome.java-api-update.com"
+set dst-address "landertok.site"
+set dst-address "viewclc.com"
+set dst-address "www.freecontent.stream"
+set dst-address "www.hibids10.com"
+exit
+set policy id 565 from "Trust" to "Untrust"  "Any" "132.245.0.0_Testbk" "ANY" deny log 
+set policy id 565 disable
+set policy id 565
+set dst-address "132.245.68.210_117994"
+exit
+set policy id 564 from "Trust" to "Untrust"  "Any" "120.130.140.210_CHINA" "ANY" deny log 
+set policy id 564
+exit
+set policy id 551 from "Trust" to "Untrust"  "FERROSUR-APN TELCEL-172.16.103.89/32" "APN TELCEL-FERROSUR-10.212.250.0/24" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xc4 pair-policy 550 log 
+set policy id 551
+exit
+set policy id 802 from "Untrust" to "Trust"  "edib2b.oocl.com" "10.10.61.35 ftp IMEX" "SFTP" permit 
+set policy id 802
+set src-address "edib2btest.oocl.com"
+set src-address "ediftp.one-line.com"
+exit
+set policy id 797 from "Untrust" to "Trust"  "lms.pilship.com" "10.10.61.35 ftp IMEX" "FTP" permit 
+set policy id 797
+set service "Puertos 20_21_22"
+set service "SFTP"
+set service "SSH"
+exit
+set policy id 792 name "TT#183356" from "Untrust" to "Trust"  "Any" "10.10.54.54" "ANY" permit log 
+set policy id 792
+exit
+set policy id 734 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.14)" "FTP" permit log 
+set policy id 734
+set service "ICMP-ANY"
+set service "TELNET"
+set service "TRACEROUTE"
+exit
+set policy id 715 name "Bloqueo_in_184.105.192.2" from "Untrust" to "Trust"  "184.105.192.2" "Any" "ANY" deny log 
+set policy id 715
+exit
+set policy id 694 from "Untrust" to "Trust"  "197.231.221.211" "Any" "ANY" deny 
+set policy id 694
+set src-address "199.249.223.66"
+set src-address "216.218.222.12"
+exit
+set policy id 692 from "Untrust" to "Trust"  "IPs_China" "Any" "ANY" deny log 
+set policy id 692
+exit
+set policy id 710 from "Untrust" to "Trust"  "china_3" "Any" "ANY" deny log 
+set policy id 710
+set src-address "IPs_China2"
+exit
+set policy id 707 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.43)" "HTTP" permit log 
+set policy id 707
+set service "HTTPS"
+set service "TCP-4248"
+set service "VP-8080"
+exit
+set policy id 662 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.13)" "ANY" permit log 
+set policy id 662
+exit
+set policy id 673 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.8)" "HTTP" permit log 
+set policy id 673
+set service "HTTPS"
+set service "ICMP-ANY"
+set service "PING"
+set service "pto_50000"
+set service "Saprouter-3299"
+exit
+set policy id 502 from "Untrust" to "Trust"  "IPS Bloqueadas C&C" "Any" "ANY" deny schedule "Seguridad" log 
+set policy id 502
+exit
+set policy id 290 from "Untrust" to "Trust"  "131.188.40.189" "Any" "ANY" deny log 
+set policy id 290
+set src-address "191.234.4.50-Malware"
+set src-address "74.125.1.19-google"
+set src-address "bvconline.com.ar"
+set src-address "chrome.java-api-update.com"
+set src-address "landertok.site"
+set src-address "viewclc.com"
+set src-address "www.freecontent.stream"
+set src-address "www.hibids10.com"
+exit
+set policy id 563 from "Untrust" to "Trust"  "120.130.140.210_CHINA" "Any" "ANY" deny log 
+set policy id 563
+set log session-init
+exit
+set policy id 458 from "Untrust" to "Trust"  "Any" "Any" "ICMP-ANY" deny log 
+set policy id 458
+set service "NBNAME"
+set service "SMB"
+exit
+set policy id 550 from "Untrust" to "Trust"  "APN TELCEL-FERROSUR-10.212.250.0/24" "FERROSUR-APN TELCEL-172.16.103.89/32" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xc4 pair-policy 551 log 
+set policy id 550
+exit
+set policy id 549 from "Trust" to "Untrust"  "FERROSUR-APN TELCEL-172.16.103.89/32" "APN TELCEL-FERROSUR-10.212.248.0/23" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xc5 pair-policy 548 log 
+set policy id 549
+exit
+set policy id 548 from "Untrust" to "Trust"  "APN TELCEL-FERROSUR-10.212.248.0/23" "FERROSUR-APN TELCEL-172.16.103.89/32" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xc5 pair-policy 549 log 
+set policy id 548
+exit
+set policy id 547 from "Trust" to "Untrust"  "FERROSUR-APN TELCEL-172.16.103.89/32" "APN TELCEL-FERROSUR-10.212.238.0/24" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xc6 pair-policy 546 log 
+set policy id 547
+exit
+set policy id 546 from "Untrust" to "Trust"  "APN TELCEL-FERROSUR-10.212.238.0/24" "FERROSUR-APN TELCEL-172.16.103.89/32" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xc6 pair-policy 547 log 
+set policy id 546
+exit
+set policy id 545 from "Trust" to "Untrust"  "FERROSUR-APN TELCEL-172.16.104.90/32" "APN TELCEL-FERROSUR-10.212.250.0/24" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xc7 pair-policy 544 log 
+set policy id 545
+exit
+set policy id 544 from "Untrust" to "Trust"  "APN TELCEL-FERROSUR-10.212.250.0/24" "FERROSUR-APN TELCEL-172.16.104.90/32" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xc7 pair-policy 545 log 
+set policy id 544
+exit
+set policy id 543 from "Trust" to "Untrust"  "FERROSUR-APN TELCEL-172.16.104.90/32" "APN TELCEL-FERROSUR-10.212.248.0/23" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xc8 pair-policy 542 log 
+set policy id 543
+exit
+set policy id 542 from "Untrust" to "Trust"  "APN TELCEL-FERROSUR-10.212.248.0/23" "FERROSUR-APN TELCEL-172.16.104.90/32" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xc8 pair-policy 543 log 
+set policy id 542
+exit
+set policy id 541 from "Trust" to "Untrust"  "FERROSUR-APN TELCEL-172.16.104.90/32" "APN TELCEL-FERROSUR-10.212.238.0/24" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xca pair-policy 540 log 
+set policy id 541
+exit
+set policy id 540 from "Untrust" to "Trust"  "APN TELCEL-FERROSUR-10.212.238.0/24" "FERROSUR-APN TELCEL-172.16.104.90/32" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xca pair-policy 541 log 
+set policy id 540
+exit
+set policy id 537 from "Trust" to "Untrust"  "FERROSUR-APN TELCEL-10.10.64.70/32" "APN TELCEL-FERROSUR-10.212.250.0/24" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xcb pair-policy 536 log 
+set policy id 537
+exit
+set policy id 536 from "Untrust" to "Trust"  "APN TELCEL-FERROSUR-10.212.250.0/24" "FERROSUR-APN TELCEL-10.10.64.70/32" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xcb pair-policy 537 log 
+set policy id 536
+exit
+set policy id 533 from "Trust" to "Untrust"  "FERROSUR-APN TELCEL-10.10.64.70/32" "APN TELCEL-FERROSUR-10.212.248.0/23" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xcc pair-policy 532 log 
+set policy id 533
+exit
+set policy id 532 from "Untrust" to "Trust"  "APN TELCEL-FERROSUR-10.212.248.0/23" "FERROSUR-APN TELCEL-10.10.64.70/32" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xcc pair-policy 533 log 
+set policy id 532
+exit
+set policy id 530 from "Untrust" to "Trust"  "APN TELCEL-FERROSUR-10.212.238.0/24" "FERROSUR-APN TELCEL-10.10.64.70/32" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xcd pair-policy 531 log 
+set policy id 530
+exit
+set policy id 531 from "Trust" to "Untrust"  "FERROSUR-APN TELCEL-10.10.64.70/32" "APN TELCEL-FERROSUR-10.212.238.0/24" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0xcd pair-policy 530 log 
+set policy id 531
+exit
+set policy id 539 from "Trust" to "Untrust"  "FERROSUR-APN TELCEL-10.10.32.70/32" "APN TELCEL-FERROSUR-10.212.250.0/24" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0x10a pair-policy 538 log 
+set policy id 539
+exit
+set policy id 535 from "Trust" to "Untrust"  "FERROSUR-APN TELCEL-10.10.32.70/32" "APN TELCEL-FERROSUR-10.212.248.0/23" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0x10b pair-policy 534 log 
+set policy id 535
+exit
+set policy id 538 from "Untrust" to "Trust"  "APN TELCEL-FERROSUR-10.212.250.0/24" "FERROSUR-APN TELCEL-10.10.32.70/32" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0x10a pair-policy 539 log 
+set policy id 538
+exit
+set policy id 534 from "Untrust" to "Trust"  "APN TELCEL-FERROSUR-10.212.248.0/23" "FERROSUR-APN TELCEL-10.10.32.70/32" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0x10b pair-policy 535 log 
+set policy id 534
+exit
+set policy id 529 from "Trust" to "Untrust"  "FERROSUR-APN TELCEL-10.10.32.70/32" "APN TELCEL-FERROSUR-10.212.238.0/24" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0x10c pair-policy 528 log 
+set policy id 529
+exit
+set policy id 528 from "Untrust" to "Trust"  "APN TELCEL-FERROSUR-10.212.238.0/24" "FERROSUR-APN TELCEL-10.10.32.70/32" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0x10c pair-policy 529 log 
+set policy id 528
+exit
+set policy id 415 from "Trust" to "Untrust"  "Any" "Any" "DNS" permit log traffic pbw 1500
+set policy id 415
+exit
+set policy id 523 from "Trust" to "Untrust"  "10.10.0.0/16" "VPN New York-149.244.179.0/24" "ANY" tunnel vpn "VPN New York-149.244.179/24a" id 0x9a pair-policy 522 log 
+set policy id 523
+exit
+set policy id 501 from "Untrust" to "dmz2"  "Bloqueospam" "Any" "ANY" deny schedule "Seguridad" log 
+set policy id 501
+set src-address "IPS Bloqueadas C&C"
+exit
+set policy id 570 name "209.235.250.103_SPAM1" from "Untrust" to "dmz2"  "209.235.250.103/32" "Any" "ANY" deny log 
+set policy id 570
+exit
+set policy id 524 from "Untrust" to "Trust"  "VPN New York-149.244.179.0/24" "190.1.0.0/16" "ANY" tunnel vpn "VPN New York-149.244.179/24b" id 0x9b pair-policy 525 log 
+set policy id 524
+exit
+set policy id 522 from "Untrust" to "Trust"  "VPN New York-149.244.179.0/24" "10.10.0.0/16" "ANY" tunnel vpn "VPN New York-149.244.179/24a" id 0x9a pair-policy 523 log 
+set policy id 522
+exit
+set policy id 519 from "Trust" to "Untrust"  "10.10.0.0/16" "VPN-NY-WF-10.68.4.0" "ANY" tunnel vpn "VPN New York-10.68.4.0/23b" id 0x99 pair-policy 518 log 
+set policy id 519
+exit
+set policy id 518 from "Untrust" to "Trust"  "VPN-NY-WF-10.68.4.0" "10.10.0.0/16" "ANY" tunnel vpn "VPN New York-10.68.4.0/23b" id 0x99 pair-policy 519 log 
+set policy id 518
+exit
+set policy id 517 from "Trust" to "Untrust"  "190.1.0.0/16" "VPN-NY-WF-10.68.4.0" "ANY" tunnel vpn "VPN New York-10.68.4.0/23" id 0x98 pair-policy 516 log 
+set policy id 517
+exit
+set policy id 516 from "Untrust" to "Trust"  "VPN-NY-WF-10.68.4.0" "190.1.0.0/16" "ANY" tunnel vpn "VPN New York-10.68.4.0/23" id 0x98 pair-policy 517 log 
+set policy id 516
+exit
+set policy id 269 from "Trust" to "Untrust"  "10.10.32.0/21" "VPN RMI US-192.168.100.0/24" "ANY" tunnel vpn "VPN RMI USA 10.10.32.0/21" id 0x4d pair-policy 270 log count traffic gbw 512
+set policy id 269
+exit
+set policy id 521 from "Trust" to "Untrust"  "10.10.182.7 - DOC-TORREON-A" "209.251.51.192/26 - Railcomm_B" "HTTP" permit log traffic pbw 1500
+set policy id 521
+set src-address "10.10.182.8 - DOC-TORREON-B"
+set src-address "10.10.182.9 - DOC-TORREON-C"
+set src-address "10.10.40.105- ILO"
+set src-address "172.16.112.234-DOC-SERVER-D"
+set src-address "172.16.113.230_DOC-SERVER-A"
+set src-address "172.16.113.231-DOC-SERVER-B"
+set src-address "172.16.113.232-DOC-SERVER-C"
+set src-address "172.16.113.240 - DOC-SERVER-A"
+set src-address "172.16.113.242 - DOC-SERVER-B"
+set src-address "172.16.113.246 - DOC-SERVER-C"
+set dst-address "69.195.39.192/26 - Railcomm_A"
+set service "HTTPS"
+exit
+set policy id 457 from "Trust" to "Untrust"  "Equipos Redes TI_t" "Any" "ANY" permit log 
+set policy id 457
+exit
+set policy id 515 name "Akamai Red 23.75.219.0/24" from "Trust" to "Untrust"  "10.10.0.0/16" "108.161.147.0" "3478" permit log traffic
+set policy id 515
+set src-address "10.175.116.0-LAN_WiWork_FXE"
+set src-address "10.70.209.0/25"
+set src-address "172.16.0.0/16"
+set src-address "Corporativo - 10.10.1.0/24"
+set src-address "Corporativo - 10.10.2.0/24"
+set src-address "Guadalajara - 10.10.73.0/24"
+set src-address "Hermosillo-10.10.129.0/24"
+set src-address "Hermosillo-10.10.130.0/24"
+set src-address "Mexicali - 10.10.231.0/24"
+set src-address "Monterrey - (Escobedo) 10.10.3.0/24"
+set src-address "Monterrey - 10.10.146./24"
+set src-address "Nogales - 10.10.184.0/25"
+set dst-address "199.231.78.0"
+set dst-address "209.206.48.0"
+set dst-address "64.62.142.12"
+set dst-address "AKAMAI - 23.40.20.0/24"
+set dst-address "AKAMAI - 23.63.109.0/24"
+set dst-address "AKAMAI - 23.76.0.0/16"
+set dst-address "amazon_192.168.1.80/32"
+set dst-address "Amazon_52.23.0.0/16"
+set dst-address "Microsoft - 13.104.0.0/14"
+set dst-address "Microsoft - 13.64.0.0/11"
+set dst-address "Microsoft - 13.96.0.0/13"
+set dst-address "MICROSOFT-64.4.0.0"
+set dst-address "Microsoft-65.52.0.0/14"
+set dst-address "Office 23.76.2.70/32"
+set dst-address "Office 365 23.75.0.0/16"
+set dst-address "Office 365- 64.4.11.42/32"
+set dst-address "Office 365- 93.184.215.200/32"
+set dst-address "Office 365-132.245.0.0/16"
+set dst-address "Office 365-134.170.0.0/16"
+set dst-address "Office 365-191.238.33.50/32"
+set dst-address "Office 365-201.149.60.0/24"
+set dst-address "Office 365-40.97.108.0/24"
+set dst-address "Office 365-40.97.155.0/24"
+set dst-address "Office 365-65.54.54.128/28"
+set dst-address "Office 365-65.55.121.128/27"
+set dst-address "Office 365-65.55.127.0/24"
+set dst-address "Verizon – 72.21.91.0/24"
+set dst-address "2Skype Microsoft"
+set dst-address "Grp_Skype"
+set dst-address "Segmentos_Microsoft"
+set service "7351"
+set service "7734"
+set service "7752"
+set service "Correo-ferrosur"
+set service "HTTP"
+set service "HTTPS"
+set service "NTP"
+set service "Pto-5223"
+set service "PTO3478-3481UDP"
+set service "Pto50000-59999"
+set service "Puerto_4172"
+set service "TCP-110"
+set service "TCP-25"
+set service "APPLE-ICHAT"
+set log session-init
+exit
+set policy id 514 from "Trust" to "Untrust"  "10.10.15.8" "mensajeria.telcel.com" "HTTPS" permit log 
+set policy id 514
+set src-address "10.10.31.105"
+set src-address "10.10.31.23"
+set src-address "10.10.31.24"
+set src-address "10.10.32.105"
+set src-address "10.10.32.129"
+set src-address "10.10.32.130"
+set src-address "10.10.33.75"
+set src-address "172.16.103.76"
+set service "Puerto-1522"
+set service "Puertos-23301, 23303"
+set service "SQL*Net V2"
+set service "APPLE-ICHAT"
+exit
+set policy id 513 from "Trust" to "Untrust"  "10.10.250.58" "194.140.170.152" "POP3" permit log 
+set policy id 513
+set service "SMTP"
+exit
+set policy id 511 from "Trust" to "Untrust"  "10.20.103.2" "200.66.69.29" "ANY" permit log 
+set policy id 511
+exit
+set policy id 510 from "Trust" to "Untrust"  "Any" "187.236.11.244_AS400-IBM-Legaria" "ANY" permit log 
+set policy id 510
+set dst-address "69.58.254.116/32"
+set log session-init
+exit
+set policy id 508 name "Conexiones DVR" from "Trust" to "Untrust"  "Mvaldez" "189.135.0.0/16" "ANY" permit log 
+set policy id 508
+set dst-address "199.16.156.21"
+set dst-address "199.16.156.38"
+set dst-address "199.96.57.7"
+set dst-address "201.103.0.0/16"
+set dst-address "93.184.216.146"
+set dst-address "impulso_pedagogico_3"
+set dst-address "impulsopedagogico.com"
+set dst-address "ipmalisos.redirectme.net"
+set dst-address "Segmento Infinitums"
+set dst-address "Uninet-Infinitums-impuso pedagogico"
+exit
+set policy id 503 from "Trust" to "Untrust"  "10.10.40.35" "Any" "ANY" permit log 
+set policy id 503
+exit
+set policy id 500 from "Trust" to "Untrust"  "Serv-SAP-IMEX" "Any" "ANY" permit log 
+set policy id 500
+exit
+set policy id 499 from "Trust" to "Untrust"  "10.10.1.22" "212.49.145.0/24" "HTTPS" permit log 
+set policy id 499
+set src-address "10.10.1.23"
+set src-address "10.10.1.26"
+set src-address "10.10.129.0/24"
+set src-address "10.10.130.0/24"
+set src-address "10.10.146.0/24"
+set src-address "10.10.2.0/24"
+set src-address "10.10.212.0/24"
+set src-address "10.10.221.0/24"
+set src-address "10.10.231.0/24"
+set src-address "10.10.234.0/24"
+set src-address "10.10.3.0/24"
+set src-address "10.10.73.0/24"
+exit
+set policy id 498 from "Trust" to "Untrust"  "Any" "Infosel-200.57.83.30" "HTTP" permit log 
+set policy id 498
+set service "Puerto-5553"
+exit
+set policy id 495 from "Trust" to "Untrust"  "10.10.32.213/32" "167.57.13.235_IndiciumTimbradoWS" "FTP" permit log traffic pbw 1500
+set policy id 495
+set src-address "Facturación Electrónica Producción-10.10.32.213"
+set src-address "Facturación Electrónica-10.10.32.43 (svrcorfac01)"
+set src-address "Facturación Electrónica-10.10.32.44(svrcorfac02)"
+set src-address "Facturación Electrónica-10.10.32.45"
+set src-address "Facturación Electrónica-10.10.32.46"
+set dst-address "Comercio-digital_1"
+set dst-address "Comercio-digital_2"
+set dst-address "digitalinvoicecfdi.com.mx"
+set dst-address "http://pruebas.comercio-digital.mx/retenciones/timbrar.asmx"
+set dst-address "https://cancela.comercio-digital.mx/cancela3/cancelarUuid"
+set dst-address "indicium.comercio-digital.mx/wsx/cfdi.svc"
+set dst-address "indicium.expidetufactura.com.mx"
+set dst-address "Pruebas.comercio-digital_1"
+set dst-address "Pruebas.comercio-digital_2"
+set dst-address "rayo.wf.com.mx"
+set dst-address "Soporte-indiciumsolutions.com-75.126.23.206"
+set dst-address "Timbrado-108.168.130.12"
+set dst-address "Sitios facturación electrónica"
+set service "HTTP"
+set service "HTTPS"
+set service "Puerto-4042"
+set service "Puerto-8443"
+exit
+set policy id 494 from "Trust" to "Untrust"  "Any" "200.52.78.27" "ANY" nat src permit log 
+set policy id 494
+exit
+set policy id 492 from "Trust" to "Untrust"  "Any" "www.interjet.com.mx" "ANY" nat src dip-id 7 permit log traffic pbw 1500
+set policy id 492
+exit
+set policy id 488 name "Prueba" from "Trust" to "Untrust"  "10.10.250.231" "Any" "ANY" permit log traffic pbw 1500
+set policy id 488 disable
+set policy id 488
+exit
+set policy id 489 from "Trust" to "Untrust"  "10.10.250.28/32" "Any" "POP3" permit log 
+set policy id 489
+set service "SMTP"
+exit
+set policy id 490 from "Trust" to "Untrust"  "10.10.250.28/32" "Any" "ANY" deny log 
+set policy id 490
+exit
+set policy id 487 from "Trust" to "Untrust"  "10.10.34.98" "ahmftp.honda.com" "SFTP" permit log 
+set policy id 487
+exit
+set policy id 485 name "ssid-ad" from "Trust" to "Untrust"  "10.10.27.0/24" "Any" "ANY" permit log 
+set policy id 485
+exit
+set policy id 484 from "Trust" to "Untrust"  "10.10.1.3" "194.39.131.34" "Sap Network-3298" permit log 
+set policy id 484
+set service "Saprouter-3299"
+exit
+set policy id 483 from "Trust" to "Untrust"  "10.10.250.0/24" "imap-mail.outlook.com" "Gmail-465" permit log 
+set policy id 483
+set dst-address "imap.gmail.com"
+set dst-address "smtp-mail.outlook.com"
+set dst-address "smtp.gmail.com"
+set service "gmail-587"
+set service "Gmail-993"
+exit
+set policy id 481 from "Untrust" to "dmz2"  "Any" "Any" "CONCENTRADOR_VPN" permit log 
+set policy id 481
+set service "HTTPS"
+set service "ICMP-ANY"
+set service "Puerto-4433"
+set service "SNPP-444"
+set service "SSH"
+exit
+set policy id 569 name "209.235.250.103_SPAM2" from "dmz2" to "Untrust"  "Any" "209.235.250.103/32" "ANY" deny log 
+set policy id 569
+exit
+set policy id 479 from "dmz2" to "Untrust"  "192.168.10.13" "204.10.22.0/24_Texas Pacifico net2" "FTP" nat src permit log 
+set policy id 479
+set dst-address "208.67.24.0/22_Texas Pacifico net1"
+set dst-address "209.203.79.67-dev.glovis.com"
+set dst-address "ftp.glovismx.com"
+set dst-address "sftp4.successfactors.com"
+set service "SFTP"
+exit
+set policy id 478 from "Trust" to "Untrust"  "sapdes02-10.10.1.118" "mail.eclipsedc.com.mx" "POP3" permit log 
+set policy id 478
+set service "pto_2525_smtp"
+exit
+set policy id 475 from "Trust" to "Untrust"  "AD_IMEX_GOOGLE" "apps-apis.google.com" "HTTP" permit log 
+set policy id 475
+set dst-address "apps-apis.l.google.com"
+set dst-address "Syn_Google1"
+set dst-address "Syn_Google2"
+set service "HTTPS"
+set service "IMAP4/SSL"
+set service "POP3/SSL"
+set service "SMTP/SSL"
+exit
+set policy id 470 from "Trust" to "Untrust"  "10.10.250.76" "www.jonima.com.mx" "FTP" permit log 
+set policy id 470 disable
+set policy id 470
+set src-address "10.10.35.76"
+exit
+set policy id 469 from "Trust" to "Untrust"  "10.10.250.145" "Any" "ICMP-ANY" permit log 
+set policy id 469
+set src-address "10.10.250.204"
+exit
+set policy id 468 from "Trust" to "Untrust"  "10.10.32.171_svcoxbw01" "189.210.196.22" "2222" permit log 
+set policy id 468
+set src-address "10.10.32.244"
+set src-address "10.10.32.24_svcoxctm01"
+set src-address "10.10.32.252"
+set dst-address "209.164.32.46"
+set dst-address "ahmftp.honda.com"
+set dst-address "ftp.glovismx.com"
+set dst-address "ftp.iclfca.com"
+set dst-address "ftp.iclmazda.com"
+set dst-address "ftp.iclnna.com"
+set dst-address "ftp.icltls.com"
+set dst-address "ftp.icltlsuat.com"
+set dst-address "ftp.qts.com"
+set dst-address "mft.honda.com"
+set dst-address "sftp.wi-tronix.com"
+set service "FTP"
+set service "HTTPS"
+set service "SFTP"
+set service "SSH"
+exit
+set policy id 465 from "Trust" to "Untrust"  "BacSoft AEI-10.10.32.70" "timobile.dyndns.info" "FTP" permit schedule "Temporal-BacSoft" log 
+set policy id 465
+exit
+set policy id 472 name "APN-TELCEL" from "Untrust" to "Trust"  "APN TELCEL-10.202.116.0/22" "MIP(192.168.2.117)" "Puertos 20_21_22" nat src permit log 
+set policy id 472 disable
+set policy id 472
+set src-address "TELCEL APN-10.205.140.0/22"
+set dst-address "MIP(192.168.2.118)"
+set service "Puertos Telcel 1"
+set service "Puertos Telcel 2"
+exit
+set policy id 471 name "APN-TELCEL" from "Untrust" to "Trust"  "APN TELCEL-10.202.116.0/22" "MIP(192.168.2.116)" "Puertos 20_21_22" nat src permit log 
+set policy id 471 disable
+set policy id 471
+set src-address "TELCEL APN-10.205.140.0/22"
+set service "Puertos Telcel 1"
+set service "Puertos Telcel 2"
+exit
+set policy id 463 name "APN-TELCEL" from "Untrust" to "Trust"  "TELCEL APN-10.205.140.0/22" "MIP(192.168.2.112)" "Puertos 20_21_22" nat src permit log 
+set policy id 463
+set service "Puertos Telcel 1"
+set service "Puertos Telcel 2"
+exit
+set policy id 224 name "Tunel VPN Telcel" from "Untrust" to "Trust"  "TELCEL APN-10.205.140.0/22" "TELCEL_ACCESO_APN" "Puertos 20_21_22" permit log count 
+set policy id 224
+set service "Puertos Telcel 1"
+set service "Puertos Telcel 2"
+exit
+set policy id 437 name "Tunel VPN Telcel" from "Untrust" to "Trust"  "APN TELCEL-10.202.116.0/22" "TELCEL_ACCESO_APN" "Puertos 20_21_22" permit log count 
+set policy id 437 disable
+set policy id 437
+set service "Puertos Telcel 1"
+set service "Puertos Telcel 2"
+exit
+set policy id 410 from "Untrust" to "Trust"  "VPN-BMCR-192.168.105.24/29" "10.10.42.11" "LDAP" tunnel vpn "GATEWAY-Remedy BMC-1" id 0x7d pair-policy 411 log 
+set policy id 410
+exit
+set policy id 408 from "Untrust" to "Trust"  "VPN-BMCR-192.168.105.24/29" "10.10.42.30" "POP3" tunnel vpn "GATEWAY-Remedy BMC-2" id 0x7c pair-policy 409 log 
+set policy id 408
+set service "Puerto-495"
+set service "SMTP"
+set service "SMTP/SSL"
+exit
+set policy id 354 from "Untrust" to "Trust"  "Dial-Up VPN" "Any" "ANY" tunnel l2tp "Tunnel_Radius" log 
+set policy id 354 disable
+set policy id 354
+exit
+set policy id 461 from "Trust" to "Untrust"  "10.10.34.86_Pc-ahernandezc" "8.20.181.61_VpnIpSec_BMC_Marlboro" "pto_10000" permit log 
+set policy id 461
+exit
+set policy id 460 name "WhatsUp" from "Trust" to "Untrust"  "10.10.250.0/24" "50.22.231.41" "HTTP-EXT" permit log 
+set policy id 460 disable
+set policy id 460
+set dst-address "bin-short.whatsapp.net"
+set service "HTTPS"
+set service "Puerto-3689"
+set service "Puerto-5222"
+set service "Puerto-5223"
+set service "Puerto-5228"
+set service "Puerto-5353"
+exit
+set policy id 459 from "Trust" to "Untrust"  "Any" "ftp2.railconnect.com" "FTP" permit log 
+set policy id 459
+set log session-init
+exit
+set policy id 474 name "Tunel VPN Telcel" from "Trust" to "Untrust"  "10.10.32.50" "APN TELCEL-10.202.116.0/22" "Puertos 20_21_22" permit log count 
+set policy id 474 disable
+set policy id 474
+set dst-address "TELCEL APN-10.205.140.0/22"
+set service "Puertos Telcel 1"
+set service "Puertos Telcel 2"
+exit
+set policy id 473 name "Tunel VPN Telcel" from "Trust" to "Untrust"  "NAT-10.10.31.39" "APN TELCEL-10.202.116.0/22" "Puertos 20_21_22" permit log count 
+set policy id 473 disable
+set policy id 473
+set dst-address "TELCEL APN-10.205.140.0/22"
+set service "Puertos Telcel 1"
+set service "Puertos Telcel 2"
+exit
+set policy id 464 name "Tunel VPN Telcel" from "Trust" to "Untrust"  "NAT-172.16.103.91" "APN TELCEL-10.202.116.0/22" "Puertos 20_21_22" permit log count 
+set policy id 464 disable
+set policy id 464
+set dst-address "TELCEL APN-10.205.140.0/22"
+set service "Puertos Telcel 1"
+set service "Puertos Telcel 2"
+exit
+set policy id 223 name "Tunel VPN Telcel" from "Trust" to "Untrust"  "TELCEL_ACCESO_APN" "TELCEL APN-10.205.140.0/22" "Puertos 20_21_22" permit log count 
+set policy id 223
+set service "Puertos Telcel 1"
+set service "Puertos Telcel 2"
+exit
+set policy id 438 name "Tunel VPN Telcel" from "Trust" to "Untrust"  "TELCEL_ACCESO_APN" "APN TELCEL-10.202.116.0/22" "Puertos 20_21_22" permit log count 
+set policy id 438 disable
+set policy id 438
+set service "Puertos Telcel 1"
+set service "Puertos Telcel 2"
+exit
+set policy id 476 from "Trust" to "Untrust"  "10.10.32.39/32" "66.11.7.16/32" "FTP" permit log 
+set policy id 476
+exit
+set policy id 454 from "Trust" to "Untrust"  "Rebeca Galindo-10.10.37.197" "189.226.73.162" "Pto 8000 TCP" permit log traffic pbw 1500
+set policy id 454
+exit
+set policy id 453 from "Trust" to "Untrust"  "Big-Ip-monitor" "Any" "DNS" permit log 
+set policy id 453
+set service "HTTP"
+set service "ICMP-ANY"
+exit
+set policy id 444 from "Trust" to "Untrust"  "Any" "laseritsconline.com/DirectAProveedores" "Puerto-Holcim Apasco" permit log 
+set policy id 444
+exit
+set policy id 413 from "dmz2" to "Untrust"  "192.168.10.5/32" "Any" "DNS" nat src permit log 
+set policy id 413
+exit
+set policy id 439 from "dmz2" to "Untrust"  "192.168.10.14" "Any" "DNS" nat src permit log 
+set policy id 439
+set service "HTTP"
+set service "HTTPS"
+set service "ICMP-ANY"
+set service "ICMP-INFO"
+set service "NTP"
+set service "SMTP"
+set service "SSH"
+set service "TRACEROUTE"
+exit
+set policy id 435 from "Trust" to "Untrust"  "svcoxcarh01-10.10.32.13" "ftp2.railconnect.com" "FTP" permit log 
+set policy id 435
+exit
+set policy id 434 from "Trust" to "Untrust"  "iPad-ifranklin-10.10.250.88" "pop.prodigy.net.mx" "POP3" permit log 
+set policy id 434 disable
+set policy id 434
+set src-address "iPhone-ifranklin-10.10.250.87"
+set src-address "Mac-ifranklin-10.10.250.86"
+set dst-address "smtp.prodigy.net.mx"
+set service "POP3/SSL"
+set service "SMTP"
+set service "SMTP/SSL"
+exit
+set policy id 433 from "Trust" to "Untrust"  "IP phones-Imex" "Any" "ANY" permit log 
+set policy id 433
+exit
+set policy id 427 from "Trust" to "Untrust"  "10.10.33.72" "Any" "HTTP" permit log 
+set policy id 427
+set src-address "10.10.33.73"
+set src-address "Portal SAP Pro-10.10.33.96"
+set src-address "Portal SAP Pro-10.10.33.97"
+set service "HTTPS"
+exit
+set policy id 426 from "Trust" to "Untrust"  "10.10.1.24" "10.255.132.17" "FTP" permit log 
+set policy id 426
+set src-address "Host_10.10.61.35"
+set dst-address "12.191.195.66"
+set dst-address "148.245.62.85"
+set dst-address "173.227.95.204"
+set dst-address "174.143.212.203"
+set dst-address "174.36.134.128"
+set dst-address "185.21.133.157-VMODAL"
+set dst-address "187.237.234.195"
+set dst-address "190.143.117.2_Widetech_1"
+set dst-address "193.163.248.25"
+set dst-address "193.163.248.28/32"
+set dst-address "193.17.48.215-Hapag-Lloyd AG"
+set dst-address "193.17.48.216 - Hapag-Lloyd AG"
+set dst-address "194.9.166.145-Hapag-Lloyd AG"
+set dst-address "194.9.166.146-Hapag-Lloyd AG"
+set dst-address "198.58.80.94"
+set dst-address "204.232.130.226_Widetech 2"
+set dst-address "207.106.188.251"
+set dst-address "207.211.89.200"
+set dst-address "207.97.206.102_Widetech 3"
+set dst-address "210.65.198.133"
+set dst-address "216.111.234.115"
+set dst-address "216.111.234.116"
+set dst-address "216.54.111.217"
+set dst-address "23.91.123.124"
+set dst-address "57.77.23.92-cma-cgm.com"
+set dst-address "63.240.116.74 - EVERGREEN tpegw001.shipmentchain.com"
+set dst-address "63.254.154.250"
+set dst-address "63.254.154.251"
+set dst-address "65.200.132.15"
+set dst-address "65.200.132.39"
+set dst-address "CMI-63.138.243.68/32"
+set dst-address "CMI-64.22.152.164/32"
+set dst-address "CMI-66.77.30.68/32"
+set dst-address "edi-xfr.usa.cma-cgm.com"
+set dst-address "edi.gtgs.net"
+set dst-address "edi.gtgs.net-69.64.161.46"
+set dst-address "edi.maerskline.com"
+set dst-address "ediftp.cosco-usa.com"
+set dst-address "ediftp.mol-it.com"
+set dst-address "ftp.usa.cma-cgm.com"
+set dst-address "ftpham04.hamburgsud.com"
+set dst-address "ibtsus.hmm21.com"
+set dst-address "shipmentchain.com"
+set dst-address "shipmentonline.com"
+set dst-address "XPO/Pacer1"
+set dst-address "XPO/Pacer2"
+set dst-address "XPO/Pacer3"
+set dst-address "XPO/Pacer4"
+set dst-address "XPO/Pacer5"
+set service "SFTP"
+exit
+set policy id 425 from "Trust" to "Untrust"  "SmartCare-10.10.40.14" "Any" "ANY" permit log 
+set policy id 425
+exit
+set policy id 424 from "Trust" to "Untrust"  "Pool Self Ip F5" "ebmx.extra.chrysler.com" "FTP" permit log 
+set policy id 424
+set dst-address "ftp.transentric.com"
+set dst-address "ftp2.sat.gob.mx"
+set service "HTTPS"
+exit
+set policy id 423 from "Trust" to "Untrust"  "BacSoft AEI-10.10.32.70" "187.237.233.124" "FTP" permit log 
+set policy id 423
+exit
+set policy id 419 from "Trust" to "Untrust"  "10.10.32.75" "alpha.watchdogtracking.com" "FTP" permit log 
+set policy id 419
+set src-address "10.10.32.76"
+set service "HTTP"
+exit
+set policy id 418 from "Trust" to "Untrust"  "10.10.224.0" "200.53.155.0-Pago_Santander" "HTTPS" permit log 
+set policy id 418
+set src-address "10.10.32.142_svcoxapt01"
+set src-address "10.10.32.143_svcoxapt02"
+set src-address "10.10.32.144_svcoxapt03"
+set src-address "10.10.32.145_svcoxapt04"
+set src-address "Vista SAP PRO"
+set src-address "Vista SAP QA"
+set dst-address "ebmx.extra.chrysler.com"
+set dst-address "m.mitec.com.mx"
+set dst-address "ssl.e-pago.com.mx"
+set dst-address "ssl2.e-pago.com.mx"
+set dst-address "vip.e-pago.com.mx"
+set dst-address "vip2.e-pago.com.mx"
+exit
+set policy id 417 from "Trust" to "Untrust"  "10.10.32.142_svcoxapt01" "ftp.transentric.com" "FTP" permit log 
+set policy id 417
+set src-address "10.10.32.143_svcoxapt02"
+set src-address "10.10.32.144_svcoxapt03"
+set src-address "10.10.32.145_svcoxapt04"
+set src-address "Vista SAP PRO"
+set src-address "Vista SAP QA"
+exit
+set policy id 406 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.23)" "FTP" permit log 
+set policy id 406
+set service "HTTP"
+set service "ICMP-ANY"
+set service "TELNET"
+set service "VNC"
+exit
+set policy id 407 from "Trust" to "Untrust"  "svrcorfacpro-10.10.32.46" "ftp2.sat.gob.mx" "FTP" permit log 
+set policy id 407
+set src-address "SVRCORFACQAS-10.10.32.45"
+exit
+set policy id 401 from "Trust" to "Untrust"  "Acceso Sagarpa" "200.57.159.17/32" "ICMP-ANY" permit log 
+set policy id 401
+set service "SAGARPA"
+exit
+set policy id 400 from "Trust" to "Untrust"  "Any" "edcidse.com.mx" "ANY" permit log 
+set policy id 400
+set dst-address "fiestarewards.com"
+set dst-address "fiestarewards.holabye.com"
+set dst-address "idse.imss.gob.mx"
+set dst-address "imss.gob.mx"
+set dst-address "maps.qlikcloud.com"
+exit
+set policy id 399 from "Trust" to "Untrust"  "10.10.34.78" "FTP" "FTP" permit log 
+set policy id 399
+set service "SSH"
+exit
+set policy id 398 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.45)" "ICMP-ANY" permit log 
+set policy id 398
+set service "PING"
+set service "TELNET"
+set service "TRACEROUTE"
+exit
+set policy id 397 from "Trust" to "Untrust"  "10.0.0.0/8" "187.237.233.124" "449" permit log 
+set policy id 397
+set src-address "172.16.0.0/16"
+set service "8476"
+set service "TELNET"
+exit
+set policy id 396 from "Trust" to "Untrust"  "10.10.33.75" "ftp://www.grupodos.com.mx/" "FTP" permit log 
+set policy id 396
+exit
+set policy id 394 from "Trust" to "Untrust"  "Barracuda_Imex-10.10.40.19" "Any" "DNS" permit log 
+set policy id 394
+set service "HTTP"
+set service "NTP"
+set service "SMTP"
+set service "SSH"
+exit
+set policy id 392 name "ts 49677" from "Trust" to "Untrust"  "10.10.168.46" "www.ssamexico.com" "ANY" permit log 
+set policy id 392
+set src-address "10.10.225.46"
+exit
+set policy id 391 name "ts 49677" from "Trust" to "Untrust"  "10.10.37.196" "infotel.com.mx" "POP3" permit log 
+set policy id 391
+set src-address "Rebeca Galindo-10.10.37.197"
+set service "SMTP_secure_465"
+exit
+set policy id 395 from "Trust" to "Untrust"  "10.10.1.24" "data.interasset.com" "FTP" permit log 
+set policy id 395
+set dst-address "edi.maerskline.com"
+set dst-address "uftp.cyberlogitec.com"
+exit
+set policy id 388 from "Trust" to "Untrust"  "10.10.1.24" "FTP hlcl" "ANY" permit log 
+set policy id 388
+exit
+set policy id 385 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.58)" "VPN WINDOWS" permit log 
+set policy id 385
+exit
+set policy id 383 from "Trust" to "Untrust"  "10.10.1.24" "ftp.pacer.com" "FTP" permit log 
+set policy id 383
+exit
+set policy id 382 from "Trust" to "Untrust"  "Any" "burodecredito.com.mx" "Puerto-9443" permit log 
+set policy id 382
+exit
+set policy id 381 from "Trust" to "Untrust"  "10.10.34.44" "201.122.55.91" "Puerto-1022" permit log 
+set policy id 381 disable
+set policy id 381
+set src-address "Integridata Fsrr-172.16.103.28"
+set service "Puerto-2300"
+exit
+set policy id 380 from "Trust" to "Untrust"  "Any" "mensajeria.telcel.com" "HTTP" permit log 
+set policy id 380 disable
+set policy id 380
+set service "HTTPS"
+exit
+set policy id 379 from "Trust" to "Untrust"  "Any" "204.10.22.165" "HTTP" permit log 
+set policy id 379 disable
+set policy id 379
+set service "HTTPS"
+set service "TELNET"
+exit
+set policy id 378 from "Trust" to "Untrust"  "Any" "201.122.131.252" "MySQL" permit log 
+set policy id 378 disable
+set policy id 378
+exit
+set policy id 377 from "Trust" to "Untrust"  "Any" "kh.google.com" "ANY" permit log 
+set policy id 377 disable
+set policy id 377
+exit
+set policy id 376 from "Untrust" to "Netcontrol"  "Any" "MIP(200.52.78.5)" "ANY" permit log 
+set policy id 376
+exit
+set policy id 375 from "Netcontrol" to "Untrust"  "192.168.95.0/24" "Any" "ANY" nat src permit log 
+set policy id 375
+set src-address "Red Netcontrol 192.168.20.0"
+exit
+set policy id 372 from "Trust" to "Untrust"  "SERVERS RHLE6" "akamaitechnologies.com" "HTTP" permit log 
+set policy id 372
+set dst-address "redhat.com"
+set service "HTTPS"
+set service "TCP-50778"
+exit
+set policy id 384 from "Untrust" to "Trust"  "10.255.132.17" "MIP(200.52.78.21)" "FTP" permit log 
+set policy id 384
+set src-address "12.191.195.66"
+set src-address "162.253.151.84"
+set src-address "167.132.254.32"
+set src-address "167.132.254.33"
+set src-address "167.132.254.34"
+set src-address "167.132.254.35"
+set src-address "167.132.254.36"
+set src-address "167.132.254.37"
+set src-address "167.132.254.38"
+set src-address "167.132.254.39"
+set src-address "167.132.254.40"
+set src-address "173.227.95.204"
+set src-address "185.21.133.157-VMODAL"
+set src-address "187.174.238.23 - MEDITARREAN SHIPPING COMPANY"
+set src-address "187.237.234.195"
+set src-address "190.143.117.2_Widetech_1"
+set src-address "193.163.248.25"
+set src-address "193.163.248.28/32"
+set src-address "193.17.48.215-Hapag-Lloyd AG"
+set src-address "193.17.48.216 - Hapag-Lloyd AG"
+set src-address "194.9.166.145-Hapag-Lloyd AG"
+set src-address "194.9.166.146-Hapag-Lloyd AG"
+set src-address "198.58.80.94"
+set src-address "200.52.78.28"
+set src-address "204.232.130.226_Widetech 2"
+set src-address "207.106.188.251"
+set src-address "207.211.89.200"
+set src-address "207.97.206.102_Widetech 3"
+set src-address "57.77.23.92-cma-cgm.com"
+set src-address "63.240.116.74 - EVERGREEN tpegw001.shipmentchain.com"
+set src-address "63.254.154.250"
+set src-address "63.254.154.251"
+set src-address "65.200.132.15"
+set src-address "65.200.132.39"
+set src-address "CMI-63.138.243.68/32"
+set src-address "CMI-64.22.152.164/32"
+set src-address "CMI-66.77.30.68/32"
+set src-address "edi-xfr.usa.cma-cgm.com"
+set src-address "edi.gtgs.net-69.64.161.46"
+set src-address "edi.maerskline.com"
+set src-address "edi.rez1.com"
+set src-address "ediftp.cosco-usa.com"
+set src-address "ediftp.mol-it.com"
+set src-address "ftp.transentric.com"
+set src-address "ibtsus.hmm21.com"
+set src-address "XPO/Pacer1"
+set src-address "XPO/Pacer2"
+set src-address "XPO/Pacer3"
+set src-address "XPO/Pacer4"
+set src-address "XPO/Pacer5"
+set src-address "XPO/Pacer6"
+set src-address "XPO/Pacer7"
+set src-address "FTP-IMEX"
+set dst-address "MIP(200.52.78.28)"
+set service "SFTP"
+exit
+set policy id 368 from "Trust" to "Untrust"  "10.10.35.11_bancos" "tslink1.jpmorgan.com_bancos a jpmorgan" "HTTP" permit log 
+set policy id 368
+set dst-address "Tslink2.jpmorgan.com"
+set service "Puerto 6080"
+exit
+set policy id 366 from "Trust" to "Untrust"  "Server wdms.fxe.net-10.10.32.39" "Servidor (InteRRIS)-150.195.254.140" "FTP" permit log 
+set policy id 366
+exit
+set policy id 364 from "Untrust" to "Trust"  "Any" "wsfxe" "FTP" permit log 
+set policy id 364 disable
+set policy id 364
+exit
+set policy id 362 from "Trust" to "Untrust"  "10.10.32.252" "bbftp-trn.bnsf.com-170.49.49.107" "FTP" permit log 
+set policy id 362
+set src-address "10.10.38.134-svsappro"
+set src-address "10.10.69.40"
+set src-address "KRONOS-10.10.33.75"
+set src-address "kronos-a"
+set src-address "kronos-b"
+set src-address "PC_nf20036-10.10.34.74"
+set src-address "svcoxcarh01-10.10.32.13"
+set src-address "svcoxctm01-10.10.32.24"
+set src-address "SVCOXFXE32-10.10.9.2"
+set src-address "svcoxvuc03-10.10.32.158"
+set dst-address "bbftp.bnsf.com-139.51.10.48"
+set dst-address "EDIFTP.BNSF.COM"
+set dst-address "ediftp.railconnect.com"
+set dst-address "ftp.glovismx.com"
+set dst-address "ftp1.toyota.com"
+set dst-address "ftp2.railconnect.com"
+set dst-address "mft.railinc.com"
+set dst-address "railconnect.com"
+set dst-address "tstmft.railinc.com"
+set service "SSH"
+exit
+set policy id 361 from "Trust" to "Untrust"  "VWSISOV01-10.10.32.47" "EDIFTP.BNSF.COM" "FTP" permit log 
+set policy id 361
+set dst-address "ftp.toyota.com"
+set dst-address "ftp1.toyota.com"
+exit
+set policy id 359 from "Trust" to "Untrust"  "Correo Lotus-10.10.32.55" "Any" "HTTP" nat src dip-id 9 permit log 
+set policy id 359
+set src-address "HOST_172.16.103.158"
+set src-address "Relay_Lotus-10.10.32.176"
+set src-address "svcoxmail02_10.10.32.183"
+set service "HTTPS"
+set service "SMTP"
+set service "SMTP/SSL"
+exit
+set policy id 480 from "Trust" to "Untrust"  "10.10.32.62" "Any" "Blackberry" permit log 
+set policy id 480
+set service "HTTP"
+set service "HTTPS"
+set service "SMTP"
+exit
+set policy id 355 from "Trust" to "Untrust"  "10.10.32.190-SVCOXBES02" "208.65.77.102" "Blackberry" permit log 
+set policy id 355
+set src-address "10.10.32.62"
+set src-address "Bes Express-10.10.32.61"
+set src-address "SERVICIO BB LOTUS-10.10.32.59"
+set src-address "Svcoxbes03-10.10.32.81"
+set dst-address "216.9.242.176"
+set dst-address "216.9.242.177"
+set dst-address "216.9.242.244"
+set dst-address "216.9.242.32"
+set dst-address "68.171.232.35"
+set dst-address "68.171.232.36"
+set dst-address "68.171.242.240"
+set dst-address "68.171.242.241"
+set dst-address "68.171.242.252"
+set dst-address "68.171.242.32"
+set dst-address "ca.swsmanager.bbsecure.com"
+set dst-address "ca.swstps.bbsecure.com"
+set dst-address "license.blackberry.com"
+set dst-address "mx.bbsecure.com"
+set dst-address "mx.srp.blackberry.com"
+set service "HTTPS"
+exit
+set policy id 393 from "Untrust" to "Trust"  "BMC-remedy" "MIP(200.52.78.48)" "POP3" permit log 
+set policy id 393
+set src-address "BMC-remedy-2"
+set service "POP3/SSL"
+set service "SMTP"
+set service "SMTP/SSL"
+exit
+set policy id 353 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.48)" "HTTP" permit log 
+set policy id 353
+set service "HTTPS"
+set service "IMAP"
+set service "IMAP4/SSL"
+set service "POP3"
+set service "POP3/SSL"
+exit
+set policy id 352 from "Trust" to "Untrust"  "Servidor Fxe-10.10.32.70" "158.255.43.240" "HTTP" permit log 
+set policy id 352
+set dst-address "212.199.160.162/32"
+set dst-address "bacsoft.com"
+exit
+set policy id 350 from "Trust" to "Untrust"  "10.10.0.0/16" "VPN New York-172.31.0.0/16" "ANY" tunnel vpn "GATEWAY-NY4" id 0x6d pair-policy 349 log count alarm 800000 0 
+set policy id 350
+exit
+set policy id 306 from "Trust" to "Untrust"  "10.10.0.0/16" "VPN New York-149.244.178.0/23" "ANY" tunnel vpn "GATEWAY-NY2" id 0x5e pair-policy 307 log count 
+set policy id 306
+exit
+set policy id 348 from "Trust" to "Untrust"  "190.1.0.0/16" "VPN New York-149.244.178.0/23" "ANY" nat src tunnel vpn "GATEWAY-NY3" id 0x6c pair-policy 347 log count 
+set policy id 348
+exit
+set policy id 345 from "Untrust" to "Trust"  "200.57.151.129/32" "10.10.130.47/32" "ANY" nat src tunnel vpn "VPN_Sat_Triara_130.47" id 0x69 pair-policy 344 log count 
+set policy id 345 disable
+set policy id 345
+exit
+set policy id 144 from "Trust" to "Untrust"  "190.1.0.0/16" "VPN New York-172.31.0.0/16" "ANY" tunnel vpn "GATEWAY-NY" id 0x18 pair-policy 145 log count alarm 800000 0 
+set policy id 144
+exit
+set policy id 505 from "Trust" to "Untrust"  "10.10.120.0/23" "VPN RMI US-192.168.100.0/24" "ANY" tunnel vpn "VPN RMI USA 10.10.120.0/23" id 0x96 pair-policy 504 log count 
+set policy id 505
+exit
+set policy id 429 from "Trust" to "Untrust"  "10.10.192.0/24" "VPN RMI US-192.168.100.0/24" "ANY" tunnel vpn "VPN RMI USA 10.10.192.0/24" id 0x7e pair-policy 428 log count 
+set policy id 429
+exit
+set policy id 261 from "Trust" to "Untrust"  "10.10.64.0/21" "VPN RMI US-192.168.100.0/24" "ANY" tunnel vpn "VPN RMI USA 10.10.64.0/21" id 0x49 pair-policy 262 log count 
+set policy id 261
+exit
+set policy id 552 from "Trust" to "Untrust"  "10.10.237.0/24" "VPN RMI US-192.168.100.0/24" "ANY" tunnel vpn "VPN RMI USA 10.10.237.0/24" id 0xd1 pair-policy 553 log count traffic gbw 512
+set policy id 552
+exit
+set policy id 411 from "Trust" to "Untrust"  "10.10.42.11" "VPN-BMCR-192.168.105.24/29" "LDAP" tunnel vpn "GATEWAY-Remedy BMC-1" id 0x7d pair-policy 410 log 
+set policy id 411
+set service "PING"
+exit
+set policy id 409 from "Trust" to "Untrust"  "10.10.42.30" "VPN-BMCR-192.168.105.24/29" "PING" tunnel vpn "GATEWAY-Remedy BMC-2" id 0x7c pair-policy 408 log 
+set policy id 409
+set service "POP3"
+set service "Puerto-495"
+set service "SMTP"
+set service "SMTP/SSL"
+exit
+set policy id 284 from "Trust" to "Untrust"  "10.10.234.65/32" "200.57.151.129/32" "ANY" tunnel vpn "VPN_Sat_Triara_234.65/32" id 0x5d pair-policy 285 log count 
+set policy id 284
+exit
+set policy id 340 from "Trust" to "Untrust"  "10.10.1.24" "194.39.131.34-Servidor SAP" "FTP" permit log 
+set policy id 340
+set src-address "10.10.32.195-SAP_Router"
+set src-address "10.10.33.70"
+set src-address "10.10.33.75"
+set src-address "10.10.33.90"
+set src-address "10.10.33.91"
+set src-address "10.10.33.92"
+set src-address "10.10.33.93"
+set src-address "10.10.34.152"
+set src-address "10.10.38.132 SAP Nodo 1"
+set src-address "10.10.38.133 SAP Nodo 2"
+set src-address "10.10.38.134 SAP Server Virtual"
+set src-address "Host_10.10.61.35"
+set dst-address "216.251.67.122_ftp_ericher"
+set dst-address "CMI-66.161.82.84"
+set dst-address "ericher-nld.dyndns.org"
+set dst-address "ftp.edi.rez1.com"
+set dst-address "ftp.transentric.com"
+set dst-address "nld.dyndns.org"
+set dst-address "sftp4.successfactors.com"
+set service "PING"
+set service "SFTP"
+set service "tpc_sap"
+exit
+set policy id 324 from "Trust" to "Untrust"  "10.10.1.70" "Any" "DNS" permit log 
+set policy id 324
+set src-address "Servidor correo Inmex-10.10.1.10"
+set service "IMAP"
+set service "IMAP4/SSL"
+set service "POP3"
+set service "POP3/SSL"
+set service "Puerto-587"
+set service "Puerto-8501"
+set service "SMTP"
+set service "SMTP/SSL"
+exit
+set policy id 323 from "Trust" to "Untrust"  "Any" "Dominios Railconnect" "HTTP" permit log 
+set policy id 323
+set service "HTTPS"
+set service "License Check/SSL"
+set service "SSL TELNET"
+exit
+set policy id 317 from "Trust" to "Untrust"  "10.10.33.75-SVCORAP1" "187.237.234.197" "FTP" permit log 
+set policy id 317
+set src-address "10.10.33.90"
+set src-address "10.10.33.91"
+set src-address "BacSoft AEI-10.10.32.70"
+set dst-address "207.126.48.231"
+set dst-address "ftp2.railconnect.com"
+exit
+set policy id 344 from "Trust" to "Untrust"  "10.10.130.47/32" "200.57.151.129/32" "ANY" tunnel vpn "VPN_Sat_Triara_130.47" id 0x69 pair-policy 345 log count 
+set policy id 344 disable
+set policy id 344
+exit
+set policy id 314 from "Trust" to "Untrust"  "Any" "200.57.67.5-DRP de Sicotra" "ANY" permit schedule "DRP-Sicotra" log 
+set policy id 314 disable
+set policy id 314
+exit
+set policy id 351 from "Trust" to "Untrust"  "10.10.34.111" "200.52.131.28" "Pto-8080-HTTP-ALT" permit log 
+set policy id 351 disable
+set policy id 351
+exit
+set policy id 231 from "Trust" to "Untrust"  "10.10.34.0/24" "Any" "FTP" permit log 
+set policy id 231 disable
+set policy id 231
+set log session-init
+exit
+set policy id 336 from "Trust" to "Untrust"  "10.10.32.41" "sdinet.com.mx" "ANY" permit log 
+set policy id 336 disable
+set policy id 336
+exit
+set policy id 332 from "Trust" to "Untrust"  "Any" "Any" "VPN WINDOWS" permit log 
+set policy id 332 disable
+set policy id 332
+exit
+set policy id 778 from "dmz2" to "Trust"  "Any" "10.10.40.0/24" "SSH" deny log 
+set policy id 778
+exit
+set policy id 316 from "dmz2" to "Trust"  "Any" "Any" "ANY" permit log 
+set policy id 316
+exit
+set policy id 307 from "Untrust" to "Trust"  "VPN New York-149.244.178.0/23" "10.10.0.0/16" "ANY" tunnel vpn "GATEWAY-NY2" id 0x5e pair-policy 306 log count 
+set policy id 307
+exit
+set policy id 347 from "Untrust" to "Trust"  "VPN New York-149.244.178.0/23" "190.1.0.0/16" "ANY" nat src tunnel vpn "GATEWAY-NY3" id 0x6c pair-policy 348 log count 
+set policy id 347
+exit
+set policy id 145 from "Untrust" to "Trust"  "VPN New York-172.31.0.0/16" "190.1.0.0/16" "ANY" tunnel vpn "GATEWAY-NY" id 0x18 pair-policy 144 log count alarm 800000 0 
+set policy id 145
+exit
+set policy id 349 from "Untrust" to "Trust"  "VPN New York-172.31.0.0/16" "10.10.0.0/16" "ANY" tunnel vpn "GATEWAY-NY4" id 0x6d pair-policy 350 log count alarm 800000 0 
+set policy id 349
+exit
+set policy id 297 from "Trust" to "Untrust"  "IP Servidor Antivirus" "osce8-p.activeupdate.trendmicro.com/activeupdate" "ANY" permit log 
+set policy id 297 disable
+set policy id 297
+exit
+set policy id 292 from "Trust" to "Untrust"  "10.10.250.108" "intellego.no-ip.org" "ANY" permit log 
+set policy id 292 disable
+set policy id 292
+set dst-address "Pruebas SAP"
+exit
+set policy id 293 from "Trust" to "Untrust"  "Acceso sdinet.com.mx" "sdinet.com.mx" "Pto-7824" permit log 
+set policy id 293 disable
+set policy id 293
+exit
+set policy id 289 from "Trust" to "Untrust"  "10.10.5.5" "IMSS" "FTP" permit log 
+set policy id 289 disable
+set policy id 289
+set service "HTTP"
+set service "POP3"
+set service "Pto-8080-HTTP-ALT"
+exit
+set policy id 285 from "Untrust" to "Trust"  "200.57.151.129/32" "10.10.234.65/32" "ANY" tunnel vpn "VPN_Sat_Triara_234.65/32" id 0x5d pair-policy 284 log count 
+set policy id 285
+exit
+set policy id 283 from "Untrust" to "Trust"  "200.57.151.129/32" "10.10.146.65/32" "ANY" tunnel vpn "VPN_Sat_Triara_146.65/32" id 0x5c pair-policy 282 log count 
+set policy id 283
+exit
+set policy id 282 from "Trust" to "Untrust"  "10.10.146.65/32" "200.57.151.129/32" "ANY" tunnel vpn "VPN_Sat_Triara_146.65/32" id 0x5c pair-policy 283 log count 
+set policy id 282
+exit
+set policy id 281 from "Untrust" to "Trust"  "200.57.151.129/32" "10.10.9.0/24" "ANY" tunnel vpn "VPN_Sat_Triara_9.0/24" id 0x5b pair-policy 280 log count 
+set policy id 281
+exit
+set policy id 280 from "Trust" to "Untrust"  "10.10.9.0/24" "200.57.151.129/32" "ANY" tunnel vpn "VPN_Sat_Triara_9.0/24" id 0x5b pair-policy 281 log count 
+set policy id 280
+exit
+set policy id 270 from "Untrust" to "Trust"  "VPN RMI US-192.168.100.0/24" "10.10.32.0/21" "ANY" tunnel vpn "VPN RMI USA 10.10.32.0/21" id 0x4d pair-policy 269 log count 
+set policy id 270
+exit
+set policy id 262 from "Untrust" to "Trust"  "VPN RMI US-192.168.100.0/24" "10.10.64.0/21" "ANY" tunnel vpn "VPN RMI USA 10.10.64.0/21" id 0x49 pair-policy 261 log count 
+set policy id 262
+exit
+set policy id 428 from "Untrust" to "Trust"  "VPN RMI US-192.168.100.0/24" "10.10.192.0/24" "ANY" tunnel vpn "VPN RMI USA 10.10.192.0/24" id 0x7e pair-policy 429 log count 
+set policy id 428
+exit
+set policy id 504 from "Untrust" to "Trust"  "VPN RMI US-192.168.100.0/24" "10.10.120.0/23" "ANY" tunnel vpn "VPN RMI USA 10.10.120.0/23" id 0x96 pair-policy 505 log count 
+set policy id 504
+exit
+set policy id 553 from "Untrust" to "Trust"  "VPN RMI US-192.168.100.0/24" "10.10.237.0/24" "ANY" tunnel vpn "VPN RMI USA 10.10.237.0/24" id 0xd1 pair-policy 552 log count 
+set policy id 553
+exit
+set policy id 226 name "Policy for VPN AVAYA" from "Untrust" to "Trust"  "Red Noc Avaya" "190.1.0.0/16" "ANY" tunnel vpn "VPN Nueva para Avaya" id 0x39 pair-policy 225 log count 
+set policy id 226 disable
+set policy id 226
+exit
+set policy id 294 from "Untrust" to "Trust"  "Wild-65.217.179.242" "MIP(200.52.78.9)" "Pto8080,8443,8095" permit schedule "Acceso_Wild" log count alarm 800000 0 
+set policy id 294
+set service "SSH"
+exit
+set policy id 312 from "Untrust" to "Trust"  "Any" "Any" "HTTP" permit log 
+set policy id 312 disable
+set policy id 312
+set service "HTTPS"
+set service "pto_50000"
+exit
+set policy id 571 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.41)" "HTTP" permit log 
+set policy id 571
+exit
+set policy id 225 name "Policy for VPN AVAYA" from "Trust" to "Untrust"  "190.1.0.0/16" "Red Noc Avaya" "ANY" tunnel vpn "VPN Nueva para Avaya" id 0x39 pair-policy 226 log count 
+set policy id 225 disable
+set policy id 225
+exit
+set policy id 232 from "Trust" to "Untrust"  "190.1.1.0/16" "Any" "FTP" permit log 
+set policy id 232 disable
+set policy id 232
+set log session-init
+exit
+set policy id 162 from "Trust" to "Untrust"  "Any" "209.164.26.98_tranferencia_archivos_clm_edi" "FTP" permit log count alarm 800000 0 
+set policy id 162
+set dst-address "tsftp.transystems.com"
+exit
+set policy id 228 from "Trust" to "Untrust"  "Any" "190.1.4.43/32" "ANY" permit log 
+set policy id 228 disable
+set policy id 228
+exit
+set policy id 183 from "Trust" to "Untrust"  "167.132.252.50/32" "Any" "ANY" permit log 
+set policy id 183 disable
+set policy id 183
+exit
+set policy id 171 from "Trust" to "Untrust"  "Barracuda Imex-10.10.40.18" "Any" "ANY" permit log count alarm 800000 0 
+set policy id 171
+exit
+set policy id 170 name "Pop3 ssl" from "Trust" to "Untrust"  "10.10.2.69/32" "Any" "POP3/SSL" permit log count alarm 800000 0 
+set policy id 170
+set src-address "10.10.32.14/32"
+set log session-init
+exit
+set policy id 165 from "Trust" to "Untrust"  "10.10.5.41" "201.161.8.69" "ANY" permit log count alarm 800000 0 
+set policy id 165 disable
+set policy id 165
+set src-address "10.10.5.42"
+set src-address "10.10.5.43"
+exit
+set policy id 164 name "Akamai" from "Trust" to "Untrust"  "Any" "72.246.54.1_akamai" "ANY" permit log count alarm 800000 0 
+set policy id 164 disable
+set policy id 164
+exit
+set policy id 206 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.46)" "ANY" permit log 
+set policy id 206
+exit
+set policy id 134 from "Trust" to "Untrust"  "Any" "12.129.104.0/24" "ANY" permit log count alarm 800000 0 
+set policy id 134 disable
+set policy id 134
+set dst-address "208.29.21.60"
+set dst-address "fxe.railconnect.com"
+set dst-address "railconnect.com"
+set dst-address "www.hostlink.eds.com"
+set dst-address "www.railconnect.com"
+set log session-init
+exit
+set policy id 127 from "Untrust" to "Trust"  "Dial-Up VPN" "Any" "ANY" tunnel l2tp "l2tptunel2" log count alarm 800000 0 
+set policy id 127 disable
+set policy id 127
+exit
+set policy id 123 from "Trust" to "Untrust"  "IMEX-1" "Any" "INFO-RMI" permit log count alarm 800000 0 
+set policy id 123 disable
+set policy id 123
+exit
+set policy id 122 from "Untrust" to "Trust"  "172.16.103.32/32" "Any" "ANY" permit log count alarm 800000 0 
+set policy id 122 disable
+set policy id 122
+exit
+set policy id 119 from "Trust" to "Untrust"  "190.1.5.38/32" "ericher-nld.dyndns.org" "5222, 5223, 5269, 7777" permit log count alarm 800000 0 
+set policy id 119 disable
+set policy id 119
+exit
+set policy id 118 from "Untrust" to "Trust"  "Demo_allot-untrust" "Demo_allot-trust" "Demo_allot" permit log count alarm 800000 0 
+set policy id 118 disable
+set policy id 118
+exit
+set policy id 172 from "Trust" to "Untrust"  "ip-libres-10.10.x.x" "Any" "ANY" permit log count alarm 800000 0 
+set policy id 172
+set src-address "LAN_WeWork_FXE"
+exit
+set policy id 113 from "Trust" to "Untrust"  "FTP 20 Y 21 trust" "FTP 20 Y 21" "FTP" permit log count alarm 800000 0 
+set policy id 113
+exit
+set policy id 96 from "Untrust" to "Trust"  "Guillermo García Avila" "10.1.0.0/16" "ANY" permit log 
+set policy id 96 disable
+set policy id 96
+set dst-address "190.1.0.0/16"
+exit
+set policy id 95 from "Untrust" to "Trust"  "172.16.111.82" "SAP Desarrollo" "ANY" permit log count alarm 800000 0 
+set policy id 95 disable
+set policy id 95
+set src-address "Sarahi Landa"
+set src-address "Xavier Villegas"
+exit
+set policy id 94 from "Untrust" to "Trust"  "172.16.104.243/24" "Mario" "ANY" permit log count alarm 800000 0 
+set policy id 94 disable
+set policy id 94
+exit
+set policy id 93 from "Untrust" to "Trust"  "Productos cierres ingresos" "190.1.4.146/32" "ANY" permit log count alarm 800000 0 
+set policy id 93 disable
+set policy id 93
+set dst-address "190.1.6.4"
+set dst-address "190.1.7.15"
+set dst-address "Anuar"
+set dst-address "Mario"
+exit
+set policy id 89 from "Trust" to "Untrust"  "Aplicación TMD" "64.105.150.123/32" "ANY" permit log 
+set policy id 89
+exit
+set policy id 85 from "Trust" to "Untrust"  "Any" "mail.praxis.com.mx" "MAIL" permit log count alarm 800000 0 
+set policy id 85 disable
+set policy id 85
+set service "POP3"
+exit
+set policy id 52 from "Trust" to "Untrust"  "10.10.33.75-SVCORAP1" "Servidor RMI" "ANY" permit log count alarm 800000 0 
+set policy id 52
+set src-address "To_ferrosur"
+set dst-address "Servidor RMI desarrollo"
+exit
+set policy id 43 from "Trust" to "Untrust"  "Any" "148.233.4.40/32" "ANY" permit log count alarm 800000 0 
+set policy id 43 disable
+set policy id 43
+exit
+set policy id 40 from "Trust" to "Untrust"  "Informacion RMI" "RMI_2" "INFO-RMI" permit log count alarm 800000 0 
+set policy id 40 disable
+set policy id 40
+set dst-address "RMI_3"
+set dst-address "RMI"
+exit
+set policy id 39 name "atenea 130106" from "Untrust" to "Trust"  "69.58.198.62/32" "MIP(200.52.78.20)" "SSH" permit schedule "ACCESO_ATENEA" log 
+set policy id 39
+set src-address "69.58.198.71"
+set src-address "69.58.198.91"
+set src-address "69.58.204.104/32"
+set src-address "69.58.204.78"
+exit
+set policy id 72 name "Servidor Imex SMTP" from "Trust" to "Untrust"  "Servidor Imex SMTP" "Any" "DNS" permit log count alarm 800000 0 
+set policy id 72
+set service "MAIL"
+exit
+set policy id 6 from "Trust" to "Untrust"  "Servidores SMTP-intel" "Any" "MAIL" nat src dip-id 4 permit log count alarm 800000 0 
+set policy id 6
+exit
+set policy id 182 from "Trust" to "Untrust"  "Servidores_Smtp_Unix-1" "Any" "MAIL" nat src dip-id 5 permit log count alarm 800000 0 
+set policy id 182 disable
+set policy id 182
+exit
+set policy id 188 name "grupo2" from "Trust" to "Untrust"  "Servidores_Smtp_Unix-2" "Any" "MAIL" nat src dip-id 8 permit log count alarm 800000 0 
+set policy id 188 disable
+set policy id 188
+exit
+set policy id 38 from "Trust" to "Untrust"  "GDL_Principal_Alfonso" "12.129.104.244/32" "FTP" permit log count alarm 800000 0 
+set policy id 38 disable
+set policy id 38
+set dst-address "150.195.254.140"
+set dst-address "207.126.48.231"
+set dst-address "ftp.railincftp.com"
+set dst-address "ftp.transentric.com"
+exit
+set policy id 2 from "Trust" to "Untrust"  "FTP_cemex" "200.23.29.227/255.255.255.255" "FTP" permit log count alarm 800000 0 
+set policy id 2 disable
+set policy id 2
+exit
+set policy id 318 from "Untrust" to "Trust"  "187.237.234.197" "MIP(200.52.78.20)" "FTP" permit log 
+set policy id 318
+exit
+set policy id 466 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.29)" "Pto 8000 TCP" permit log 
+set policy id 466
+set service "Pto-50100"
+set service "pto_50000"
+set service "Saprouter-3299"
+exit
+set policy id 300 from "Trust" to "Untrust"  "129.170.1.36" "Any" "Puerto 2776" permit log count 
+set policy id 300 disable
+set policy id 300
+set src-address "129.170.1.42"
+set service "Puertos 1719, 2776, 2777"
+exit
+set policy id 301 from "Trust" to "Untrust"  "10.10.40.10" "Any" "ANY" permit log 
+set policy id 301
+set src-address "HA-MX1_10.10.40.182"
+set src-address "HA-MX2_10.10.40.184"
+set src-address "LAN1-MX1_10.10.40.181"
+set src-address "LAN1-MX2_10.10.40.183"
+exit
+set policy id 302 from "Trust" to "Untrust"  "10.10.70.254" "SmartRad-12.53.43.234" "ANY" permit log 
+set policy id 302
+set src-address "172.16.113.201"
+exit
+set policy id 303 from "Trust" to "Untrust"  "10.10.33.57" "Any" "SMTP" permit log 
+set policy id 303 disable
+set policy id 303
+exit
+set policy id 305 from "Trust" to "Untrust"  "10.10.129.62" "vpn.gruppomgus.com-63.76.230.11" "ANY" permit log 
+set policy id 305 disable
+set policy id 305
+exit
+set policy id 321 from "Trust" to "Untrust"  "10.10.1.11/32" "Any" "DNS" permit log 
+set policy id 321
+exit
+set policy id 311 from "Untrust" to "Trust"  "Any" "VIP(200.52.78.47)" "HTTP" permit log 
+set policy id 311
+set service "VP-8080"
+exit
+set policy id 313 from "Trust" to "dmz2"  "Any" "Any" "ANY" permit log 
+set policy id 313
+exit
+set policy id 346 from "Trust" to "Untrust"  "10.10.32.14/32" "200.23.29.227" "FTP" permit log 
+set policy id 346 disable
+set policy id 346
+set dst-address "209.164.26.98"
+set dst-address "ehms.railinc.com"
+set service "HTTP"
+set service "HTTP-EXT"
+set service "HTTPS"
+exit
+set policy id 387 from "Trust" to "Untrust"  "10.10.1.24" "162.253.151.84" "FTP" permit log 
+set policy id 387
+set src-address "Host_10.10.61.35"
+set dst-address "167.132.254.32"
+set dst-address "167.132.254.33"
+set dst-address "167.132.254.34"
+set dst-address "167.132.254.35"
+set dst-address "167.132.254.36"
+set dst-address "167.132.254.37"
+set dst-address "167.132.254.38"
+set dst-address "167.132.254.39"
+set dst-address "167.132.254.40"
+set dst-address "210.71.241.143_FTP"
+set dst-address "ftp.hlcl.com"
+exit
+set policy id 422 name "barracuda" from "dmz2" to "Untrust"  "192.168.10.14" "Any" "DNS" permit log 
+set policy id 422
+set src-address "192.168.10.4"
+set service "HTTP"
+set service "HTTP-EXT"
+set service "HTTPS"
+set service "SMTP"
+set service "SSH"
+exit
+set policy id 448 from "Untrust" to "dmz2"  "Any" "MIP(200.52.81.1)" "ICMP-ANY" permit log 
+set policy id 448
+set service "IMAP"
+set service "IMAP4/SSL"
+set service "NTP"
+set service "SMTP"
+exit
+set policy id 449 from "Untrust" to "dmz2"  "Any" "MIP(200.52.88.1)" "ICMP-ANY" permit log 
+set policy id 449
+set service "IMAP"
+set service "IMAP4/SSL"
+set service "NTP"
+set service "SMTP"
+exit
+set policy id 450 from "Untrust" to "dmz2"  "Any" "MIP(200.66.64.4)" "ICMP-ANY" permit log 
+set policy id 450
+set service "IMAP"
+set service "IMAP4/SSL"
+set service "NTP"
+set service "SMTP"
+exit
+set policy id 451 from "Untrust" to "dmz2"  "Any" "MIP(201.149.0.36)" "ICMP-ANY" permit log 
+set policy id 451
+set service "IMAP"
+set service "IMAP4/SSL"
+set service "NTP"
+set service "SMTP"
+exit
+set policy id 452 from "Untrust" to "dmz2"  "Any" "MIP(201.149.32.8)" "ICMP-ANY" permit log 
+set policy id 452
+set service "IMAP"
+set service "IMAP4/SSL"
+set service "NTP"
+set service "SMTP"
+exit
+set policy id 477 from "Trust" to "Untrust"  "10.10.21.0 SSID_WSPONSOR" "Any" "HTTP" permit log 
+set policy id 477
+set src-address "10.10.30.0/24SSID fxegadget"
+set service "HTTPS"
+set service "APPLE-ICHAT"
+exit
+set policy id 482 from "Trust" to "Untrust"  "10.10.250.224" "201.155.113.8/32" "VNC" permit log 
+set policy id 482
+exit
+set policy id 525 from "Trust" to "Untrust"  "190.1.0.0/16" "VPN New York-149.244.179.0/24" "ANY" tunnel vpn "VPN New York-149.244.179/24b" id 0x9b pair-policy 524 log 
+set policy id 525
+exit
+set policy id 526 name "SICOP TEMPORAL" from "Trust" to "Untrust"  "sapdes02-10.10.1.118" "Any" "ANY" permit log 
+set policy id 526 disable
+set policy id 526
+exit
+set policy id 527 name "Acceso IMEX Faturacion" from "Trust" to "Untrust"  "10.10.61.19sap_prod_imex" "Any" "ANY" permit log 
+set policy id 527
+set src-address "10.10.61.22"
+exit
+set policy id 554 from "Trust" to "Untrust"  "Any" "Win-Defender-134.170.180.0/24" "TCP-443" nat src permit log 
+set policy id 554
+set dst-address "Win-Defender-134.170.58.0/24"
+set service "TCP-80"
+exit
+set policy id 555 from "Trust" to "Untrust"  "10.10.250.130_prueba" "Afaria Akamai-3" "ANY" permit log 
+set policy id 555 disable
+set policy id 555
+set src-address "lsosa_afaria_10.10.251.96"
+set src-address "motorola_afaria_10.10.250.179"
+set dst-address "Afaria-Akamai_1"
+set dst-address "Afaria-Akamai_2"
+set dst-address "Afaria-Akamai_4"
+set dst-address "Afaria-Google_2"
+set dst-address "Afaria-Google_3"
+set dst-address "Afaria-Google_4"
+set dst-address "Affaria-Google_1"
+exit
+set policy id 557 from "Untrust" to "Trust"  "VPN_Remedy_10.170.4.119/32" "10.10.33.80/32" "Pto_1528" tunnel vpn "GATEWAY -Remedy BMC-3" id 0xd5 pair-policy 560 log 
+set policy id 557
+exit
+set policy id 558 from "Untrust" to "Trust"  "VPN_Remedy_10.170.136.107/32" "10.10.33.80/32" "Pto_1528" tunnel vpn "GATEWAY -Remedy BMC-4" id 0xd6 pair-policy 561 log 
+set policy id 558
+exit
+set policy id 559 from "Untrust" to "Trust"  "VPN_Remedy_10.170.144.116/32" "10.10.33.80/32" "Pto_1528" tunnel vpn "GATEWAY -Remedy BMC-5" id 0xd7 pair-policy 562 log 
+set policy id 559
+exit
+set policy id 560 from "Trust" to "Untrust"  "10.10.33.80/32" "VPN_Remedy_10.170.4.119/32" "Pto_1528" tunnel vpn "GATEWAY -Remedy BMC-3" id 0xd5 pair-policy 557 log 
+set policy id 560
+exit
+set policy id 561 from "Trust" to "Untrust"  "10.10.33.80/32" "VPN_Remedy_10.170.136.107/32" "Pto_1528" tunnel vpn "GATEWAY -Remedy BMC-4" id 0xd6 pair-policy 558 log 
+set policy id 561
+exit
+set policy id 562 from "Trust" to "Untrust"  "10.10.33.80/32" "VPN_Remedy_10.170.144.116/32" "Pto_1528" tunnel vpn "GATEWAY -Remedy BMC-5" id 0xd7 pair-policy 559 log 
+set policy id 562
+exit
+set policy id 567 name "10.10.31.25-svcoxdvbwh01" from "Trust" to "Untrust"  "10.10.31.25/32" "my305077.crm.ondemand.com" "ANY" permit log 
+set policy id 567
+exit
+set policy id 572 name "Servidor 69.16.233.139" from "Trust" to "Untrust"  "10.10.35.182" "69.16.233.139/32" "ANY" permit log 
+set policy id 572
+set src-address "10.10.35.185"
+set src-address "10.10.35.93"
+exit
+set policy id 573 from "Trust" to "Untrust"  "10.10.137.132" "Any" "ANY" permit log 
+set policy id 573 disable
+set policy id 573
+exit
+set policy id 574 from "Trust" to "Untrust"  "10.10.32.115-svcoxome01" "143.166.0.0/16 Monitor_OME_DELL" "FTP" permit log 
+set policy id 574
+set service "HTTPS"
+set service "SNMP"
+set service "TCP-143 SQL_Server"
+exit
+set policy id 575 from "Trust" to "Untrust"  "172.16.112.244/32" "Any" "ANY" permit log 
+set policy id 575
+exit
+set policy id 576 from "Trust" to "Untrust"  "Any" "FTP_189.202.236.105" "FTP" permit log 
+set policy id 576
+exit
+set policy id 577 from "Trust" to "Untrust"  "10.10.61.22_imex-appprod" "Office 365-132.245.0.0/16" "POP3/SSL" permit log 
+set policy id 577
+set service "TCP-443"
+exit
+set policy id 578 from "Trust" to "Untrust"  "Any" "50.252.112.179_TMD" "ANY" permit log 
+set policy id 578
+exit
+set policy id 580 from "Trust" to "Untrust"  "10.10.35.192/32" "Any" "ANY" nat src permit log 
+set policy id 580
+exit
+set policy id 582 from "Trust" to "Untrust"  "10.10.32.94" "Any" "NTP" permit log 
+set policy id 582
+exit
+set policy id 583 from "Trust" to "Untrust"  "Any" "VPN_RMI 204.10.22.230" "ANY" permit log 
+set policy id 583
+exit
+set policy id 585 name "10.10.61.35 ftp IMEX" from "Untrust" to "Trust"  "edi.maerskline.com" "MIP(200.52.78.28)" "FTP" permit log 
+set policy id 585
+set src-address "edi.rez1.com"
+set service "Puertos 20_21_22"
+set service "SSH"
+exit
+set policy id 587 from "Trust" to "Untrust"  "Any" "mail.amf.org.mx" "Pto_110" permit log 
+set policy id 587
+set service "Pto_465"
+set service "Pto_587"
+set service "Pto_995"
+set service "SMTP"
+exit
+set policy id 588 name "Politica-200.57.179.203" from "Trust" to "Untrust"  "Any" "200.57.136.21" "ICMP Address Mask" permit log 
+set policy id 588
+set dst-address "200.57.179.203-Server_Vending_Test"
+set dst-address "vending2.tmanager.com.mx"
+set service "ICMP Dest Unreachable"
+set service "ICMP Fragment Needed"
+set service "ICMP Fragment Reassembly"
+set service "ICMP Host Unreachable"
+set service "ICMP Parameter Problem"
+set service "ICMP Port Unreachable"
+set service "ICMP Protocol Unreach"
+set service "ICMP Redirect"
+set service "ICMP Redirect Host"
+set service "ICMP Redirect TOS & Host"
+set service "ICMP Redirect TOS & Net"
+set service "ICMP Source Quench"
+set service "ICMP Source Route Fail"
+set service "ICMP Time Exceeded"
+set service "ICMP-ANY"
+set service "ICMP-INFO"
+set service "ICMP-TIMESTAMP"
+set service "PING"
+set service "Pto_9002"
+set service "Pto_9154"
+exit
+set policy id 592 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.35.28" "ANY" tunnel vpn "telestock.28" id 0xe3 pair-policy 591 log 
+set policy id 592
+exit
+set policy id 594 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.35.201/32" "ANY" tunnel vpn "TelestockVending" id 0xe5 pair-policy 593 log 
+set policy id 594
+exit
+set policy id 596 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.168.70/32" "ANY" tunnel vpn "Telstock_CAT_Manzanillo" id 0xe7 pair-policy 595 log 
+set policy id 596
+exit
+set policy id 598 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.71.70/32" "ANY" tunnel vpn "TelestockCAT_Guadalajara" id 0xe8 pair-policy 597 log 
+set policy id 598
+exit
+set policy id 600 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.236.70/32" "ANY" tunnel vpn "TelestockCAT_Tepic-10.10.236.70" id 0xea pair-policy 599 log 
+set policy id 600
+exit
+set policy id 601 from "Trust" to "Untrust"  "10.10.213.70/32" "192.168.66.80/32" "ANY" tunnel vpn "TelstockCAT_Colima-10.10.213.70" id 0xeb pair-policy 602 log 
+set policy id 601
+exit
+set policy id 602 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.213.70/32" "ANY" tunnel vpn "TelstockCAT_Colima-10.10.213.70" id 0xeb pair-policy 601 log 
+set policy id 602
+exit
+set policy id 603 from "Trust" to "Untrust"  "10.10.184.70/32" "192.168.66.80/32" "ANY" tunnel vpn "TeslstockNogales-10.10.184.70" id 0xec pair-policy 604 log 
+set policy id 603
+exit
+set policy id 604 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.184.70/32" "ANY" tunnel vpn "TeslstockNogales-10.10.184.70" id 0xec pair-policy 603 log 
+set policy id 604
+exit
+set policy id 605 from "Trust" to "Untrust"  "10.10.215.70/32" "192.168.66.80/32" "ANY" tunnel vpn "TelstockEmpalme" id 0xfb pair-policy 620 log 
+set policy id 605
+exit
+set policy id 606 from "Trust" to "Untrust"  "10.10.224.67/32" "192.168.66.80/32" "ANY" tunnel vpn "TelstockLos Mochis-10.10.224.67" id 0xee pair-policy 607 log 
+set policy id 606
+exit
+set policy id 607 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.224.67/32" "ANY" tunnel vpn "TelstockLos Mochis-10.10.224.67" id 0xee pair-policy 606 log 
+set policy id 607
+exit
+set policy id 608 from "Trust" to "Untrust"  "10.10.224.69/32" "192.168.66.80/32" "ANY" tunnel vpn "TelstockSufragio-10.10.224.69" id 0xfa pair-policy 619 log 
+set policy id 608
+exit
+set policy id 609 from "Trust" to "Untrust"  "10.10.226.70/32" "192.168.66.80/32" "ANY" tunnel vpn "TelstockMazatlán-10.10.226.70" id 0xfc pair-policy 621 log 
+set policy id 609
+exit
+set policy id 610 from "Trust" to "Untrust"  "10.10.192.70/32" "192.168.66.80/32" "ANY" tunnel vpn "TelstockCd_Juarez-10.10.192.70" id 0xfd pair-policy 622 log 
+set policy id 610
+exit
+set policy id 611 from "Trust" to "Untrust"  "10.10.209.69/32" "192.168.66.80/32" "ANY" tunnel vpn "TelstockCd_Frontera-10.10.209.6" id 0xfe pair-policy 623 log 
+set policy id 611
+exit
+set policy id 612 from "Trust" to "Untrust"  "10.10.188.69/32" "192.168.66.80/32" "ANY" tunnel vpn "TelsPiedras Negras-10.10.188.69" id 0xff pair-policy 624 log 
+set policy id 612
+exit
+set policy id 613 from "Trust" to "Untrust"  "10.10.145.70/32" "192.168.66.80/32" "ANY" tunnel vpn "TelstockMonterrey-10.10.145.70" id 0x100 pair-policy 625 log 
+set policy id 613
+exit
+set policy id 614 from "Trust" to "Untrust"  "10.10.180.70/32" "192.168.66.80/32" "ANY" tunnel vpn "TelstockTorreón TC-10.10.180.70" id 0x101 pair-policy 626 log 
+set policy id 614
+exit
+set policy id 615 from "Trust" to "Untrust"  "10.10.205.70/32" "192.168.66.80/32" "ANY" tunnel vpn "TesltockAltamira-10.10.205.70" id 0x102 pair-policy 627 log 
+set policy id 615
+exit
+set policy id 616 from "Trust" to "Untrust"  "10.10.153.70/32" "192.168.66.80/32" "ANY" tunnel vpn "TelstockCAT_Irapuato-10.10.153." id 0x103 pair-policy 628 log 
+set policy id 616
+exit
+set policy id 617 from "Trust" to "Untrust"  "10.10.204.70/32" "192.168.66.80/32" "ANY" tunnel vpn "TelstockCAT San Francisco de lo" id 0x104 pair-policy 629 log 
+set policy id 617
+exit
+set policy id 618 from "Trust" to "Untrust"  "10.10.217.70/32" "192.168.66.80/32" "ANY" tunnel vpn "TeslstockFelipe Pescador-10.10." id 0x105 pair-policy 630 log 
+set policy id 618
+exit
+set policy id 619 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.224.69/32" "ANY" tunnel vpn "TelstockSufragio-10.10.224.69" id 0xfa pair-policy 608 log 
+set policy id 619
+exit
+set policy id 620 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.215.70/32" "ANY" tunnel vpn "TelstockEmpalme" id 0xfb pair-policy 605 log 
+set policy id 620
+exit
+set policy id 621 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.226.70/32" "ANY" tunnel vpn "TelstockMazatlán-10.10.226.70" id 0xfc pair-policy 609 log 
+set policy id 621
+exit
+set policy id 622 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.192.70/32" "ANY" tunnel vpn "TelstockCd_Juarez-10.10.192.70" id 0xfd pair-policy 610 log 
+set policy id 622
+exit
+set policy id 623 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.209.69/32" "ANY" tunnel vpn "TelstockCd_Frontera-10.10.209.6" id 0xfe pair-policy 611 log 
+set policy id 623
+exit
+set policy id 624 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.188.69/32" "ANY" tunnel vpn "TelsPiedras Negras-10.10.188.69" id 0xff pair-policy 612 log 
+set policy id 624
+exit
+set policy id 625 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.145.70/32" "ANY" tunnel vpn "TelstockMonterrey-10.10.145.70" id 0x100 pair-policy 613 log 
+set policy id 625
+exit
+set policy id 626 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.180.70/32" "ANY" tunnel vpn "TelstockTorreón TC-10.10.180.70" id 0x101 pair-policy 614 log 
+set policy id 626
+exit
+set policy id 627 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.205.70/32" "ANY" tunnel vpn "TesltockAltamira-10.10.205.70" id 0x102 pair-policy 615 log 
+set policy id 627
+exit
+set policy id 628 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.153.70/32" "ANY" tunnel vpn "TelstockCAT_Irapuato-10.10.153." id 0x103 pair-policy 616 log 
+set policy id 628
+exit
+set policy id 629 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.204.70/32" "ANY" tunnel vpn "TelstockCAT San Francisco de lo" id 0x104 pair-policy 617 log 
+set policy id 629
+exit
+set policy id 630 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.217.70/32" "ANY" tunnel vpn "TeslstockFelipe Pescador-10.10." id 0x105 pair-policy 618 log 
+set policy id 630
+exit
+set policy id 631 from "Trust" to "Untrust"  "10.10.29.117/32" "192.168.66.80/32" "ANY" tunnel vpn "TelstockServer10.10.29.117" id 0x106 pair-policy 632 log 
+set policy id 631
+exit
+set policy id 632 from "Untrust" to "Trust"  "192.168.66.80/32" "10.10.29.117/32" "ANY" tunnel vpn "TelstockServer10.10.29.117" id 0x106 pair-policy 631 log 
+set policy id 632
+exit
+set policy id 633 from "Trust" to "Untrust"  "SERVER_1_10.10.62.17" "cfdiws.sedeb2b.com" "HTTPS" nat src permit log 
+set policy id 633
+exit
+set policy id 634 from "Trust" to "Untrust"  "SERVER_10.10.62.132" "cfdiws.sedeb2b.com" "HTTPS" nat src permit log 
+set policy id 634
+exit
+set policy id 635 from "Trust" to "Untrust"  "10.10.29.117_svgdldvtbc03" "sftp.wi-tronix.com" "HTTPS" permit log 
+set policy id 635
+set src-address "10.10.29.171_svgdlqabw01"
+set service "SFTP"
+exit
+set policy id 636 name "Descargas_consola_irsa" from "Trust" to "Untrust"  "10.10.32.211/32" "services.isee.hp.com" "TCP-443" permit log 
+set policy id 636
+exit
+set policy id 637 name "remote3par.houston.hp.com" from "Trust" to "Untrust"  "10.10.38.165-StorageOnce_MX" "remote3par.houston.hp.com" "TCP-443" nat src permit log 
+set policy id 637
+exit
+set policy id 643 from "Trust" to "Untrust"  "10.10.0.0/16" "sftp.kcsouthern.com" "TCP-22" permit log 
+set policy id 643
+set src-address "10.175.116.173"
+set src-address "10.175.116.176"
+exit
+set policy id 430 from "Untrust" to "dmz2"  "Any" "MIP(200.52.78.11)" "Ferromex Port 15" permit log 
+set policy id 430
+set service "HTTP"
+set service "HTTPS"
+set service "pto_6400_crital_reports"
+set service "PUERTO 35000"
+set service "TCP-4248"
+exit
+set policy id 486 from "Untrust" to "dmz2"  "Any" "MIP(200.52.78.15)" "HTTP" permit log 
+set policy id 486
+set service "HTTPS"
+set service "Puerto-50000"
+exit
+set policy id 412 from "Untrust" to "dmz2"  "Any" "MIP(200.52.78.25)" "DNS" permit log 
+set policy id 412
+exit
+set policy id 416 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.10)" "HTTP" permit log 
+set policy id 416
+set service "HTTPS"
+set service "Pto 25"
+set service "pto 8080"
+set service "Pto-8080"
+set service "pto_6400_crital_reports"
+set service "Puerto-50000"
+set service "SMTP"
+exit
+set policy id 467 from "Untrust" to "dmz2"  "Any" "MIP(200.52.78.26)" "FTP" permit log 
+set policy id 467
+set service "SFTP"
+exit
+set policy id 520 from "Untrust" to "dmz2"  "Any" "MIP(200.52.78.49)" "HTTP" permit log 
+set policy id 520
+set service "HTTPS"
+set service "pto_81_8081_tcp"
+set service "Puerto-2083"
+exit
+set policy id 644 from "Trust" to "Untrust"  "10.10.32.172_svcoxbw02" "gateway.push.apple.com" "HTTPS" permit log 
+set policy id 644
+set dst-address "gateway.sandbox.push.apple.com"
+set dst-address "gcm-http.googleapis.com"
+set service "TCP-2195"
+exit
+set policy id 645 from "Trust" to "Untrust"  "Consola DOC Río Escondido A" "docsupport.railcomm.com" "HTTPS" nat src dip-id 4 permit log 
+set policy id 645
+set src-address "Consola DOC Río Escondido B"
+exit
+set policy id 647 from "Untrust" to "Trust"  "VPN_Remedy_10.170.136.107/32" "ServVI_Aplicación_ADDM" "TCP_46262" tunnel vpn "GATEWAY -Remedy BMC-7" id 0x112 pair-policy 650 log 
+set policy id 647
+exit
+set policy id 648 from "Untrust" to "Trust"  "VPN_Remedy_10.170.136.107/32" "Servidor_Fisico_FXE-BMC" "TCP_46262" tunnel vpn "GATEWAY-Remedy BMC-6" id 0x111 pair-policy 649 log 
+set policy id 648
+exit
+set policy id 649 from "Trust" to "Untrust"  "Servidor_Fisico_FXE-BMC" "VPN_Remedy_10.170.136.107/32" "TCP_46262" tunnel vpn "GATEWAY-Remedy BMC-6" id 0x111 pair-policy 648 log 
+set policy id 649
+exit
+set policy id 650 from "Trust" to "Untrust"  "ServVI_Aplicación_ADDM" "VPN_Remedy_10.170.136.107/32" "TCP_46262" tunnel vpn "GATEWAY -Remedy BMC-7" id 0x112 pair-policy 647 log 
+set policy id 650
+exit
+set policy id 654 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.44)" "ANY" nat src permit log 
+set policy id 654
+exit
+set policy id 442 from "Untrust" to "dmz2"  "205.158.110.0/24" "MIP(200.52.78.22)" "ANY" permit log 
+set policy id 442
+exit
+set policy id 440 from "Untrust" to "dmz2"  "Any" "MIP(200.52.78.22)" "ICMP-ANY" permit log 
+set policy id 440
+set service "IMAP"
+set service "IMAP4/SSL"
+set service "NTP"
+set service "SMTP"
+exit
+set policy id 447 from "Untrust" to "dmz2"  "IPS Forefront" "MIP(200.52.78.22)" "doc-server-station" permit log 
+set policy id 447
+set service "ICMP-ANY"
+set service "IMAP"
+set service "IMAP4/SSL"
+set service "NTP"
+set service "SMTP"
+exit
+set policy id 443 from "Untrust" to "dmz2"  "Any" "MIP(200.52.78.22)" "ANY" deny log 
+set policy id 443 disable
+set policy id 443
+exit
+set policy id 661 from "Trust" to "Untrust"  "10.20.20.23" "Any" "Ephermeral_Port" nat src permit log 
+set policy id 661
+set service "Sip_Media"
+set service "SIP_Signaling_1024"
+set service "SIP_Signaling_7001"
+set service "SIP_Signaling_7004"
+set service "SSH(https/tunels)"
+set service "XMPP"
+exit
+set policy id 665 from "Trust" to "Untrust"  "FERROSUR-APN TELCEL-172.16.103.90/32" "APN TELCEL-FERROSUR-10.212.238.0/24" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0x11d pair-policy 668 log 
+set policy id 665
+exit
+set policy id 666 from "Trust" to "Untrust"  "FERROSUR-APN TELCEL-172.16.103.90/32" "APN TELCEL-FERROSUR-10.212.248.0/23" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0x11e pair-policy 669 log 
+set policy id 666
+exit
+set policy id 667 from "Trust" to "Untrust"  "FERROSUR-APN TELCEL-172.16.103.90/32" "APN TELCEL-FERROSUR-10.212.250.0/24" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0x11f pair-policy 670 log 
+set policy id 667
+exit
+set policy id 668 from "Untrust" to "Trust"  "APN TELCEL-FERROSUR-10.212.238.0/24" "FERROSUR-APN TELCEL-172.16.103.90/32" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0x11d pair-policy 665 log 
+set policy id 668
+exit
+set policy id 669 from "Untrust" to "Trust"  "APN TELCEL-FERROSUR-10.212.248.0/23" "FERROSUR-APN TELCEL-172.16.103.90/32" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0x11e pair-policy 666 log 
+set policy id 669
+exit
+set policy id 670 from "Untrust" to "Trust"  "APN TELCEL-FERROSUR-10.212.250.0/24" "FERROSUR-APN TELCEL-172.16.103.90/32" "ANY" tunnel vpn "APN-Telcel-Ferrosur" id 0x11f pair-policy 667 log 
+set policy id 670
+exit
+set policy id 671 from "Trust" to "Untrust"  "Any" "apps1.semarnat.gob.mx" "ANY" permit log 
+set policy id 671
+set dst-address "www.gemco.com.mx"
+exit
+set policy id 674 name "prueba pag. sin acc" from "Trust" to "Untrust"  "10.10.250.145/32" "Barracuda-Update" "ANY" nat src dip-id 12 permit log 
+set policy id 674
+exit
+set policy id 677 from "Trust" to "Untrust"  "10.10.1.24" "194.39.131.34-Servidor SAP" "FTP" permit log 
+set policy id 677
+set src-address "10.10.32.195-SAP_Router"
+set src-address "10.10.33.70"
+set src-address "10.10.33.75"
+set src-address "10.10.33.90"
+set src-address "10.10.33.91"
+set src-address "10.10.33.92"
+set src-address "10.10.33.93"
+set src-address "10.10.34.152"
+set src-address "Host_10.10.61.35"
+set dst-address "216.251.67.122_ftp_ericher"
+set dst-address "CMI-66.161.82.84"
+set dst-address "ericher-nld.dyndns.org"
+set dst-address "ftp.edi.rez1.com"
+set dst-address "ftp.transentric.com"
+set dst-address "nld.dyndns.org"
+set dst-address "sftp4.successfactors.com"
+set service "PING"
+set service "SFTP"
+set service "tpc_sap"
+exit
+set policy id 680 from "Trust" to "Untrust"  "svcoxdbqlk01-10.10.31.33" "ga.idevio.com" "HTTP" permit 
+set policy id 680
+set src-address "svcoxdbqlk02-10.10.31.34"
+set src-address "svcoxqlk01-10.10.32.147"
+set src-address "svcoxqlk02-10.10.32.148"
+set dst-address "maps.qlikcloud.com"
+set service "HTTPS"
+exit
+set policy id 690 from "Trust" to "Untrust"  "10.10.32.142_svcoxapt01" "eferromex.saas.appdynamics.com" "HTTPS" permit log 
+set policy id 690 disable
+set policy id 690
+set src-address "10.10.32.143_svcoxapt02"
+set src-address "10.10.32.144_svcoxapt03"
+set src-address "10.10.32.145_svcoxapt04"
+set src-address "10.10.32.170_svcoxems02"
+set src-address "10.10.32.171_svcoxbw01"
+set src-address "10.10.32.196_svcoxmon01"
+set src-address "10.10.57.20_svcoxwbt01"
+set src-address "10.10.57.21_svcoxwbt02"
+set src-address "10.10.57.22_svcoxwbt03"
+set src-address "10.10.57.23_svcoxwbt04"
+set src-address "172.16.103.66_fs03mxwb01"
+exit
+set policy id 688 from "Trust" to "Untrust"  "10.10.32.142_svcoxapt01" "analytics.api.appdynamics.com" "HTTPS" permit log 
+set policy id 688
+set src-address "10.10.32.143_svcoxapt02"
+set src-address "10.10.32.144_svcoxapt03"
+set src-address "10.10.32.145_svcoxapt04"
+set src-address "10.10.32.170_svcoxems02"
+set src-address "10.10.32.171_svcoxbw01"
+set src-address "10.10.32.196_svcoxmon01"
+set src-address "10.10.57.20_svcoxwbt01"
+set src-address "10.10.57.21_svcoxwbt02"
+set src-address "10.10.57.22_svcoxwbt03"
+set src-address "10.10.57.23_svcoxwbt04"
+set src-address "172.16.103.66_fs03mxwb01"
+set src-address "shcoxflx2bl09 _10.10.59.36"
+set src-address "shgdlen1bl04_10.10.64.143"
+set dst-address "ca.dynatrace.com"
+set dst-address "eferromex.saas.appdynamics.com"
+set dst-address "fxi67456.live.dynatrace.com"
+exit
+set policy id 691 from "Trust" to "Untrust"  "10.10.32.50" "eferromex.saas.appdynamics.com" "HTTPS" permit log 
+set policy id 691 disable
+set policy id 691
+exit
+set policy id 686 from "Trust" to "Untrust"  "10.10.32.50" "analytics.api.appdynamics.com" "HTTPS" permit log 
+set policy id 686
+set dst-address "ca.dynatrace.com"
+set dst-address "eferromex.saas.appdynamics.com"
+set dst-address "fxi67456.live.dynatrace.com"
+exit
+set policy id 687 from "Trust" to "Untrust"  "10.10.0.0/16" "fs-us.kyocera.biz" "161_UDP" permit log 
+set policy id 687
+set dst-address "rfs-us.kyocera.biz"
+set service "445"
+set service "5985"
+set service "8081"
+set service "8442"
+set service "8443"
+set service "9090"
+set service "9091"
+set service "9100"
+set service "HTTP"
+set service "HTTPS"
+exit
+set policy id 689 from "Trust" to "Untrust"  "10.10.31.240" "208.67.220.220" "2222" permit log 
+set policy id 689
+set dst-address "208.67.220.222"
+set dst-address "208.67.222.220"
+set dst-address "208.67.222.222"
+set dst-address "67.215.71.201"
+set dst-address "67.215.92.0/24"
+set dst-address "91.189.89.199"
+set dst-address "91.189.94.4"
+set dst-address "crl.digicert.com"
+set dst-address "ocsp.digicert.com"
+set service "HTTP"
+set service "HTTPS"
+set service "TCP_53"
+set service "UDP_123"
+set service "UDP_53"
+exit
+set policy id 695 from "Trust" to "Untrust"  "10.10.2.100" "Any" "ANY" permit log 
+set policy id 695
+set src-address "10.10.250.215"
+set src-address "10.10.35.76"
+set src-address "10.10.36.63"
+set src-address "10.10.40.33"
+set src-address "10.175.116.205"
+set src-address "10.175.116.254"
+set src-address "10.175.116.81"
+set src-address "Proxy Virtual"
+exit
+set policy id 698 from "Trust" to "Untrust"  "10.10.29.91" "centos.com" "HTTP" permit log 
+set policy id 698
+set src-address "10.10.39.34"
+set src-address "10.10.39.36"
+set src-address "10.10.39.52/32"
+set src-address "svcoxngo01-10.10.39.33"
+set src-address "svcoxopk01-10.10.39.35"
+set dst-address "centos.org"
+set dst-address "community.opmantek.com"
+set dst-address "mirror.centos.org"
+set dst-address "mirrorlist.centos.org"
+set dst-address "nagios.com"
+set dst-address "opmantek.com"
+set dst-address "repo.nagios.com"
+set dst-address "support.nagios.com"
+set dst-address "support.opmantek.com"
+set dst-address "www.assets.nagios.com"
+set service "HTTPS"
+exit
+set policy id 699 from "Trust" to "Untrust"  "10.10.32.193/32" "200.34.168.94/32" "HTTP" permit 
+set policy id 699
+exit
+set policy id 700 from "Trust" to "Untrust"  "10.10.78.102/32" "ftp2.railconnect.com" "ANY" permit log 
+set policy id 700
+set src-address "10.10.78.134/32"
+exit
+set policy id 702 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.6)" "ANY" permit log 
+set policy id 702
+exit
+set policy id 703 from "Trust" to "Untrust"  "Any" "fsrr.railconnect.com" "ANY" permit log 
+set policy id 703
+exit
+set policy id 705 from "Untrust" to "Trust"  "104.244.14.252/32" "Any" "ANY" deny 
+set policy id 705
+exit
+set policy id 708 name "10.175.116.50" from "Trust" to "Untrust"  "10.175.116.50" "Any" "ANY" permit 
+set policy id 708
+exit
+set policy id 709 from "Untrust" to "dmz2"  "Any" "MIP(200.52.78.4)" "HTTP" permit log 
+set policy id 709 disable
+set policy id 709
+exit
+set policy id 712 from "Trust" to "Untrust"  "10.10.32.24_svcoxctm01" "ftp.deacero.com" "ANY" permit 
+set policy id 712
+set src-address "10.10.32.252"
+exit
+set policy id 713 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.52)" "TCP-22" nat src permit log 
+set policy id 713
+set service "TCP-443"
+set service "TCP-80"
+exit
+set policy id 716 from "Trust" to "Untrust"  "10.10.35.235" "FTP-Holland" "FTP" permit log 
+set policy id 716
+set src-address "10.10.66.173/32"
+set src-address "10.11.70.129"
+exit
+set policy id 718 from "Untrust" to "Trust"  "IP_CHINA_3" "Any" "ANY" deny log 
+set policy id 718
+exit
+set policy id 719 name "Acceso a wpp.sandbox.mit.com.mx" from "Trust" to "Untrust"  "Chepe Legacy Pro1" "wpp.sandbox.mit.com.mx" "HTTP" nat src permit 
+set policy id 719
+set src-address "Chepe Legacy Pro2"
+set src-address "Reservaciones Pro"
+exit
+set policy id 720 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.16)" "7070" permit 
+set policy id 720
+set service "7443"
+set service "9090"
+set service "HTTP"
+set service "HTTPS"
+exit
+set policy id 721 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.53)" "7070" permit log 
+set policy id 721
+set service "7443"
+set service "9091"
+set service "HTTP"
+set service "HTTPS"
+exit
+set policy id 722 from "Untrust" to "Trust"  "Any" "10.10.32.19/32" "ANY" permit log 
+set policy id 722
+exit
+set policy id 724 from "Trust" to "Untrust"  "10.10.66.203" "Any" "ANY" nat src permit log 
+set policy id 724
+set src-address "10.11.72.0/24"
+exit
+set policy id 725 name "Acceso a Webpay Plus" from "Trust" to "Untrust"  "Chepe Legacy Pro1" "Webpay Plus" "HTTP" permit log 
+set policy id 725
+set src-address "Chepe Legacy Pro2"
+set src-address "Reservaciones Pro"
+set service "TCP-443"
+exit
+set policy id 726 from "Trust" to "Untrust"  "10.10.32.29" "ferromex.jidoka.io" "HTTPS" permit log 
+set policy id 726
+exit
+set policy id 727 from "Trust" to "Untrust"  "10.10.31.27" "dev30431.service-now.com" "HTTPS" permit log 
+set policy id 727
+set dst-address "install.service-now.com"
+exit
+set policy id 729 from "Trust" to "Untrust"  "Any" "s1.ariba.com" "ANY" permit log 
+set policy id 729
+exit
+set policy id 731 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.28)" "SFTP" permit log 
+set policy id 731
+exit
+set policy id 733 from "Untrust" to "Trust"  "Any" "MIP(200.52.78.14)" "FTP" permit 
+set policy id 733
+exit
+set policy id 735 name "www.google.com" from "Trust" to "Untrust"  "Any" "www.google.com" "ANY" permit log 
+set policy id 735
+exit
+set policy id 737 from "Trust" to "Untrust"  "Any" "remote.fecrwy.com" "ANY" permit log 
+set policy id 737
+exit
+set policy id 741 name "10.1.4.0/23" from "Netcontrol" to "Untrust"  "10.1.12.0/23" "Any" "ANY" nat src permit log 
+set policy id 741
+set src-address "10.1.4.0/23"
+exit
+set policy id 743 from "Untrust" to "Trust"  "10.10.34.136" "Any" "ANY" nat src permit log 
+set policy id 743
+exit
+set policy id 744 name "10.10.32.243" from "Trust" to "Untrust"  "Any" "10.10.32.243" "FTP" permit log 
+set policy id 744
+set service "SFTP"
+exit
+set policy id 746 name "Policy//TT147118" from "Trust" to "Untrust"  "10.10.32.105" "192.70.191.64" "HTTPS" permit 
+set policy id 746
+exit
+set policy id 759 from "Trust" to "Untrust"  "AP_Meraki" "Any" "ANY" permit traffic pbw 30000
+set policy id 759
+exit
+set policy id 760 from "Trust" to "Untrust"  "10.10.28.99" "VPN_UNIFIED-FXE 192.168.245.162/32" "ANY" tunnel vpn "VPN_UNIFIED-FXE_1" id 0x127 pair-policy 763 log 
+set policy id 760
+set src-address "10.10.32.99/32"
+exit
+set policy id 763 from "Untrust" to "Trust"  "VPN_UNIFIED-FXE 192.168.245.162/32" "10.10.32.99/32" "ANY" tunnel vpn "VPN_UNIFIED-FXE_1" id 0x127 pair-policy 760 log 
+set policy id 763
+exit
+set policy id 766 name "10.10.32.121" from "Trust" to "Untrust"  "10.10.32.121/32" "Any" "ANY" nat src permit 
+set policy id 766
+exit
+set policy id 768 from "Trust" to "Untrust"  "10.10.31.51" "VM_Oracle-129.213.18.247" "TCP-1521" permit 
+set policy id 768
+set src-address "10.10.31.73"
+set src-address "10.10.31.75"
+set src-address "10.10.31.91"
+set src-address "10.10.31.93"
+set src-address "gjimenez-10.10.251.142"
+set src-address "jreynoso-10.10.251.111"
+set dst-address "VM_Oracle2-129.213.83.182"
+set dst-address "VM_Oracle3-129.213.21.65"
+set service "TCP-22"
+exit
+set policy id 769 name "Tarea//152527" from "Trust" to "Untrust"  "Any" "adrm.com/" "ANY" permit 
+set policy id 769
+set dst-address "azure.com"
+set dst-address "azure.net"
+set dst-address "portal.azurerms.com/"
+set dst-address "virtualearth.net"
+set dst-address "windows.net"
+exit
+set policy id 770 from "Trust" to "Untrust"  "10.10.28.99/32" "VPN_UNIFIED-FXE 192.168.245.162/32" "ANY" tunnel vpn "VPN-UNIFIED-FXE-2" id 0x12a pair-policy 771 log 
+set policy id 770
+exit
+set policy id 771 from "Untrust" to "Trust"  "VPN_UNIFIED-FXE 192.168.245.162/32" "10.10.28.99/32" "ANY" tunnel vpn "VPN-UNIFIED-FXE-2" id 0x12a pair-policy 770 log 
+set policy id 771
+exit
+set policy id 774 from "Trust" to "Untrust"  "10.10.32.60" "Any" "ANY" permit log 
+set policy id 774
+exit
+set policy id 776 from "Trust" to "Untrust"  "10.11.77.105" "axxonnet.com" "ANY" permit 
+set policy id 776
+exit
+set policy id 777 from "Trust" to "Untrust"  "10.10.13.143" "10.10.64.15" "PTO_389" permit log 
+set policy id 777
+exit
+set policy id 779 from "Untrust" to "Trust"  "58.242.83.0" "Any" "ANY" deny log 
+set policy id 779
+exit
+set policy id 780 name "Webex Board" from "Trust" to "Untrust"  "10.10.32.158" "Any" "ANY" nat src permit log 
+set policy id 780
+exit
+set policy id 786 from "Trust" to "Untrust"  "10.10.250.0/23" "157.230.218.231_ mail.b-iit.com" "Pto_110" permit log 
+set policy id 786
+set service "Pto_465"
+set service "Pto_995"
+set service "SMTP"
+set service "TCP-143 SQL_Server"
+set service "TCP-25"
+exit
+set policy id 789 from "Trust" to "Untrust"  "10.10.40.53" "cisco.com" "HTTP" permit 
+set policy id 789
+set src-address "10.10.40.54"
+set dst-address "tools2.cisco.com"
+set service "HTTPS"
+exit
+set policy id 791 from "Trust" to "Untrust"  "10.10.32.171/32" "ftp.truck.fourkites.com" "ANY" permit 
+set policy id 791
+exit
+set policy id 793 name "TEST09" from "Trust" to "Untrust"  "Acceso Sagarpa" "2Skype Microsoft" "ANY" nat src dip-id 5 permit 
+set policy id 793
+exit
+set policy id 794 from "Trust" to "Untrust"  "10.141.60.80/28" "213.174.234.157" "ANY" permit 
+set policy id 794
+set dst-address "213.174.234.158"
+exit
+set policy id 795 name "LIBRE//TT187129" from "Trust" to "Untrust"  "10.1.12.30" "Any" "ANY" permit log 
+set policy id 795
+set src-address "10.1.12.31"
+exit
+set policy id 796 name "ORACLE//TT187129" from "Untrust" to "Trust"  "Linux/Oracle" "10.1.12.30" "ANY" permit 
+set policy id 796
+set src-address "Linux/Oracle/Update"
+set dst-address "10.1.12.31"
+exit
+set policy id 798 from "Trust" to "Untrust"  "Any" "fonts.google.com" "HTTP" permit 
+set policy id 798
+set dst-address "https://fonts.googleapis.com/"
+exit
+set policy id 799 from "Trust" to "Untrust"  "10.10.32.168/32" "Any" "ANY" permit log 
+set policy id 799
+exit
+set policy id 804 name "NTP/ICMP" from "Trust" to "Untrust"  "Any" "Any" "ICMP-ANY" permit log 
+set policy id 804
+set service "NTP"
+exit
+set policy id 805 from "Trust" to "Untrust"  "SAP1" "Any" "ANY" permit log 
+set policy id 805
+set src-address "SAP2"
+exit
+set policy id 809 name "TE Ticket #204721" from "Trust" to "Untrust"  "10.10.34.89" "Any" "ANY" permit log 
+set policy id 809
+exit
+set policy id 811 from "Trust" to "Untrust"  "Acceso Sagarpa" "2Skype Microsoft" "ANY" nat src dip-id 13 permit auth 
+set policy id 811
+exit

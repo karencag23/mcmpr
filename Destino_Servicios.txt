@@ -1,0 +1,593 @@
+config firewall service custom
+edit "Pto8081,8096,8082,8003"
+set tcp-portrange  8081-8081 8096-8096 8082-8082 8003-8003
+set udp-portrange  8081-8081 8096-8096 8082-8082
+next
+edit "Puerto_109,_5051"
+set tcp-portrange  109-109 5051-5051
+next
+edit "Pto_2095"
+set tcp-portrange  2095-2095
+next
+edit "Secure_Radius_Svce_2083"
+set tcp-portrange  2083-2083
+set udp-portrange  2083-2083
+next
+edit "Base_de_datos_DIA"
+set tcp-portrange  7824-7824
+next
+edit "7001"
+set tcp-portrange  7001-7001
+next
+edit "SNPP-444"
+set tcp-portrange  444-444
+next
+edit "SAGARPA"
+set tcp-portrange  2155-2155 80-80 0-0
+set udp-portrange  2155-2155
+next
+edit "avaya_pbx"
+set tcp-portrange  5050-5050
+next
+edit "VPN-CISCO"
+set tcp-portrange  10000-10000
+set udp-portrange  10000-10000
+next
+edit "maildev"
+set tcp-portrange  80-80 443-443 389-389 636-636
+next
+edit "Demo_allot"
+set tcp-portrange  80-80 21-21 51000-51000 52000-52000 53000-53000
+next
+edit "5222,_5223,_5269,_7777"
+set tcp-portrange  5222-5222 5223-5223 5269-5269 7777-7777
+next
+edit "doc-server-station"
+set tcp-portrange  3389-3389
+set udp-portrange  3389-3389
+next
+edit "PROXY-FERROMEX1"
+set tcp-portrange  4443-4443 100-109 51002-51009 50000-50001
+next
+edit "Pto_4500_ipsec-nat-t"
+set tcp-portrange  4500-4500
+set udp-portrange  4500-4500
+next
+edit "pto_8080"
+set tcp-portrange  8080-8080
+next
+edit "pto_8999"
+set tcp-portrange  8999-8999
+set udp-portrange  8999-8999
+next
+edit "Pto_8000_TCP"
+set tcp-portrange  8000-8000
+next
+edit "Pto_TCP_UDP_4672"
+set tcp-portrange  0-65535
+set udp-portrange  0-65535
+next
+edit "Saprouter-3299"
+set tcp-portrange  3299-3299
+set udp-portrange  3299-3299
+next
+edit "POP3/SSL"
+set tcp-portrange  995-995
+set udp-portrange  995-995
+next
+edit "Sevicios_para_190.1.4.45"
+set tcp-portrange  993-993 143-143
+set udp-portrange  993-993 143-143
+next
+edit "IMAP4/SSL"
+set tcp-portrange  993-993
+set udp-portrange  993-993
+next
+edit "Pto-8080-HTTP-ALT"
+set tcp-portrange  8080-8080
+next
+edit "Pto-7824"
+set tcp-portrange  7824-7824
+next
+edit "Pto-8080"
+set tcp-portrange  8080-8080 8030-8030
+next
+edit "Pto-3301"
+set tcp-portrange  3301-3301
+next
+edit "Pto-5631"
+set tcp-portrange  5631-5631
+next
+edit "pto_6400_crital_reports"
+set tcp-portrange  6400-6400
+next
+edit "pto_50000"
+set tcp-portrange  50000-50000
+next
+edit "Pto-50100"
+set tcp-portrange  50100-50100
+next
+edit "Puerto_Skype"
+set tcp-portrange  33138-33138
+next
+edit "SKYPE"
+set tcp-portrange  29015-29015 33138-33138 37-37
+next
+edit "Puertos_1719,_2776,_2777"
+set udp-portrange  1719-1719 2776-2776 2777-2777
+next
+edit "Puerto_2776"
+set tcp-portrange  2776-2776
+set udp-portrange  2776-2776
+next
+edit "Puerto-2187"
+set tcp-portrange  2187-2187
+next
+edit "SMTP/SSL"
+set tcp-portrange  465-465
+next
+edit "tpc_sap"
+set tcp-portrange  3299-3299 3200-3200 3201-3201
+next
+edit "Ptos-doc.ferromex"
+set tcp-portrange  2055-2055 4739-4739 6343-6343
+set udp-portrange  2055-2055 4739-4739 6343-6343
+next
+edit "VP-8080"
+set tcp-portrange  8080-8080
+next
+edit "Puerto-5000"
+set tcp-portrange  50000-50000
+next
+edit "ICA"
+set tcp-portrange  1494-1494
+next
+edit "SSL_TELNET"
+set tcp-portrange  992-992
+next
+edit "License_Check/SSL"
+set tcp-portrange  9470-9470
+next
+edit "Blackberry"
+set tcp-portrange  3101-3101
+next
+edit "Puerto-21173"
+set tcp-portrange  21173-21173
+next
+edit "Puerto-465"
+set tcp-portrange  465-465
+next
+edit "Puerto_6080"
+set tcp-portrange  6080-6080
+next
+edit "CONCENTRADOR_VPN"
+set tcp-portrange  18190-18191
+next
+edit "Puerto-4433"
+set tcp-portrange  4433-4433
+next
+edit "Puerto-8642"
+set tcp-portrange  8642-8642
+next
+edit "MySQL"
+set tcp-portrange  3306-3306
+next
+edit "Puerto-2300"
+set tcp-portrange  2300-2300
+next
+edit "Puerto-9443"
+set tcp-portrange  9443-9443
+next
+edit "Puerto-1022"
+set tcp-portrange  1022-1022
+next
+edit "SMTP_secure_465"
+set tcp-portrange  465-465
+set udp-portrange  465-465
+next
+edit "Puerto-495"
+set tcp-portrange  495-495
+next
+edit "Puerto-1533"
+set tcp-portrange  1533-1533
+next
+edit "Puerto-9080"
+set tcp-portrange  9080-9080
+next
+edit "Ferromex_Port_15"
+set tcp-portrange  1533-1533 9080-9080
+set udp-portrange  1533-1533 9080-9080
+next
+edit "Puerto-49177"
+set tcp-portrange  49177-49177
+next
+edit "Puerto-56123"
+set tcp-portrange  56123-56123
+set udp-portrange  56123-56123
+next
+edit "MS-CIFS"
+set tcp-portrange  445-445
+set udp-portrange  445-445
+next
+edit "Puerto-8"
+set tcp-portrange  8-8
+next
+edit "Puerto-8501"
+set udp-portrange  8501-8501
+next
+edit "Puerto-Holcim_Apasco"
+set tcp-portrange  47449-47449
+next
+edit "Puerto-5223"
+set tcp-portrange  5223-5223
+next
+edit "Puerto-3689"
+set tcp-portrange  3689-3689
+next
+edit "Puerto-5353"
+set udp-portrange  5353-5353
+next
+edit "Puerto-5222"
+set tcp-portrange  5222-5222
+set udp-portrange  5222-5222
+next
+edit "pto_10000"
+set tcp-portrange  10000-10000
+next
+edit "Puerto-5228"
+set tcp-portrange  5228-5228
+set udp-portrange  5228-5228
+next
+edit "pto_2525_smtp"
+set tcp-portrange  2525-2525
+next
+edit "SFTP"
+set tcp-portrange  22-22 99-99
+set udp-portrange  99-99
+next
+edit "pto_8200_tcp"
+set tcp-portrange  8200-8200
+next
+edit "Gmail-465"
+set tcp-portrange  465-465
+next
+edit "Gmail-993"
+set tcp-portrange  993-993
+next
+edit "gmail-587"
+set tcp-portrange  587-587
+next
+edit "Sap_Network-3298"
+set tcp-portrange  3298-3298
+next
+edit "Puerto_50000"
+set tcp-portrange  50000-50000
+next
+edit "Puerto-50000"
+set tcp-portrange  50000-50000
+next
+edit "Puerto-4042"
+set tcp-portrange  4042-4042
+next
+edit "Puerto-8443"
+set tcp-portrange  8443-8443
+next
+edit "Puerto-5553"
+set tcp-portrange  5553-5553
+next
+edit "Puerto-8000"
+set tcp-portrange  8000-8000
+next
+edit "Puerto-1522"
+set tcp-portrange  1522-1522
+next
+edit "Puertos-23301,_23303"
+set tcp-portrange  23301-23301 23303-23303
+next
+edit "Puerto-90"
+set tcp-portrange  90-90
+next
+edit "Puerto-6036"
+set tcp-portrange  6036-6036
+next
+edit "Puerto-587"
+set tcp-portrange  587-587
+set udp-portrange  587-587
+next
+edit "Puerto-2083"
+set tcp-portrange  2083-2083
+next
+edit "Puertos_20_21_22"
+set tcp-portrange  20-22
+next
+edit "Puertos_Telcel_1"
+set tcp-portrange  2809-2809 8880-8880 9043-9043 9060-9060 9080-9080 9443-9443 9633-9633 2810-2810
+next
+edit "Puertos_Telcel_2"
+set tcp-portrange  8881-8881 9044-9044 9061-9061 9081-9081 9444-9444 9634-9634
+next
+edit "TCP-443"
+set tcp-portrange  443-443
+next
+edit "TCP-80"
+set tcp-portrange  80-80
+next
+edit "Puerto-3007"
+set tcp-portrange  3007-3007
+set udp-portrange  3007-3007
+next
+edit "Puerto_81"
+set tcp-portrange  81-81
+set udp-portrange  81-81
+next
+edit "Pto_1528"
+set tcp-portrange  1528-1528
+set udp-portrange  1528-1528
+next
+edit "TCP-50778"
+set tcp-portrange  50778-65535
+next
+edit "pto_81_8081_tcp"
+set tcp-portrange  81-81 8081-8081
+next
+edit "Pto_587"
+set tcp-portrange  587-587
+set udp-portrange  587-587
+next
+edit "Pto_465"
+set tcp-portrange  465-465
+set udp-portrange  465-465
+next
+edit "Pto_995"
+set tcp-portrange  995-995
+set udp-portrange  995-995
+next
+edit "Pto_110"
+set tcp-portrange  110-110
+set udp-portrange  110-110
+next
+edit "PUERTO_35000"
+set tcp-portrange  35000-35000 35001-35001
+set udp-portrange  35000-35000 35001-35001
+next
+edit "Puerto_1433"
+set tcp-portrange  1433-1433
+set udp-portrange  1433-1433
+next
+edit "TCP-143_SQL_Server"
+set tcp-portrange  143-143
+next
+edit "Pto_9154"
+set tcp-portrange  9154-9154
+set udp-portrange  9154-9154
+next
+edit "Pto_9002"
+set tcp-portrange  9002-9002
+set udp-portrange  9002-9002
+next
+edit "TCP-22"
+set tcp-portrange  22-22
+next
+edit "TCP-2195"
+set tcp-portrange  0-2195
+next
+edit "TCP_46262"
+set tcp-portrange  0-65535
+next
+edit "TCP/32137"
+set tcp-portrange  0-65535
+next
+edit "7400"
+set tcp-portrange  0-65535
+next
+edit "2222"
+set tcp-portrange  2222-2222
+next
+edit "7004"
+set tcp-portrange  0-65535
+next
+edit "36000"
+set tcp-portrange  0-65535
+next
+edit "36001"
+set tcp-portrange  0-65535
+next
+edit "Ephermeral_Port"
+set tcp-portrange  0-65535
+next
+edit "XMPP"
+set tcp-portrange  7400-7400
+next
+edit "SSHhttps/tunels"
+set tcp-portrange  2222-65535
+next
+edit "Trasveral_SIP"
+set udp-portrange  36000-65535 36001-65535
+next
+edit "Sip_Media"
+set udp-portrange  1024-65535 1024-65535
+next
+edit "SIP_Signaling_7004"
+set tcp-portrange  7004-65535 7004-65535
+set udp-portrange  7004-65535
+next
+edit "SIP_Signaling_7001"
+set tcp-portrange  7001-65535 7001-65535
+set udp-portrange  7001-65535
+next
+edit "SIP_Signaling_1024"
+set tcp-portrange  1024-65535 1024-65535
+set udp-portrange  1024-65535
+next
+edit "XMPP_Presence"
+set tcp-portrange  5222-5222
+next
+edit "https_Proxy"
+set tcp-portrange  8443-8443
+next
+edit "Media"
+set udp-portrange  36002-59999 36012-59999
+next
+edit "SIP_signaling_5061"
+set tcp-portrange  5061-5061
+set udp-portrange  5061-5061
+next
+edit "SIP_Signaling_5060"
+set tcp-portrange  5060-5060
+set udp-portrange  5060-5060
+next
+edit "HTTPS_file_retrieval"
+set tcp-portrange  6970-6970
+next
+edit "CUC"
+set tcp-portrange  443-443
+next
+edit "Media_36000_1024"
+set udp-portrange  1024-65535
+next
+edit "TCP-25"
+set tcp-portrange  25-25
+next
+edit "TCP-110"
+set tcp-portrange  110-110
+next
+edit "UDP_3478"
+set udp-portrange  3478-3483
+next
+edit "UDP_36002__59999"
+set udp-portrange  36002-59999
+next
+edit "UDP_36000_59999"
+set udp-portrange  36000-59999
+next
+edit "TCP_1720"
+set tcp-portrange  1720-1720
+next
+edit "UDP_1719"
+set tcp-portrange  1719-1719
+next
+edit "TCP_15000_19999"
+set tcp-portrange  15000-19999
+next
+edit "tcp_2777"
+set tcp-portrange  2777-2777
+next
+edit "UDP_1718"
+set udp-portrange  1718-1718
+next
+edit "UDP_53"
+set udp-portrange  53-53
+next
+edit "UDP_123"
+set udp-portrange  123-123
+next
+edit "Puerto_3478_3483"
+set udp-portrange  3478-3483
+next
+edit "Puerto_3478"
+set udp-portrange  3478-3483
+next
+edit "TCP_53"
+set tcp-portrange  53-53
+next
+edit "Puerto_4172"
+set tcp-portrange  4172-4172
+set udp-portrange  4172-4172
+next
+edit "Pto50000-59999"
+set tcp-portrange  50000-59999
+set udp-portrange  50000-59999
+next
+edit "Pto-5223"
+set tcp-portrange  5223-5223
+next
+edit "PTO3478-3481UDP"
+set udp-portrange  3478-3478 3479-3479 3480-3480 3481-3481
+next
+edit "3478"
+set udp-portrange  3478-3478
+next
+edit "9090"
+set tcp-portrange  9090-9090
+next
+edit "9091"
+set tcp-portrange  9091-9091
+next
+edit "8442"
+set tcp-portrange  8442-8442
+next
+edit "9100"
+set tcp-portrange  9100-9100
+next
+edit "8081"
+set tcp-portrange  8081-8081
+next
+edit "5985"
+set tcp-portrange  5985-5985
+next
+edit "161_UDP"
+set udp-portrange  161-161
+next
+edit "445"
+set tcp-portrange  445-445
+next
+edit "8443"
+set tcp-portrange  8443-8443
+next
+edit "TCP-4248"
+set tcp-portrange  4248-4248
+next
+edit "449"
+set tcp-portrange  449-449
+next
+edit "8476"
+set tcp-portrange  8476-8476
+next
+edit "7351"
+set tcp-portrange  7351-7351
+next
+edit "7734"
+set tcp-portrange  7734-7734
+next
+edit "7752"
+set tcp-portrange  7752-7752
+next
+edit "7070"
+set tcp-portrange  7070-7070
+next
+edit "7443"
+set tcp-portrange  7443-7443
+next
+edit "0-65535"
+set tcp-portrange  0-65535
+next
+edit "ALLPORT_0-65535"
+set tcp-portrange  7443-7443
+next
+edit "TCP-1521"
+set tcp-portrange  1521-1521
+next
+edit "PTO_389"
+set tcp-portrange  389-389
+set udp-portrange  389-389
+next
+edit "9251"
+set tcp-portrange  9251-9251
+set udp-portrange  9251-9251
+next
+edit "8888"
+set tcp-portrange  8888-8888
+set udp-portrange  8888-8888
+next
+edit "8411"
+set tcp-portrange  8411-8411
+set udp-portrange  8411-8411
+next
+edit "TT204190"
+set tcp-portrange  9194-9194 80-80 443-443 9191-9191 445-445
+next
+edit "Pto_25"
+set tcp-portrange  25-25
+set udp-portrange  25-25
+next
+end

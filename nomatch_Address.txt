@@ -1,0 +1,4 @@
+# error para registro del firewall 
+edit "*.config.skype.com"
+edit "*.cqd.lync.com"
+

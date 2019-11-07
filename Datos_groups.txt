@@ -1,0 +1,179 @@
+config firewall addrgrp
+edit "Acceso_Sagarpa"
+set member  "10.10.184.0_Red_Nogales" "10.10.184.26" "10.10.188.114" "10.10.188.136" "10.10.192.237" "190.1.50.216/32" "Sagarpa_Rio_escondido-10.10.188.194"
+next
+edit "Acceso_sdinet.com.mx"
+set member  "Alberto_Castillo_Almanza" "Fernando_Medina_Bueno" "Ismael_Pico_Hernandez"
+next
+edit "accesotelcel"
+set member  "10.10.32.15" "10.10.32.19" "10.10.32.78" "10.10.32.79" "10.10.64.70" "BacSoft_AEI-10.10.32.70"
+next
+edit "AD_IMEX_GOOGLE"
+set member  "10.10.1.10" "10.10.1.15" "10.10.1.24" "10.10.1.25" "10.10.1.35" "10.10.1.45"
+next
+edit "AP_Meraki"
+set member  "10.10.34.134" "10.10.35.140" "10.10.35.161" "10.10.35.40" "10.10.35.61"
+next
+edit "Aplicación_TMD"
+set member  "Alberto_Chavez" "Cd_Juarez" "Chihuahua" "GDL_Principal_Alfonso" "GDL_Taller" "Hermosillo" "Irapuato" "Sufragio" "Torreon"
+next
+edit "Big-Ip-monitor"
+set member  "10.10.20.17_IT-1" "10.10.20.18_IT-2" "10.10.20.19_IT-3" "10.10.42.246" "10.10.42.247" "10.10.42.248" "10.10.42.249"
+next
+edit "Equipos_Redes_TI_t"
+set member  "10.10.13.6_VPN_Consola_Checkpoint" "10.10.13.7_VPN_Reportes_CheckPoint" "10.10.20.17_IT-1" "10.10.20.18_IT-2" "10.10.20.19_IT-3" "10.10.251.204" "10.10.31.69_SVRVUCEM" "10.10.32.4" "10.10.39.10_AO_120126" "10.10.39.50" "10.10.39.51" "10.10.40.133" "10.10.40.200" "10.10.40.201" "10.10.40.204-FireSight2000" "10.10.40.3" "10.10.42.246/32" "10.10.42.247" "10.10.42.248" "10.10.42.249" "10.10.71.8" "190.1.9.10" "CollectorCisco" "Facturación_Electrónica_Producción-10.10.32.213" "Fastrack1" "Fastrack2" "Fastrack3" "Fastrack4" "Fastrack5" "NSFCdJuarez" "NSFChihuahua" "nsfpst01" "nsfpst02" "nsfpst03" "nsfpst04" "nsfpst05" "Proxydgl-10.10.40.134" "svcosmail01" "svcosmail02" "svcoxadm01" "svcoxmail01" "svcoxmail02" "svcoxsmtp01" "svcoxstm01" "svcoxstm02" "svcoxtrv02" "svcoxtrv03" "svgdlmail01" "svgdlmail02" "svlotusmailO365" "svvczmail01" "svvczmail02" "TT-53637-10.10.32.5"
+next
+edit "Ferromex_to_APN_Telcel"
+set member  "10.10.31.31" "10.10.31.32" "10.10.32.78" "10.10.32.79" "10.10.42.73"
+next
+edit "FTP_20_Y_21_trust"
+set member  "SICOFXE_corporativo"
+next
+edit "FTP_cemex"
+set member  "190.1.4.224/255.255.255.255" "190.1.6.149/255.255.255.255" "190.1.7.228/255.255.255.255"
+next
+edit "ftp_Libres"
+set member  "190.1.4.214" "190.1.4.229" "190.1.4.49" "190.1.4.52" "190.1.4.61/32" "190.1.5.112" "190.1.5.190" "190.1.6.11" "190.1.6.61" "190.1.61.212"
+next
+edit "ftp_railconnect"
+set member  "190.1.4.59_SAPSG" "190.1.4.70_Argos" "190.1.4.80_Kronos" "CAROLINA" "Celina_Hernandez" "FEDERICO1" "FEDERICO2" "JONATHAN" "Jorge_Rodriguez" "RAUL" "Serv-srsappro-10.10.33.70" "Victor_Diaz" "Vrosales"
+next
+edit "IMEX-1"
+set member  "10.10.4.3" "10.10.4.5"
+next
+edit "Informacion_RMI"
+set member  "Angelica_Cabanas" "Carlos_Blake" "Celina_Hernandez" "CITRIX1" "CITRIX2" "Eduardo_Gómez_A." "Eduardo_Hilton" "Hector_Rodriguez" "Javier_Zamarripa_M." "Jorge_Rodriguez" "Paula_Flores" "Victor_Diaz"
+next
+edit "IP_phones-Imex"
+set member  "10.10.15.251" "10.10.2.125" "10.10.35.193" "10.10.50.50" "10.10.50.51-phone-Imex" "10.10.51.50" "10.10.51.51" "10.10.51.52" "10.10.52.50" "10.10.52.51" "10.10.53.50" "10.10.53.51" "10.20.103.23"
+next
+edit "ip-libres-10.10.x.x"
+set member  "10.1.4.34" "10.1.4.35" "10.10.146.123/32" "10.10.146.183/32" "10.10.15.142_alerta_sismica" "10.10.15.190" "10.10.22.47" "10.10.250.46_Juan_Carlos_Miranda" "10.10.250.98" "10.10.29.131" "10.10.29.132" "10.10.32.149" "10.10.32.158" "10.10.32.196" "10.10.32.21" "10.10.34.160" "10.10.35.11_bancos" "10.10.35.192" "10.10.35.193" "10.10.35.196/Temporal" "10.10.35.42/Temporal" "10.10.35.71" "10.10.36.162" "10.10.36.186" "10.10.37.192" "10.10.37.195" "10.10.37.199" "10.10.40.6" "10.10.49.80" "10.175.116.24_/32" "10.175.116.38" "AP_Meraki_cir99" "Bancos1" "CallTrip" "CorporateMessenger" "F5-190.1.4.15" "ISS-GX5108-10.10.40.5" "Maqui_Instructor_SAP" "Rogelio_Velez" "Site_protector_del_equipo_IPS-10.10.40.6" "svcoxdrpscp01-10.10.32.61" "UMBRELLA-VA-PRI_10.10.32.188" "UMBRELLA-VA-PRI_10.10.32.189"
+next
+edit "LAN_WeWork_FXE"
+set member  "10.175.116.155/32" "10.175.116.164/32" "10.175.116.20/32" "10.175.116.21/32" "10.175.116.22/32" "10.175.116.23/32" "10.175.116.24/32" "10.175.116.25/32" "10.175.116.26/32" "10.175.116.27/32" "10.175.116.28/32" "10.175.116.29/32" "10.175.116.30/32" "10.175.116.31/32"
+next
+edit "Pool_Self_Ip_F5"
+set member  "10.10.31.18" "10.10.31.19" "10.10.42.246/32" "10.10.42.247" "10.10.42.248" "10.10.42.249"
+next
+edit "Serv-SAP-IMEX"
+set member  "imex-isx18-10.10.63.138" "imex-isx19-10.10.63.139" "sapdes02-10.10.62.132" "sapproap01-10.10.61.25" "sapproap02-10.10.61.26" "sapproci-10.10.61.21" "sapprodb-10.10.61.19" "sapqas02-10.10.62.17" "sapserver1-10.10.62.150" "sapsolman-10.10.61.6"
+next
+edit "SERVERS_RHLE6"
+set member  "RHLE6-DES-10.10.62.132" "RHLE6-ECC_10.10.61.19" "RHLE6-ECC-AP1_10.10.61.25" "RHLE6-ECC-AP2_10.10.61.26" "RHLE6-QAS_10.10.62.17" "RHLE6-SOL_10.10.61.6" "RHLE6-TEST02_10.10.62.150"
+next
+edit "Servidor_Imex_SMTP"
+set member  "190.1.4.249_Imex"
+next
+edit "SERVIDOR69.16.233.139"
+set member  "Servidor_69.16.233.139" "Servidor_69.16.233.139_2" "Servidor_69.16.233.139_3"
+next
+edit "Servidores_SMTP-intel"
+set member  "190.1.4.249_Imex" "190.1.4.50_NT_Corp" "190.1.4.72_Jupiter" "190.1.4.74_Zeus" "190.1.4.77_Ito" "190.1.4.79_Mercurio" "190.1.4.90_Apolo" "190.1.6.203_CRMpro" "190.1.6.218_ADM_Unix" "190.1.6.219_ADM_Site" "190.1.7.153_CRMdev" "190.1.8.14_FCK2GDL" "BARRACUDA_IN_190.1.7.230" "bARRACUDA_OUT_190.1.7.231"
+next
+edit "Servidores_Smtp_Unix-1"
+set member  "10.10.33.76-Serv-srsapap1" "10.10.65.21" "190.1.10.221_gdl_jupiter" "190.1.10.249_GDL_DFCRUX" "190.1.4.59_SAPSG" "190.1.4.70_Argos" "190.1.4.76_Olimpia" "190.1.8.4_Hercules" "Serv-srsappro-10.10.33.70"
+next
+edit "Servidores_Smtp_Unix-2"
+set member  "10.10.33.75-SVCORAP1"
+next
+edit "SIIPAD-Nomina"
+set member  "Francisco_J._Perez_Oceguera" "Jorge_V._Amador_Diaz" "Mario_Carrasco_Torres"
+next
+edit "SubRedes"
+set member  "10.10.0.0/16" "190.1.0.0/16" "190.4.0.0/16" "191.2.0.0/16" "191.4.0.0/16"
+next
+edit "TELCEL_ACCESO_APN"
+set member  "10.10.31.31" "10.10.31.32" "10.10.32.15" "10.10.32.19" "10.10.32.70" "10.10.32.78" "10.10.32.79" "10.10.64.70"
+next
+edit "To_ferrosur"
+set member  "190.1.4.146/32" "190.1.5.133/32" "190.1.5.151/32" "190.1.6.4/32" "190.1.6.50/32" "190.1.7.15" "190.1.7.151/32" "Aaron_David_Martinez_Soriano" "Adolfo_Huidobro_MEX_CORP" "Adriana_Quintero_GDL" "Angelica_Cabanas" "Anuar" "Araceli_Perez" "Arturo_del_Moral_MEX_CORP" "Arturo_Garcia_Santaella" "Arturo_Munoz" "Cesar_Gomez_Cantu" "Edgar_Pineda_Cruz" "Enrique_Aguirre" "Esther_Cuevas" "Francisco_Morales" "Gerardo_Urquizo" "Gloria_Leticia_Lopez" "Hector_Lopez_Pedraza" "Jesus_Irais" "Jose_Juan_Arias" "Jose_Juan_Ugalde_Bautista" "Jose_Luis_Hinojosa" "Julieta_Fuentes_Corona" "Luis_Sosa" "Marianela_Alvarado_Lopez" "Mario" "Miguel_Angel_Garcia_Rentaria" "Miguel_Angel_Pizano_Medina" "Miguel_Setien" "Miguel_Tapia" "orvonton" "Rafael_Villavicencio"
+next
+edit "Vista_SAP_PRO"
+set member  "10.10.32.73" "10.10.32.74"
+next
+edit "Vista_SAP_QA"
+set member  "10.10.31.16" "10.10.31.17"
+next
+edit "2Skype_Microsoft"
+set member  "analytics.localytics.com" "apc.delve.office.com" "aus.delve.office.com" "can.delve.office.com" "client.hip.live.com" "delve.office.com" "eur.delve.office.com" "gbr.delve.office.com" "ind.delve.office.com" "jpn.delve.office.com" "kor.delve.office.com" "lam.delve.office.com" "nam.delve.office.com" "outlook.uservoice.com" "res.delve.office.com" "support.microsoft.com" "wu.client.hip.live.com"
+next
+edit "Barracuda-Update"
+set member  "205.158.110.59" "barracuda_update" "update01.barracudanetworks.com" "update02.barracudanetworks.com" "update03.barracudanetworks.com"
+next
+edit "Bloqueospam"
+set member  "c9outbound210.ctmail.com" "ctmail.com" "mailout05.yourhostingaccount.com" "mailout07.yourhostingaccount.com" "mailout09.yourhostingaccount.com" "mailout11.yourhostingaccount.com" "mailout12.yourhostingaccount.com" "mailout13.yourhostingaccount.com" "mailout14.yourhostingaccount.com" "mailout17.yourhostingaccount.com" "ve.vg5tk6yc.vesrv.com" "yourhostingaccount.com"
+next
+edit "china_3"
+set member  "101.132.188.109" "101.132.36.68" "111.231.137.251" "111.231.141.34" "111.231.199.138" "111.231.87.36" "112.124.200.96" "114.67.239.20" "116.62.151.149" "118.126.65.155" "119.23.175.177" "119.23.175.92" "119.27.177.20" "119.29.157.181" "120.55.78.60" "121.42.58.155" "123.207.222.80" "139.199.155.158" "140.143.98.248" "39.100.108.234" "39.106.227.33" "47.100.4.171" "47.110.135.52" "47.110.146.45" "47.110.226.85" "47.110.239.52" "47.111.17.22" "47.111.28.51" "47.111.99.86" "47.92.198.53" "47.97.181.106" "47.99.152.174" "47.99.81.24" "47.99.93.209" "60.205.219.103"
+next
+edit "doc-server-station"
+set member  "doc-server-a_Mexico-Polanco" "doc-server-b_México-Polanco" "doc-server-c_México-Polanco" "doc-station-a_Veracruz" "doc-station-b_Veracruz" "doc-station-c_Veracruz" "doc-station-e_Veracruz" "doc-station-f_Veracruz"
+next
+edit "Dominios_Railconnect"
+set member  "chreports.railconnect.com" "chreports.railconnect.com/carlogin.asp" "fmrc.railconnect.com" "nspi17.railconnect.com" "railconnect.com" "rmias17.railcarmgt.com/newlook" "road-mark.railconnect.com" "txpf.railconnect.com/newlook"
+next
+edit "Equipo_Redes_TI"
+set member  "PCNSFPST02" "PCNSFPST03" "PCNSFPST04" "PCNSFPST05"
+next
+edit "Ferrosur_Todo"
+set member  "ferrosur103" "ferrosur104" "ferrosur105" "ferrosur106" "ferrosur107" "ferrosur108" "ferrosur109" "ferrosur110" "ferrosur111" "ferrosur112" "ferrosur113"
+next
+edit "FTP"
+set member  "200.67.178.107" "208.76.82.31"
+next
+edit "FTP_20_Y_21"
+set member  "EDIFTP.BNSF.COM" "ftp.transentric.com"
+next
+edit "FTP_hlcl"
+set member  "193.17.48.236" "193.17.48.244" "193.17.48.248"
+next
+edit "FTP_Intermodal"
+set member  "167.132.254.32" "167.132.254.33" "167.132.254.34" "167.132.254.35" "167.132.254.36" "167.132.254.37" "167.132.254.38" "167.132.254.39" "200.67.216.242" "CMI" "HAPPAG_LOYD" "HAPPAG_LOYD-193.17.48.236" "HAPPAG_LOYD-193.17.48.244" "HAPPAG_LOYD-193.17.48.248" "MAERSK_GDL" "PACER_GDL" "REZ1" "REZ1-65.20.130.54" "REZ1-65.200.132.15" "REZ1-65.200.132.191" "Rez1-65.200.132.2" "REZ1-65.200.132.241" "REZ1-65.200.132.242" "REZ1-65.200.132.245" "REZ1-65.200.132.249" "REZ1-65.200.132.250" "REZ1-65.200.132.50" "TRANSENTRIC" "TRANSENTRIC-167.132.254.32" "TRANSENTRIC-167.132.254.33" "TRANSENTRIC-167.132.254.34" "TRANSENTRIC-167.132.254.35" "TRANSENTRIC-167.132.254.36" "TRANSENTRIC-167.132.254.37" "TRANSENTRIC-167.132.254.38" "TRANSENTRIC-167.132.254.39" "UPDS" "UPDS-69.58.254.116" "UPDS-69.58.254.84"
+next
+edit "FTP-IMEX"
+set member  "107.21.12.134" "12.191.195.72" "167.132.254.32" "167.132.254.33" "167.132.254.34" "167.132.254.35" "167.132.254.36" "167.132.254.37" "167.132.254.38" "167.132.254.39" "174.36.134.128" "193.163.248.25" "193.17.48.236" "193.17.48.244" "193.17.48.248" "200.67.216.242" "200.77.220.194" "203.246.145.68" "210.65.198.133" "210.65.198.150" "210.71.241.143_FTP" "216.54.111.217" "65.200.132.50" "66.161.82.92" "69.58.254.116" "69.58.254.84/32" "bizedi.wanhai.com" "data.interasset.com" "domino.lbo.cmiservice.com" "edi.maerskline.com" "edi.rez1.com" "ftp.hlcl.com" "ftp.pacer.com" "ftp.transentric.com" "ftp.usa.cma-cgm.com" "glmex.com" "orchid.arvixe.com" "shipmentonline.com" "uftp.cyberlogitec.com"
+next
+edit "Grp_Skype"
+set member  "52.112.0.0/16-Microsoft_6" "52.24.47.0/24-Skype_1" "52.24.97.0/24-Skype_2" "52.42.213.0/24-Skype_3" "65.55.0.0/16-Microsoft_1" "67.235.151.0/24-Microsoft_2" "68.124.28.0/24-Microsoft_3" "69.124.28.0/24-Microsoft_5" "91.190.216.0/24-Microsoft_3" "91.190.218.0/24-Microsoft_4"
+next
+edit "hosts_libres"
+set member  "aix.hostlink.eds.com" "ftp://ftp2.railconnect.com" "smtp.alestra.net.mx" "www.hostlink.eds.com" "www.infonavit.gob.mx" "www.sabremobile.com" "www.virtuallythere.com"
+next
+edit "IMSS"
+set member  "148.223.145.10" "148.243.35.11" "148.243.35.14" "148.243.35.17" "148.243.35.37"
+next
+edit "IP_CHINA_3"
+set member  "101.4.126.139_CHINA" "101.4.126.179_CHINA" "101.4.126.235_CHINA" "166.111.8.30_CHINA" "166.111.8.31_CHINA" "202.112.0.13_CHINA" "202.112.0.35_CHINA" "202.96.0.133_CHINA" "202.96.128.68_CHINA" "203.119.28.1_CHINA" "54.222.193.92_CHINA"
+next
+edit "IPS_Bloqueadas_C&C"
+set member  "108.61.18.43" "151.142.255.255" "174.65.18.61" "174.70.175.215" "193.166.255.170" "193.166.255.171" "195.245.201.10" "23.236.62.147" "24.234.109.144" "68.0.110.156" "68.0.112.24" "68.1.17.9" "68.10.221.160" "68.109.3.231" "68.109.7.79" "68.110.154.128" "68.13.36.78" "68.9.242.254" "70.160.198.51" "70.160.66.137" "70.171.106.130" "70.178.52.86" "70.184.172.70" "70.185.162.58" "70.189.96.166" "70.191.166.9" "70.191.238.167" "72.204.133.154" "72.208.178.68" "72.220.166.242" "84.22.104.163" "95.211.120.23" "98.160.108.51" "98.162.161.167" "98.163.250.163" "98.164.247.13" "98.176.242.106" "chepe-ferromex.mx" "tren-chepe.mx"
+next
+edit "IPS_Forefront"
+set member  "12.129.199.61" "12.129.20.0/24" "12.129.219.155" "206.16.57.70" "207.46.163.0/24" "207.46.51.64/26" "213.199.154.0/24" "213.199.180.128/26" "216.32.180.0/24" "216.32.181.0/24" "23.236.62.147" "63.241.222.0/24" "65.55.88.0/24" "94.245.120.64/26" "chepe-ferromex.mx" "tren-chepe.mx"
+next
+edit "IPs_China"
+set member  "101.4.126.27_CHINA" "106.48.13.47_CHINA" "106.48.13.53_CHINA" "110.53.183.252/32" "117.27.138.138_CHINA" "121.18.238.106/32" "121.18.238.119/32" "121.18.238.39/32" "202.96.0.133_CHINA" "203.119.25.3_CHINA" "203.119.26.3_CHINA" "203.119.27.3_CHINA" "203.130.53.126_CHINA" "211.136.17.105_CHINA" "221.194.47.221/32" "221.194.47.239/32" "221.194.47.243/32" "221.194.47.245/32" "42.236.10.104" "42.236.10.109" "42.236.10.111" "54.223.23.213_CHINA" "58.218.198.150/32" "58.218.198.155" "58.242.83.39" "China-_10.10.32.86" "China-10.10.153.185" "China-10.10.21.112" "China-10.10.21.134" "China-10.10.21.150" "China-10.10.21.179" "China-10.10.21.191" "China-10.10.21.207" "China-10.10.21.228" "China-10.10.21.236" "China-10.10.21.91" "China-10.10.32.85" "China-10.10.32.86" "China-10.10.32.87" "China-10.10.40.10" "China-10.10.40.3" "China-101.4.126.139" "China-101.4.126.179" "China-101.4.126.203" "China-101.4.126.235" "China-101.4.126.27" "China-101.4.126.99" "China-106.11.61.140" "China-114.54.23.116" "China-120.192.82.248" "China-120.78.181.57" "China-121.40.48.40" "China-122.72.35.240" "China-14.215.165.12" "China-14.215.165.3" "China-14.215.165.5" "China-140.205.218.51" "China-140.205.253.62" "China-140.205.32.6" "China-140.205.71.250" "China-166.111.8.30" "China-166.111.8.31" "China-180.97.33.177" "China-182.140.245.30" "China-183.61.112.22" "China-183.61.112.42" "China-183.61.112.80" "China-183.61.112.93" "China-202.101.98.54" "China-202.102.224.94" "China-202.102.227.94" "China-202.106.196.28" "China-202.112.0.13" "China-202.112.0.35" "China-202.96.0.133" "China-202.96.128.143" "China-202.96.128.68" "China-202.96.209.134" "China-203.119.25.3" "China-203.119.26.3" "China-203.119.27.3" "China-203.119.28.1" "China-211.136.17.105" "China-211.136.20.201" "China-218.2.135.2" "China-220.181.105.177" "China-220.243.212.211" "China-220.243.226.49" "China-221.228.255.2" "China-42.96.248.220" "China-47.95.50.1" "china_106.120.162.96" "china_106.120.162.97" "China_110.53.183.252" "CHINA_112.26.5.252" "China_113.65.70.50" "China_113.90.230.236" "China_119.142.23.22" "China_121.18.238.106" "China_121.18.238.119" "CHINA_121.18.238.125" "China_121.18.238.28" "China_121.18.238.39" "China_14.215.176.132" "China_171.13.14.147" "China_180.76.15.145" "China_180.76.15.158" "China_182.118.20.144" "China_220.181.132.194" "China_220.181.132.196" "China_220.181.51.103" "CHINA_221.194.44.211" "China_221.194.47.233" "China_221.194.47.236" "China_221.194.47.239" "China_221.194.47.242" "China_36.110.147.83" "CHINA_42.48.171.156" "china_58.218.198.143" "CHINA_58.218.198.159" "China_58.242.83.18" "China_60.12.126.54" "IP_China_115.238.245.8" "IP_China_121.18.238.125" "IP_China_121.18.238.39" "IP_China_221.194.47.236" "IP_China_221.194.47.239" "IP_China_222.186.15.174"
+next
+edit "IPs_China2"
+set member  "China-_10.10.32.86" "China-_61.177.172.33" "China-1.192.81.197" "China-10.10.153.162" "China-10.10.153.86" "China-10.10.176.113" "China-10.10.176.63" "China-10.10.27.171" "China-10.10.30.25" "China-10.10.32.85" "China-10.10.32.87" "China-10.10.40.10" "China-10.10.40.3" "China-10.175.116.30" "China-111.177.117.36" "China-115.205.229.104" "China-115.238.245.2" "China-115.238.245.4" "China-115.238.245.8" "China-115.27.254.6" "China-119.122.89.111" "China-121.18.231.66" "China-121.18.238.125" "China-125.89.56.110" "China-139.199.102.128" "China-14.104.83.179" "China-166.111.8.246" "China-171.13.196.46" "China-171.214.176.9" "China-175.150.131.78" "China-182.100.67.118" "China-182.127.170.48" "China-182.150.27.205" "China-183.129.160.229" "China-183.131.83.112" "China-202.103.225.70" "China-202.112.27.1" "China-202.112.36.197" "China-202.112.38.186" "China-202.113.160.130" "China-202.113.244.253" "China-202.115.255.166" "China-202.121.255.6" "China-202.121.32.20" "China-202.125.191.2" "China-202.203.131.1" "China-202.207.130.237" "China-202.96.75.68" "China-202.96.75.69" "China-203.158.16.39" "China-210.26.64.33" "China-210.28.168.10" "china-210.28.176.82" "China-210.34.0.15" "China-210.34.0.16" "China-219.134.14.31" "China-220.181.108.109" "China-221.194.47.205" "China-221.194.47.221" "China-221.194.47.233" "China-221.194.47.236" "China-221.194.47.239" "China-221.229.204.177" "China-223.86.188.215" "China-42.236.10.81" "China-42.236.10.82" "China-42.236.10.84" "China-58.242.83.11" "China-58.242.83.38" "China-61.177.172.130" "China-61.177.172.86" "China_10.10.30.44" "China_10.10.32.87" "China_101.4.126.139" "China_101.4.126.179" "China_101.4.126.203" "China_101.4.126.235" "China_101.4.126.27" "China_101.4.126.99" "China_106.11.172.27" "China_106.11.61.140" "China_111.206.198.55" "China_111.206.198.76" "China_111.206.221.30" "China_111.206.221.38" "China_111.206.221.72" "CHINA_115.238.245.6" "China_116.204.101.229" "China_118.178.165.146" "China_118.193.219.137" "China_120.10.209.180" "China_120.78.181.57" "China_122.228.198.140" "China_123.125.114.8" "China_123.125.143.137" "China_123.133.84.106" "China_140.205.253.62" "China_140.205.34.16" "China_140.205.71.250" "China_166.111.8.30" "China_166.111.8.31" "China_202.101.98.54" "China_202.101.98.55" "China_202.102.224.94" "China_202.102.227.94" "China_202.106.196.28" "China_202.112.0.13" "China_202.112.0.35" "China_202.96.0.133" "China_202.96.103.36" "China_202.96.128.143" "China_202.96.128.68" "China_202.98.0.73" "China_203.119.25.3" "China_203.119.26.3" "China_203.119.27.3" "China_203.119.29.1" "China_203.205.155.46" "China_211.136.17.105" "China_211.136.20.201" "China_218.2.135.2" "China_221.228.255.2" "China_42.176.32.67" "China_42.236.10.82" "China_42.236.10.84" "China_58.129.247.39" "China_60.221.236.179" "China_61.177.172.31"
+next
+edit "Mensajeria_Telcel"
+set member  "12.129.104.132" "12.129.104.133" "12.129.104.134" "12.129.104.135" "12.129.104.136" "12.129.104.137" "12.129.104.138" "12.129.104.139" "12.129.104.140" "12.129.104.141" "12.129.104.142" "12.129.104.143" "12.129.104.144" "12.129.104.145" "12.129.104.146" "12.129.104.147" "12.129.104.148" "12.129.104.149" "12.129.104.150" "12.129.104.151" "12.129.104.152" "12.129.104.153" "12.129.104.154" "12.129.104.155" "12.129.104.156" "12.129.104.157" "12.129.104.158" "12.129.104.159" "12.129.104.160" "12.129.104.161" "12.129.104.162" "12.129.104.163" "12.129.104.164" "12.129.104.165" "12.129.104.166" "12.129.104.167" "12.129.104.168" "12.129.104.169" "12.129.104.170" "12.129.104.171" "12.129.104.172" "12.129.104.173" "12.129.104.174" "12.129.104.175" "12.129.104.176" "12.129.104.177" "12.129.104.178" "12.129.104.179" "12.129.104.180" "12.129.104.181" "12.129.104.182" "12.129.104.183" "12.129.104.184" "12.129.104.185" "12.129.104.186" "12.129.104.187" "12.129.104.188" "12.129.104.189" "12.129.104.190" "12.129.104.191" "12.129.104.192" "12.129.104.193" "12.129.104.194" "12.129.104.195" "12.129.104.196" "12.129.104.197" "12.129.104.198" "12.129.104.199" "12.129.104.200" "12.129.104.201" "12.129.104.202" "12.129.104.203" "12.129.104.204" "12.129.104.205" "12.129.104.206" "12.129.104.207" "12.129.104.208" "12.129.104.209" "12.129.104.210" "12.129.104.211" "12.129.104.212" "12.129.104.213" "12.129.104.214" "12.129.104.215" "12.129.104.216" "12.129.104.217" "12.129.104.218" "12.129.104.219" "12.129.104.220" "12.129.104.221" "12.129.104.222" "12.129.104.223" "12.129.104.224" "12.129.104.225" "12.129.104.226" "12.129.104.227" "12.129.104.228" "12.129.104.229" "12.129.104.230" "12.129.104.231" "12.129.104.232" "12.129.104.233" "12.129.104.234" "12.129.104.235" "12.129.104.236" "12.129.104.237" "12.129.104.238" "12.129.104.239" "12.129.104.240" "12.129.104.241" "12.129.104.242" "12.129.104.243" "12.129.104.244" "12.129.104.244/32" "12.129.104.245" "12.129.104.246" "12.129.104.247" "12.129.104.248" "12.129.104.249" "12.129.104.250" "12.129.104.251" "12.129.104.252" "12.129.104.253" "12.129.104.254"
+next
+edit "Segmentos_Microsoft"
+set member  "104.0.0.0" "118.0.0.0" "13.0.0.0/8" "131.0.0.0/8" "132.0.0.0" "132.245.0.0/16" "137.0.0.0/8" "157.55.0.0/16" "157.55.130.0/25" "157.55.145.0/25" "157.55.155.0/25" "157.55.227.192/26" "157.55.45.128/25" "157.55.59.128/25" "157.56.151.0/25" "157.56.53.128/25" "157.56.55.0/25" "157.56.58.0" "168.0.0.0/8" "191.0.0.0/8" "213.0.0.0/8" "23.0.0.0/8" "40.0.0.0/8" "51.0.0.0/8" "52.0.0.0/8" "65.0.0.0/8" "70.0.0.0/8" "93.0.0.0/8"
+next
+edit "Sitios_facturación_electrónica"
+set member  "108.168.130.12:8443/indicium/IndiciumTimbradoWS?wsdl" "157.56.12.236_iofacturo.mx" "cfdiws.sedeb2b.com" "ftp2.sat.gob.mx" "indicium.comercio-digital.mx/wsx/cfdi.svc" "indicium.ecodex.com.mx:4042/serviciotimbrado.svc" "indicium.expidetufactura.com.mx" "indicium2.comercio-digital.mx/wsx/cfdi.svc" "integracionlithopac.cloudapp.net/webservices/" "iofacturo.mx" "iotunel.iofacturo.mx/" "iotunelautenticacion.iofacturo.mx/Autenticacion.svc" "pruebaiotunel.iofacturo.mx/" "pruebaiotunelautenticacion.cloudapp.net" "timbrado.expidetufactura.com.mx:8443/" "www.lithopac.mx" "www.lithopac.mx/privado/webservices/IntegrationServices.svc" "www.soporte-indiciumsolutions.com/" "www.soporte.indiciumsolutions.com.mx/registro/"
+next
+edit "Skype_Microsoft"
+set member  "accesscontrol.windows.net" "account.activedirectory.windowsazure.com" "account.office.net" "adhybridhealth.azure.com" "adminwebservice.microsoftonline.com" "agent.office.net" "ajax.aspnetcdn.com" "aka.ms" "amp.azure.net" "api.localytics.com" "api.login.microsoftonline.com" "api.office.com" "api.skype.com" "appsforoffice.microsoft.com" "assets.onestore.ms" "azureedge.net" "blob.core.windows.net" "broadcast.skype.com" "broadcast.skype.com1" "browser.pipe.aria.microsoft.com" "c.microsoft.com" "c1.microsoft.com" "clientconfig.microsoftonline-p.net" "clientlog.portal.office.com" "compliance.outlook.com" "config.edge.skype.com" "connect.facebook.net" "Contentstorage.osi.office.net" "dc.services.visualstudio.com" "device.login.microsoftonline.com" "dgps.support.microsoft.com" "enterpriseregistration.windows.net" "equivio.office.com" "equivioprodcloudapp.net" "firstpartyapps.oaspapps.com" "groupsapi-prod.outlookgroups.ms" "groupsapi2-prod.outlookgroups.ms" "groupsapi3-prod.outlookgroups.ms" "groupsapi4-prod.outlookgroups.ms" "hip.microsoftonline-p.net" "hipservice.microsoftonline.com" "home.office.com" "infra.lync.com" "keydelivery.mediaservices.windows.net3" "liverdcxstorage.blob.core.windowsazure.com" "login-us.microsoftonline.com" "login.microsoft.com" "login.microsoftonline.com" "login.windows.net" "logincert.microsoftonline.com" "loginex.microsoftonline.com" "lync.com" "manage.office.com" "management.azure.com" "mem.gfx.ms" "microsoft.com" "microsoftonline-p.com" "microsoftonline-p.net" "microsoftonline.com" "mlccdn.blob.core.windows.net" "mscrl.microsoft.com" "msecnd.net" "msecnd.net2" "msocdn.com" "nexus.microsoftonline-p.com" "nexus.officeapps.live.com" "nexusrules.officeapps.live.com" "office.com" "office.net" "office365.com" "office365servicehealthcommunications.cloudapp.net" "office365zoom.cloudapp.net" "online.lync.com" "onmicrosoft.com" "outlook.office365.com" "pipe.aria.microsoft.com" "pipe.skype.com" "platform.linkedin.com" "policykeyservice.dc.ad.msft.net" "portal.cloudappsecurity.com" "portal.microsoftonline.com" "portal.office.com" "prod.firstpartyapps.oaspapps.com.akadns.net" "prod.msocdn.com" "products.office.com" "protection.office.com" "provisioningapi.microsoftonline.com" "queue.core.windows.net" "quicktips.skypeforbusiness.com" "r1.res.office365.com" "r4.res.office365.com" "resources.lync.com" "rink.hockeyapp.net" "sdk.hockeyapp.net" "secure.aadcdn.microsoftonline-p.com" "secure.aadcdn.microsoftonline-p.com2" "securescore.office.com" "servicebus.windows.net" "sfbassets.com" "shellprod.msocdn.com" "signup.microsoft.com" "skypeforbusiness.com" "skypegraph.skype.com" "skypemaprdsitus.trafficmanager.net" "stamp2.login.microsoftonline.com" "streaming.mediaservices.windows.net3" "suite.office.net" "support.content.office.net" "support.office.com" "swx.cdn.skype.com" "table.core.windows.net" "technet.microsoft.com" "telemetry.remoteapp.windowsazure.com" "telemetryservice.firstpartyapps.oaspapps.com" "templates.office.com" "urlp.sfbassets.com" "users.storage.live.com" "video.osi.office.net" "videocontent.osi.office.net" "videoplayercdn.osi.office.net" "vortex.data.microsoft.com" "windows.net" "wus-firstpartyapps.oaspapps.com" "www.remoteapp.windowsazure.com" "zoom-cs-prodcloudapp.net"
+next
+edit "Telcel_APN"
+set member  "APN_TELCEL-10.202.116.0/22" "APN_TELCEL-10.205.140.0/22"
+next
+edit "Windows_Update"
+set member  "download.microsoft.com" "download.windowsupdate.com" "ntservicepack.microsoft.com" "Trendmicro" "windowsupdate.microsoft.com" "wustat.windows.com"
+next
+end
